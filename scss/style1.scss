@@ -17,6 +17,8 @@ body {
   margin: 0 auto;
 }
 
+$color: #d84727;
+
 /* Header */
 
 header .info__header {
@@ -50,6 +52,10 @@ header .info__header .icon__header .icon-search img {
   vertical-align: sub;
 }
 
+header .info__header .icon__header .icon-search img:hover {
+  width: 34px;
+}
+
 header .info__header .icon__header .icon-user {
   align-self: center;
   margin-right: 40px;
@@ -58,6 +64,14 @@ header .info__header .icon__header .icon-user {
 header .info__header .icon__header .icon-user img {
   margin-right: 8px;
   vertical-align: middle;
+}
+
+header .info__header .icon__header .icon-user span:hover {
+  color: $color;
+}
+
+header .info__header .icon__header .icon-user img:hover {
+  width: 26px;
 }
 
 header .info__header .icon__header .icon[data-link="cart"] {
@@ -83,6 +97,23 @@ header a {
   font-size: 20px;
   line-height: 34px;
   letter-spacing: 0.02em;
+}
+
+header .info__header .menu .item a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: $color;
+  height: 2px;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+header .info__header .menu .item a:hover::after {
+  transform: scale(1);
+}
+
+header .info__header .menu .item a span:hover {
+  color: $color;
 }
 
 /* Section Pink  */
@@ -400,6 +431,89 @@ header a {
   background: #d84727;
   padding: 8px 36px;
   display: inline-block;
+  transition: 0.5s;
+}
+
+.product__card .item__hover .card__button a:hover {
+  color: $color;
+  background-color: #ffffff;
+  border: 1px solid $color;
+  padding: 7px 35px;
+}
+
+// Section Recent News
+
+@mixin images {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.recent__news {
+  .name__section {
+    margin-top: 57px;
+  }
+  .all__recent-news {
+    display: flex;
+    justify-content: space-between;
+    .left__recent-news {
+      margin-left: 165px;
+      margin-top: 180px;
+      width: 56%;
+      p {
+        font-family: "Taviraj", serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #777777;
+      }
+      h3 {
+        font-family: "Taviraj", serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        width: 350px;
+      }
+      .button__recent-news {
+        a {
+          text-decoration: none;
+          font-family: "Taviraj", serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 27px;
+          letter-spacing: 0.02em;
+          color: $color;
+          border: 2px solid $color;
+          padding: 15px 47px 16px 47px;
+          display: inline-block;
+          margin-top: 45px;
+          transition: 0.5s;
+        }
+        a:hover {
+          color: #ffffff;
+          background-color: $color;
+        }
+      }
+    }
+    .right__receht-news {
+      background: #f1ddc9;
+      width: 44%;
+      height: 458px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 69px;
+        right: 38%;
+        @include images;
+      }
+    }
+  }
 }
 
 /*Media */
@@ -407,6 +521,11 @@ header a {
 @media screen and (max-width: 1200px) {
   .center {
     width: 90%;
+  }
+
+  .recent__news .all__recent-news .left__recent-news {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -447,6 +566,16 @@ header a {
   .pink .pink-left img {
     top: 40px;
   }
+
+  .recent__news .all__recent-news .left__recent-news h3 {
+    line-height: 38px;
+    font-size: 28px;
+    width: 300px;
+  }
+
+  .recent__news .all__recent-news .left__recent-news .button__recent-news a {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -467,6 +596,29 @@ header a {
   .discover__now .card__now .item .info__name {
     width: 100%;
   }
+
+  .recent__news .all__recent-news {
+    flex-wrap: wrap;
+  }
+
+  .recent__news .all__recent-news .left__recent-news {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .recent__news .all__recent-news .left__recent-news h3 {
+    width: 100%;
+  }
+
+  .recent__news .all__recent-news .right__receht-news {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .recent__news .all__recent-news .right__receht-news img {
+    width: 80%;
+    right: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -483,6 +635,10 @@ header a {
     margin-right: 0;
     vertical-align: text-bottom;
   }
+
+  // .recent__news .all__recent-news .right__receht-news {
+  //   height: 350px;
+  // }
 }
 
 @media screen and (max-width: 425px) {
@@ -490,20 +646,37 @@ header a {
     font-size: 40px;
     line-height: 60px;
   }
+
+  .recent__news .all__recent-news .right__receht-news {
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .pink .pink-right .matoa__pink .button__pink {
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .pink .pink-right .matoa__pink .button__pink .button1 {
+    width: 100%;
   }
 
   .pink .pink-right .matoa__pink .button__pink .button1 .add__cart {
     font-size: 12px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 24px 10px 24px;
+  }
+
+  .pink .pink-right .matoa__pink .button__pink .button2 {
+    width: 100%;
+    margin-top: 20px;
   }
 
   .pink .pink-left img {
     width: 100%;
     max-width: 100%;
+  }
+
+  .name {
+    font-size: 30px;
   }
 }

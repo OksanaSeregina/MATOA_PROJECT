@@ -64,6 +64,10 @@ header .info__header .icon__header .icon-search img {
   vertical-align: sub;
 }
 
+header .info__header .icon__header .icon-search img:hover {
+  width: 34px;
+}
+
 header .info__header .icon__header .icon-user {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -74,6 +78,14 @@ header .info__header .icon__header .icon-user {
 header .info__header .icon__header .icon-user img {
   margin-right: 8px;
   vertical-align: middle;
+}
+
+header .info__header .icon__header .icon-user span:hover {
+  color: #d84727;
+}
+
+header .info__header .icon__header .icon-user img:hover {
+  width: 26px;
 }
 
 header .info__header .icon__header .icon[data-link="cart"] {
@@ -99,6 +111,27 @@ header a {
   font-size: 20px;
   line-height: 34px;
   letter-spacing: 0.02em;
+}
+
+header .info__header .menu .item a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #d84727;
+  height: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+header .info__header .menu .item a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header .info__header .menu .item a span:hover {
+  color: #d84727;
 }
 
 /* Section Pink  */
@@ -444,12 +477,104 @@ header a {
   background: #d84727;
   padding: 8px 36px;
   display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product__card .item__hover .card__button a:hover {
+  color: #d84727;
+  background-color: #ffffff;
+  border: 1px solid #d84727;
+  padding: 7px 35px;
+}
+
+.recent__news .name__section {
+  margin-top: 57px;
+}
+
+.recent__news .all__recent-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recent__news .all__recent-news .left__recent-news {
+  margin-left: 165px;
+  margin-top: 180px;
+  width: 56%;
+}
+
+.recent__news .all__recent-news .left__recent-news p {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #777777;
+}
+
+.recent__news .all__recent-news .left__recent-news h3 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  width: 350px;
+}
+
+.recent__news .all__recent-news .left__recent-news .button__recent-news a {
+  text-decoration: none;
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #d84727;
+  border: 2px solid #d84727;
+  padding: 15px 47px 16px 47px;
+  display: inline-block;
+  margin-top: 45px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.recent__news .all__recent-news .left__recent-news .button__recent-news a:hover {
+  color: #ffffff;
+  background-color: #d84727;
+}
+
+.recent__news .all__recent-news .right__receht-news {
+  background: #f1ddc9;
+  width: 44%;
+  height: 458px;
+  position: relative;
+}
+
+.recent__news .all__recent-news .right__receht-news img {
+  position: absolute;
+  top: 69px;
+  right: 38%;
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*Media */
 @media screen and (max-width: 1200px) {
   .center {
     width: 90%;
+  }
+  .recent__news .all__recent-news .left__recent-news {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -486,6 +611,14 @@ header a {
   .pink .pink-left img {
     top: 40px;
   }
+  .recent__news .all__recent-news .left__recent-news h3 {
+    line-height: 38px;
+    font-size: 28px;
+    width: 300px;
+  }
+  .recent__news .all__recent-news .left__recent-news .button__recent-news a {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -503,6 +636,25 @@ header a {
   }
   .discover__now .card__now .item .info__name {
     width: 100%;
+  }
+  .recent__news .all__recent-news {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .recent__news .all__recent-news .left__recent-news {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .recent__news .all__recent-news .left__recent-news h3 {
+    width: 100%;
+  }
+  .recent__news .all__recent-news .right__receht-news {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .recent__news .all__recent-news .right__receht-news img {
+    width: 80%;
+    right: auto;
   }
 }
 
@@ -525,21 +677,33 @@ header a {
     font-size: 40px;
     line-height: 60px;
   }
+  .recent__news .all__recent-news .right__receht-news {
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .pink .pink-right .matoa__pink .button__pink {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pink .pink-right .matoa__pink .button__pink .button1 {
+    width: 100%;
   }
   .pink .pink-right .matoa__pink .button__pink .button1 .add__cart {
     font-size: 12px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 24px 10px 24px;
+  }
+  .pink .pink-right .matoa__pink .button__pink .button2 {
+    width: 100%;
+    margin-top: 20px;
   }
   .pink .pink-left img {
     width: 100%;
     max-width: 100%;
+  }
+  .name {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style1.css.map */
