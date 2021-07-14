@@ -567,6 +567,148 @@ header .info__header .menu .item a span:hover {
      object-fit: cover;
 }
 
+.catalog__clock {
+  margin-top: 133px;
+}
+
+.catalog__clock .series {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 32px;
+}
+
+.catalog__clock .series div .name {
+  font-weight: normal;
+}
+
+.catalog__clock .series div .name__hr {
+  width: 65px;
+  border: 1px solid #333333;
+}
+
+.catalog__clock .series div .picture[data-link="back"] {
+  width: 131px;
+  height: 131px;
+  background: #f1ddc9;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back1 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog1.png) no-repeat center/50%;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back2 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog2.png) no-repeat center/50%;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back3 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog3.png) no-repeat center/50%;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back4 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog4.png) no-repeat center/50%;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back5 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog5.png) no-repeat center/40%;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back6 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog6.png) no-repeat center/80%;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back7 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog7.png) no-repeat center/50%;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back8 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog8.png) no-repeat center/50%;
+}
+
+.catalog__clock .series div .picture[data-link="back"] .back9 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog9.png) no-repeat center/50%;
+}
+
+.catalog__clock .series .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog__clock .series .title a {
+  text-decoration: none;
+}
+
+.catalog__clock .series .title a .info__product {
+  margin-left: 24px;
+}
+
+.catalog__clock .series .title a .info__product h4 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+.catalog__clock .series .title a .info__product p {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  text-decoration: line-through;
+  margin-bottom: 0;
+}
+
+.catalog__clock .series .title a .info__product h3 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #222222;
+}
+
+.catalog__clock .series .title:hover {
+  border: 1px solid #d84727;
+}
+
 /*Media */
 @media screen and (max-width: 1200px) {
   .center {

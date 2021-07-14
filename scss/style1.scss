@@ -449,6 +449,12 @@ header .info__header .menu .item a span:hover {
   object-fit: cover;
 }
 
+@mixin img__backgr {
+  display: block;
+  height: inherit;
+  width: inherit;
+}
+
 .recent__news {
   .name__section {
     margin-top: 57px;
@@ -512,6 +518,108 @@ header .info__header .menu .item a span:hover {
         right: 38%;
         @include images;
       }
+    }
+  }
+}
+
+// Section Catalog Clock
+
+.catalog__clock {
+  margin-top: 133px;
+  .series {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 32px;
+    div {
+      .name {
+        font-weight: normal;
+      }
+      .name__hr {
+        width: 65px;
+        border: 1px solid #333333;
+      }
+      .picture[data-link="back"] {
+        width: 131px;
+        height: 131px;
+        background: #f1ddc9;
+        .back1 {
+          @include img__backgr;
+          background: url(../images/Catalog1.png) no-repeat center/50%;
+        }
+        .back2 {
+          @include img__backgr;
+          background: url(../images/Catalog2.png) no-repeat center/50%;
+        }
+        .back3 {
+          @include img__backgr;
+          background: url(../images/Catalog3.png) no-repeat center/50%;
+        }
+        .back4 {
+          @include img__backgr;
+          background: url(../images/Catalog4.png) no-repeat center/50%;
+        }
+        .back5 {
+          @include img__backgr;
+          background: url(../images/Catalog5.png) no-repeat center/40%;
+        }
+        .back6 {
+          @include img__backgr;
+          background: url(../images/Catalog6.png) no-repeat center/80%;
+        }
+        .back7 {
+          @include img__backgr;
+          background: url(../images/Catalog7.png) no-repeat center/50%;
+        }
+        .back8 {
+          @include img__backgr;
+          background: url(../images/Catalog8.png) no-repeat center/50%;
+        }
+        .back9 {
+          @include img__backgr;
+          background: url(../images/Catalog9.png) no-repeat center/50%;
+        }
+      }
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+        .info__product {
+          margin-left: 24px;
+          h4 {
+            font-family: "Taviraj", serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.02em;
+            color: #333333;
+          }
+          p {
+            font-family: "Taviraj", serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+            text-decoration: line-through;
+            margin-bottom: 0;
+          }
+          h3 {
+            font-family: "Taviraj", serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            color: #222222;
+          }
+        }
+      }
+    }
+    .title:hover {
+      border: 1px solid $color;
     }
   }
 }
