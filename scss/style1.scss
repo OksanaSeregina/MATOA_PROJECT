@@ -91,7 +91,6 @@ header .info__header .icon__header {
 
 header .info__header .icon__header .icon-search {
   align-self: flex-end;
-  margin-right: 40px;
 }
 
 header .info__header .icon__header .icon-search img {
@@ -105,6 +104,7 @@ header .info__header .icon__header .icon-search img:hover {
 header .info__header .icon__header .icon-user {
   align-self: center;
   margin-right: 40px;
+  margin-left: 40px;
 }
 
 header .info__header .icon__header .icon-user img {
@@ -118,6 +118,7 @@ header .info__header .icon__header .icon-user span:hover {
 
 header .info__header .icon__header .icon-user img:hover {
   width: 26px;
+  margin-left: -2px;
 }
 
 header .info__header .icon__header .icon[data-link="cart"] {
@@ -232,17 +233,17 @@ header .info__header .menu .item a span:hover {
   margin-bottom: 0;
 }
 
-.pink .pink-right .matoa__pink .button__pink {
+.button__pink {
   display: flex;
   margin-top: 44px;
 }
 
-.pink .pink-right .matoa__pink .button__pink .button1 {
+.button__pink .button1 {
   display: inline-flex;
   margin-right: 16px;
 }
 
-.pink .pink-right .matoa__pink .button__pink .button1 .add__cart {
+.button__pink .button1 .add__cart {
   text-decoration: none;
   color: #ffffff;
   background-color: #d84727;
@@ -255,26 +256,31 @@ header .info__header .menu .item a span:hover {
   letter-spacing: 0.02em;
 }
 
-.pink .pink-right .matoa__pink .button__pink .button1 .add__cart i {
+.button__pink .button1 .add__cart i {
   margin-right: 13px;
 }
-
-.pink .pink-right .matoa__pink .button__pink .button1 .add__cart:hover {
+.button__pink .button1 .add__cart:hover {
   color: $color;
   background-color: rgba(216, 71, 39, 0);
   border: 2px solid $color;
+  padding: 12px 28px 12px 23px;
 }
 
-.pink .pink-right .matoa__pink .button__pink .button2 .cicil {
+.button__pink .button2 .cicil {
   display: flex;
 }
 
-.pink .pink-right .matoa__pink .button__pink .button2 .cicil img {
-  border: 2px solid #d84727;
+.button__pink .button2 .cicil img {
+  border: 2px solid $color;
   padding: 15px 41px 14px 42px;
 }
 
-.pink .pink-right .matoa__pink .arrow__pink {
+.button__pink .button2 .cicil img:hover {
+  border: 4px solid $color;
+  padding: 13px 40px 12px 41px;
+}
+
+.arrow__pink {
   display: flex;
   justify-content: flex-end;
   margin-top: 9px;
@@ -282,23 +288,23 @@ header .info__header .menu .item a span:hover {
   top: 27px;
 }
 
-.pink .pink-right .matoa__pink .arrow__pink .arrow {
+.arrow__pink .arrow {
   border: 3px solid #d84727;
   padding: 0 12px;
 }
 
-.pink .pink-right .matoa__pink .arrow__pink .arrow:last-child {
+.arrow__pink .arrow:last-child {
   // background-color: #d84727;
   margin-left: 15px;
   margin-right: 31px;
 }
 
-.pink .pink-right .matoa__pink .arrow__pink .arrow .item {
+.arrow__pink .arrow .item {
   font-size: 30px;
   color: #d84727;
 }
 
-.pink .pink-right .matoa__pink .arrow__pink .arrow:hover {
+.arrow__pink .arrow:hover {
   background-color: #d84727;
   cursor: pointer;
 
@@ -463,7 +469,7 @@ header .info__header .menu .item a span:hover {
   padding-bottom: 48px;
 }
 
-.product__card .item__hover {
+.product__card .hide {
   display: flex;
   margin-left: 26px;
   margin-right: 24px;
@@ -472,12 +478,12 @@ header .info__header .menu .item a span:hover {
   justify-content: space-between;
 }
 
-.product__card .item__hover .heart {
+.product__card .hide .heart {
   border: 1px solid #d84727;
   padding: 7px 8px 5px 7px;
 }
 
-.product__card .item__hover .card__button a {
+.product__card .hide .card__button a {
   text-decoration: none;
   font-family: "Taviraj", serif;
   font-style: normal;
@@ -492,11 +498,15 @@ header .info__header .menu .item a span:hover {
   transition: 0.5s;
 }
 
-.product__card .item__hover .card__button a:hover {
+.product__card .hide .card__button a:hover {
   color: $color;
   background-color: #ffffff;
   border: 1px solid $color;
   padding: 7px 35px;
+}
+
+.product__card .hide {
+  display: none;
 }
 
 // Section Recent News
@@ -912,6 +922,20 @@ footer {
   }
   .active {
     color: $color;
+  }
+}
+
+// Section Product Info
+
+.product__info {
+  .all_product-info {
+    display: flex;
+    .left__product-info {
+      width: 50%;
+    }
+    .right__product-info {
+      width: 50%;
+    }
   }
 }
 
