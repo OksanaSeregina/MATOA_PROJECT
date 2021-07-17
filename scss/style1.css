@@ -175,8 +175,8 @@ header .info__header .menu .item a span:hover {
   line-height: 80px;
   letter-spacing: 0.02em;
   color: #333333;
-  text-transform: uppercase;
   width: 60%;
+  text-transform: uppercase;
 }
 
 .pink .pink-right .matoa__pink hr {
@@ -192,9 +192,10 @@ header .info__header .menu .item a span:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 28px;
   letter-spacing: 0.03em;
   color: #333333;
+  line-height: 22px;
   width: 70%;
   margin-bottom: 8px;
 }
@@ -202,11 +203,13 @@ header .info__header .menu .item a span:hover {
 .pink .pink-right .matoa__pink .text__discover {
   font-family: "Taviraj", serif;
   font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  letter-spacing: 0.03em;
   font-weight: 600;
   font-size: 16px;
   line-height: 27px;
-  letter-spacing: 0.03em;
-  color: #333333;
 }
 
 .pink .pink-right .matoa__pink .discover {
@@ -232,15 +235,16 @@ header .info__header .menu .item a span:hover {
 
 .button__pink .button1 .add__cart {
   text-decoration: none;
-  color: #ffffff;
   background-color: #d84727;
   padding: 14px 30px 14px 25px;
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  color: #ffffff;
   font-size: 20px;
   line-height: 34px;
-  letter-spacing: 0.02em;
 }
 
 .button__pink .button1 .add__cart i {
@@ -338,10 +342,11 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.03em;
-  color: #333333;
 }
 
 .discover__now .card__now .item .name span {
@@ -353,8 +358,10 @@ header .info__header .menu .item a span:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
   letter-spacing: 0.03em;
+  color: #333333;
+  line-height: 24px;
   color: #777777;
   width: 345px;
   margin-top: 8px;
@@ -363,11 +370,13 @@ header .info__header .menu .item a span:hover {
 .discover__now .card__now .item .link__img .desc .link__discover {
   font-family: "Taviraj", serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 16px;
   line-height: 27px;
+  font-weight: 600;
   letter-spacing: 0.03em;
-  color: #333333;
   margin-top: 4px;
 }
 
@@ -390,11 +399,12 @@ header .info__header .menu .item a span:hover {
 .name {
   font-family: "Taviraj", serif;
   font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-weight: 500;
   font-size: 36px;
   line-height: 40px;
-  letter-spacing: 0.02em;
-  color: #333333;
 }
 
 .name__hr {
@@ -439,10 +449,12 @@ header .info__header .menu .item a span:hover {
   text-decoration: none;
   font-family: "Taviraj", serif;
   font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  color: #333333;
 }
 
 .product__details .percent {
@@ -459,6 +471,8 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 16px;
   line-height: 24px;
   color: #777777;
@@ -469,9 +483,10 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 24px;
   line-height: 32px;
-  color: #333333;
   padding-bottom: 48px;
 }
 
@@ -498,9 +513,10 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
   color: #ffffff;
   background: #d84727;
   padding: 8px 36px;
@@ -543,9 +559,10 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 20px;
   line-height: 40px;
-  letter-spacing: 0.02em;
   color: #777777;
 }
 
@@ -553,10 +570,10 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 48px;
   letter-spacing: 0.02em;
   color: #333333;
+  font-size: 36px;
+  line-height: 48px;
   width: 350px;
 }
 
@@ -565,9 +582,10 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 16px;
   line-height: 27px;
-  letter-spacing: 0.02em;
   color: #d84727;
   border: 2px solid #d84727;
   padding: 15px 47px 16px 47px;
@@ -711,16 +729,18 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
   letter-spacing: 0.02em;
   color: #333333;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .catalog__clock .series .title a .info__product p {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 16px;
   line-height: 24px;
   color: #777777;
@@ -731,10 +751,12 @@ header .info__header .menu .item a span:hover {
 .catalog__clock .series .title a .info__product h3 {
   font-family: "Taviraj", serif;
   font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-weight: 500;
   font-size: 28px;
   line-height: 40px;
-  letter-spacing: 0.02em;
   color: #222222;
 }
 
@@ -765,6 +787,8 @@ header .info__header .menu .item a span:hover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
   font-size: 20px;
   line-height: 34px;
   letter-spacing: 0.03em;
@@ -1015,13 +1039,13 @@ footer .second__footer .social__link a {
 }
 
 .bread a {
-  font-family: Taviraj;
+  font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 27px;
   letter-spacing: 0.02em;
   color: #333333;
+  font-size: 16px;
+  line-height: 27px;
   text-decoration: none;
 }
 
@@ -1057,11 +1081,286 @@ footer .second__footer .social__link a {
 }
 
 .product__info .all_product-info .left__product-info {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 41%;
+  height: 548px;
+  background-color: #f1ddc9;
+}
+
+.product__info .all_product-info .left__product-info .mini__clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 38%;
+  margin-right: 10%;
+}
+
+.product__info .all_product-info .left__product-info .mini__clock a img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 110px;
+  display: block;
+}
+
+.product__info .all_product-info .left__product-info .one__clock {
+  position: relative;
+  right: -23%;
+  top: 24px;
+}
+
+.product__info .all_product-info .left__product-info .one__clock img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .product__info .all_product-info .right__product-info {
-  width: 50%;
+  width: 59%;
+}
+
+.product__info .all_product-info .right__product-info .info__model {
+  margin-left: 173px;
+  margin-top: 24px;
+}
+
+.product__info .all_product-info .right__product-info .info__model h1 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  width: 60%;
+  width: 84%;
+}
+
+.product__info .all_product-info .right__product-info .info__model .old__price {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 20px;
+  line-height: 28px;
+  color: #777777;
+  text-decoration: line-through;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.product__info .all_product-info .right__product-info .info__model .new__price {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 41px;
+}
+
+.product__info .all_product-info .right__product-info .info__model .choose {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 8px;
+}
+
+.product__info .all_product-info .right__product-info .info__model .model {
+  border-radius: 171.5px;
+  width: 55px;
+  height: 55px;
+  margin-right: 7px;
+}
+
+.product__info .all_product-info .right__product-info .info__model .button__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__info .all_product-info .right__product-info .info__model .button__quantity .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 57px;
+}
+
+.product__info .all_product-info .right__product-info .info__model .button__quantity .quantity .choose__quantity {
+  border: 3px solid #777777;
+  padding: 0 10px;
+}
+
+.product__info .all_product-info .right__product-info .info__model .button__quantity .quantity .choose__quantity .item {
+  font-size: 30px;
+  color: #777777;
+}
+
+.product__info .all_product-info .right__product-info .info__model .button__quantity .quantity .choose__quantity:hover {
+  background-color: #d84727;
+  border: 3px solid #d84727;
+  cursor: pointer;
+}
+
+.product__info .all_product-info .right__product-info .info__model .button__quantity .quantity .choose__quantity:hover .item {
+  color: #ffffff;
+}
+
+.product__info .all_product-info .right__product-info .info__model .button__quantity .arrow__pink {
+  position: static;
+  margin-left: 39px;
+}
+
+.detail__product {
+  margin-top: 76px;
+  margin-bottom: 28px;
+}
+
+.detail__product .link__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.detail__product .link__detail .item a {
+  text-decoration: none;
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #999999;
+  margin-left: 40px;
+}
+
+.detail__product .link__detail .item:first-child a {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #d84727;
+}
+
+.detail__product .link__detail .item:first-child hr {
+  border: 1px solid #d84727;
+  margin: 0;
+  width: 62px;
+  margin-left: 40px;
+}
+
+.detail__product .link__detail .item a span:hover {
+  color: #d84727;
+}
+
+.detail__product hr {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.detail__product .descr__detail .name__descr {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 24px;
+}
+
+.detail__product .descr__detail .descr__text {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.detail__product .descr__detail .detail__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.relate__products {
+  height: 403px;
+  max-height: 100%;
+}
+
+.relate__products .relate a {
+  position: static;
+  padding-top: 46px;
+}
+
+.relate__products .details__relate h4 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.relate__products .details__relate .small {
+  margin: 0;
+}
+
+.relate__products .details__relate .big {
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.sale {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #d84727;
+  padding: 5px 16px;
+  display: inline-block;
+  position: relative;
+  top: 91px;
+  left: 128px;
+}
+
+.sale__new {
+  background: #01522d;
 }
 
 /*Media */
@@ -1232,6 +1531,12 @@ footer .second__footer .social__link a {
   footer .first__footer .payment .link:nth-child(9) {
     text-align: start;
   }
+  .detail__product .descr__detail .descr__text {
+    text-align: justify;
+  }
+  .detail__product .descr__detail .detail__img {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1257,6 +1562,13 @@ footer .second__footer .social__link a {
   }
   footer .second__footer h5 {
     margin-top: 30px;
+  }
+  .detail__product .link__detail {
+    display: block;
+  }
+  .detail__product .link__detail .item a,
+  .detail__product .link__detail .item:first-child hr {
+    margin-left: 0;
   }
 }
 

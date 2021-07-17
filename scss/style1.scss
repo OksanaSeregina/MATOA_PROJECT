@@ -41,6 +41,14 @@ $color: #d84727;
   color: #333333;
 }
 
+@mixin taviraj {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
 @mixin h4__taviraj {
   font-family: "Taviraj", serif;
   font-style: normal;
@@ -49,6 +57,17 @@ $color: #d84727;
   line-height: 32px;
   letter-spacing: 0.03em;
   color: #333333;
+}
+
+@mixin text__h1 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  width: 60%;
 }
 
 @mixin link__hover {
@@ -185,15 +204,8 @@ header .info__header .menu .item a span:hover {
 }
 
 .pink .pink-right .matoa__pink h1 {
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 80px;
-  letter-spacing: 0.02em;
-  color: #333333;
+  @include text__h1;
   text-transform: uppercase;
-  width: 60%;
 }
 
 .pink .pink-right .matoa__pink hr {
@@ -205,25 +217,18 @@ header .info__header .menu .item a span:hover {
 }
 
 .pink .pink-right .matoa__pink .text__pink {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  @include p__nunito;
   line-height: 22px;
-  letter-spacing: 0.03em;
-  color: #333333;
   width: 70%;
   margin-bottom: 8px;
 }
 
 .pink .pink-right .matoa__pink .text__discover {
-  font-family: "Taviraj", serif;
-  font-style: normal;
+  @include taviraj;
+  letter-spacing: 0.03em;
   font-weight: 600;
   font-size: 16px;
   line-height: 27px;
-  letter-spacing: 0.03em;
-  color: #333333;
 }
 
 .pink .pink-right .matoa__pink .discover {
@@ -245,15 +250,12 @@ header .info__header .menu .item a span:hover {
 
 .button__pink .button1 .add__cart {
   text-decoration: none;
-  color: #ffffff;
   background-color: #d84727;
   padding: 14px 30px 14px 25px;
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
+  @include taviraj;
+  color: #ffffff;
   font-size: 20px;
   line-height: 34px;
-  letter-spacing: 0.02em;
 }
 
 .button__pink .button1 .add__cart i {
@@ -337,13 +339,10 @@ header .info__header .menu .item a span:hover {
 }
 
 .discover__now .card__now .item .name {
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
+  @include taviraj;
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.03em;
-  color: #333333;
 }
 
 .discover__now .card__now .item .name span {
@@ -351,25 +350,19 @@ header .info__header .menu .item a span:hover {
 }
 
 .discover__now .card__now .item .info__name {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  @include p__nunito;
   line-height: 24px;
-  letter-spacing: 0.03em;
   color: #777777;
   width: 345px;
   margin-top: 8px;
 }
 
 .discover__now .card__now .item .link__img .desc .link__discover {
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: 600;
+  @include taviraj;
   font-size: 16px;
   line-height: 27px;
+  font-weight: 600;
   letter-spacing: 0.03em;
-  color: #333333;
   margin-top: 4px;
 }
 
@@ -391,13 +384,10 @@ header .info__header .menu .item a span:hover {
 }
 
 .name {
-  font-family: "Taviraj", serif;
-  font-style: normal;
+  @include taviraj;
   font-weight: 500;
   font-size: 36px;
   line-height: 40px;
-  letter-spacing: 0.02em;
-  color: #333333;
 }
 
 .name__hr {
@@ -431,12 +421,10 @@ header .info__header .menu .item a span:hover {
 
 .product__details h4 a {
   text-decoration: none;
-  font-family: "Taviraj", serif;
-  font-style: normal;
+  @include taviraj;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  color: #333333;
 }
 
 .product__details .percent {
@@ -450,9 +438,7 @@ header .info__header .menu .item a span:hover {
 }
 
 .product__details .small {
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
+  @include taviraj;
   font-size: 16px;
   line-height: 24px;
   color: #777777;
@@ -460,12 +446,9 @@ header .info__header .menu .item a span:hover {
 }
 
 .product__details .big {
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
+  @include taviraj;
   font-size: 24px;
   line-height: 32px;
-  color: #333333;
   padding-bottom: 48px;
 }
 
@@ -485,12 +468,9 @@ header .info__header .menu .item a span:hover {
 
 .product__card .hide .card__button a {
   text-decoration: none;
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
+  @include taviraj;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
   color: #ffffff;
   background: #d84727;
   padding: 8px 36px;
@@ -523,33 +503,23 @@ header .info__header .menu .item a span:hover {
       margin-top: 180px;
       width: 56%;
       p {
-        font-family: "Taviraj", serif;
-        font-style: normal;
-        font-weight: normal;
+        @include taviraj;
         font-size: 20px;
         line-height: 40px;
-        letter-spacing: 0.02em;
         color: #777777;
       }
       h3 {
-        font-family: "Taviraj", serif;
-        font-style: normal;
-        font-weight: normal;
+        @include taviraj;
         font-size: 36px;
         line-height: 48px;
-        letter-spacing: 0.02em;
-        color: #333333;
         width: 350px;
       }
       .button__recent-news {
         a {
           text-decoration: none;
-          font-family: "Taviraj", serif;
-          font-style: normal;
-          font-weight: normal;
+          @include taviraj;
           font-size: 16px;
           line-height: 27px;
-          letter-spacing: 0.02em;
           color: $color;
           border: 2px solid $color;
           padding: 15px 47px 16px 47px;
@@ -645,18 +615,12 @@ header .info__header .menu .item a span:hover {
           margin-left: 24px;
           max-height: 131px;
           h4 {
-            font-family: "Taviraj", serif;
-            font-style: normal;
-            font-weight: normal;
+            @include taviraj;
             font-size: 24px;
             line-height: 32px;
-            letter-spacing: 0.02em;
-            color: #333333;
           }
           p {
-            font-family: "Taviraj", serif;
-            font-style: normal;
-            font-weight: normal;
+            @include taviraj;
             font-size: 16px;
             line-height: 24px;
             color: #777777;
@@ -664,12 +628,10 @@ header .info__header .menu .item a span:hover {
             margin-bottom: 0;
           }
           h3 {
-            font-family: "Taviraj", serif;
-            font-style: normal;
+            @include taviraj;
             font-weight: 500;
             font-size: 28px;
             line-height: 40px;
-            letter-spacing: 0.02em;
             color: #222222;
           }
         }
@@ -691,9 +653,7 @@ header .info__header .menu .item a span:hover {
     .see__more {
       a {
         text-decoration: none;
-        font-family: "Taviraj", serif;
-        font-style: normal;
-        font-weight: normal;
+        @include taviraj;
         font-size: 20px;
         line-height: 34px;
         letter-spacing: 0.03em;
@@ -902,13 +862,9 @@ footer {
   margin-top: 74px;
   margin-bottom: 45px;
   a {
-    font-family: Taviraj;
-    font-style: normal;
-    font-weight: normal;
+    @include taviraj;
     font-size: 16px;
     line-height: 27px;
-    letter-spacing: 0.02em;
-    color: #333333;
     text-decoration: none;
   }
   a::after {
@@ -931,12 +887,217 @@ footer {
   .all_product-info {
     display: flex;
     .left__product-info {
-      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      width: 41%;
+      height: 548px;
+      background-color: #f1ddc9;
+      .mini__clock {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 38%;
+        margin-right: 10%;
+        a {
+          img {
+            @include images;
+            width: 110px;
+            display: block;
+          }
+        }
+      }
+      .one__clock {
+        position: relative;
+        right: -23%;
+        top: 24px;
+        img {
+          @include images;
+        }
+      }
     }
     .right__product-info {
-      width: 50%;
+      width: 59%;
+      .info__model {
+        margin-left: 173px;
+        margin-top: 24px;
+        h1 {
+          @include text__h1;
+          width: 84%;
+        }
+        .old__price {
+          @include taviraj;
+          font-size: 20px;
+          line-height: 28px;
+          color: #777777;
+          text-decoration: line-through;
+          margin-bottom: 0;
+          margin-top: 8px;
+        }
+        .new__price {
+          @include taviraj;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 41px;
+        }
+        .choose {
+          @include taviraj;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 27px;
+          margin-bottom: 8px;
+        }
+        .model {
+          border-radius: 171.5px;
+          width: 55px;
+          height: 55px;
+          margin-right: 7px;
+        }
+        .button__quantity {
+          display: flex;
+          .quantity {
+            display: flex;
+            margin-top: 57px;
+            .choose__quantity {
+              border: 3px solid #777777;
+              padding: 0 10px;
+              .item {
+                font-size: 30px;
+                color: #777777;
+              }
+            }
+            .choose__quantity:hover {
+              background-color: $color;
+              border: 3px solid $color;
+              cursor: pointer;
+              .item {
+                color: #ffffff;
+              }
+            }
+          }
+          .arrow__pink {
+            position: static;
+            margin-left: 39px;
+          }
+          // span {
+          //   font-family: Taviraj;
+          //   font-style: normal;
+          //   font-weight: normal;
+          //   font-size: 36px;
+          //   line-height: 61px;
+          //   letter-spacing: 0.02em;
+
+          //   color: #000000;
+          // }
+        }
+      }
     }
   }
+}
+
+// Section Detail Product
+
+.detail__product {
+  margin-top: 76px;
+  margin-bottom: 28px;
+  .link__detail {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      a {
+        text-decoration: none;
+        @include taviraj;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: #999999;
+        margin-left: 40px;
+      }
+    }
+    .item:first-child {
+      a {
+        @include taviraj;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: $color;
+      }
+      hr {
+        border: 1px solid $color;
+        margin: 0;
+        width: 62px;
+        margin-left: 40px;
+      }
+    }
+    .item a span:hover {
+      color: $color;
+    }
+  }
+  hr {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  .descr__detail {
+    .name__descr {
+      @include taviraj;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 24px;
+    }
+    .descr__text {
+      @include p__nunito;
+      letter-spacing: 0.02em;
+      color: #555555;
+    }
+    .detail__img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Section Card
+
+.relate__products {
+  height: 403px;
+  max-height: 100%;
+  .relate {
+    a {
+      position: static;
+      padding-top: 46px;
+    }
+  }
+  .details__relate {
+    h4 {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+    .small {
+      margin: 0;
+    }
+    .big {
+      padding: 0;
+      margin-bottom: 24px;
+    }
+  }
+}
+.sale {
+  @include taviraj;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background: $color;
+  padding: 5px 16px;
+  display: inline-block;
+  position: relative;
+  top: 91px;
+  left: 128px;
+}
+.sale__new {
+  background: #01522d;
 }
 
 /*Media */
@@ -1138,6 +1299,12 @@ footer {
   footer .first__footer .payment .link:nth-child(9) {
     text-align: start;
   }
+  .detail__product .descr__detail .descr__text {
+    text-align: justify;
+  }
+  .detail__product .descr__detail .detail__img {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1169,6 +1336,13 @@ footer {
 
   footer .second__footer h5 {
     margin-top: 30px;
+  }
+  .detail__product .link__detail {
+    display: block;
+  }
+  .detail__product .link__detail .item a,
+  .detail__product .link__detail .item:first-child hr {
+    margin-left: 0;
   }
 }
 
