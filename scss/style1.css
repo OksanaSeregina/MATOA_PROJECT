@@ -1705,16 +1705,25 @@ footer .second__footer .social__link a {
     text-align: end;
   }
   .product__info .all_product-info .left__product-info {
-    width: 90%;
+    width: 100%;
   }
   .product__info .all_product-info .left__product-info .mini__clock {
     margin-left: 5%;
+    margin-right: 5%;
     position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .product__info .all_product-info .left__product-info .one__clock {
-    right: -40%;
-    margin-right: 5%;
-    top: 15%;
+    position: static;
+  }
+  .product__info .all_product-info .left__product-info .one__clock img {
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
