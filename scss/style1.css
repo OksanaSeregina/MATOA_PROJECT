@@ -18,12 +18,15 @@ body {
 }
 
 /* Header */
+header {
+  padding-top: 35px;
+}
+
 header .info__header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 45% 1fr;
       grid-template-columns: 1fr 45% 1fr;
-  margin-top: 35px;
 }
 
 header .info__header .logo {
@@ -1100,13 +1103,37 @@ footer .second__footer .social__link a {
   margin-right: 10%;
 }
 
-.product__info .all_product-info .left__product-info .mini__clock a img {
+.product__info .all_product-info .left__product-info .mini__clock div {
+  position: relative;
+}
+
+.product__info .all_product-info .left__product-info .mini__clock div a img {
   width: 100%;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 110px;
   display: block;
+}
+
+.product__info .all_product-info .left__product-info .mini__clock div .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(241, 221, 201, 0.5);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.product__info .all_product-info .left__product-info .mini__clock div .filter:hover {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .product__info .all_product-info .left__product-info .one__clock {
@@ -1380,6 +1407,159 @@ footer .second__footer .social__link a {
 .sale__new {
   background: #01522d;
   left: 60%;
+}
+
+.all__section {
+  position: relative;
+}
+
+.page__cart {
+  margin-top: 80px;
+}
+
+.page__cart .kvadr {
+  width: 590px;
+  max-width: 100%;
+  height: 461px;
+  background-color: #f1ddc9;
+}
+
+.cart__product {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.cart__product .cart__detail {
+  border: 1px solid #333333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cart__product .cart__detail .item {
+  border-right: 1px solid #333333;
+}
+
+.cart__product .cart__detail .item a {
+  margin-right: 20px;
+  margin-left: 20px !important;
+  color: #333333 !important;
+}
+
+.cart__product .cart__detail .item hr {
+  margin-left: 20px !important;
+}
+
+.cart__product .cart__detail .item:last-child {
+  border-right: none;
+}
+
+.cart__product .cart__detail .item:first-child a {
+  color: #d84727 !important;
+}
+
+.cart__border {
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+  height: 40px;
+}
+
+.black__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 120px;
+}
+
+.black__filter .select {
+  background: #f7f6f4;
+}
+
+.black__filter .select .select__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.black__filter .select .select__card .left__select-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.black__filter .select .select__card .left__select-card .picture__select[data-link="back__select"] {
+  width: 144px;
+  height: 144px;
+  background: #f1ddc9;
+}
+
+.black__filter .select .select__card .left__select-card .picture__select[data-link="back__select"] .back__select {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Clock2.png) no-repeat center/50%;
+}
+
+.black__filter .select .select__card .left__select-card .info__select {
+  margin-left: 32px;
+  max-height: 144px;
+}
+
+.black__filter .select .select__card .left__select-card .info__select h4 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.black__filter .select .select__card .left__select-card .info__select .sm__price {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  text-decoration: line-through;
+  margin-bottom: 0;
+}
+
+.black__filter .select .select__card .left__select-card .info__select h3 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.black__filter .select .select__card .left__select-card .info__select .small__text {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #555555;
+  margin-bottom: 0;
 }
 
 /*Media */

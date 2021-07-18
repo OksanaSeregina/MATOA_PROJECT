@@ -81,11 +81,13 @@ $color: #d84727;
 }
 
 /* Header */
+header {
+  padding-top: 35px;
+}
 
 header .info__header {
   display: grid;
   grid-template-columns: 1fr 45% 1fr;
-  margin-top: 35px;
 }
 
 header .info__header .logo {
@@ -897,11 +899,30 @@ footer {
         position: absolute;
         left: 38%;
         margin-right: 10%;
-        a {
-          img {
-            @include images;
-            width: 110px;
-            display: block;
+        div {
+          position: relative;
+          a {
+            img {
+              @include images;
+              width: 110px;
+              display: block;
+            }
+          }
+          .filter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(241, 221, 201, 0.5);
+            transition: all 1s ease-in-out;
+            cursor: pointer;
+          }
+          .filter:hover {
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 1s ease-in-out;
           }
         }
       }
@@ -992,16 +1013,6 @@ footer {
             position: static;
             margin-left: 29px;
           }
-          // span {
-          //   font-family: Taviraj;
-          //   font-style: normal;
-          //   font-weight: normal;
-          //   font-size: 36px;
-          //   line-height: 61px;
-          //   letter-spacing: 0.02em;
-
-          //   color: #000000;
-          // }
         }
       }
     }
@@ -1117,6 +1128,123 @@ footer {
 .sale__new {
   background: #01522d;
   left: 60%;
+}
+
+// Page Cart
+
+.all__section {
+  position: relative;
+}
+
+// Section Page Cart
+
+.page__cart {
+  .kvadr {
+    width: 590px;
+    max-width: 100%;
+    height: 461px;
+    background-color: #f1ddc9;
+  }
+  margin-top: 80px;
+}
+
+// Section Detail Product
+.cart__product {
+  margin-top: 60px;
+  margin-bottom: 0;
+  .cart__detail {
+    border: 1px solid #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .item {
+      border-right: 1px solid #333333;
+      a {
+        margin-right: 20px;
+        margin-left: 20px !important;
+        color: #333333 !important;
+      }
+      hr {
+        margin-left: 20px !important;
+      }
+    }
+    .item:last-child {
+      border-right: none;
+    }
+    .item:first-child {
+      a {
+        color: $color !important;
+      }
+    }
+  }
+}
+.cart__border {
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+  height: 40px;
+}
+.black__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 120px;
+  .select {
+    background: #f7f6f4;
+    .select__card {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 3%;
+      padding-right: 3%;
+      .left__select-card {
+        display: flex;
+        align-items: center;
+        .picture__select[data-link="back__select"] {
+          width: 144px;
+          height: 144px;
+          background: #f1ddc9;
+          .back__select {
+            @include img__backgr;
+            background: url(../images/Clock2.png) no-repeat center/50%;
+          }
+        }
+        .info__select {
+          margin-left: 32px;
+          max-height: 144px;
+          h4 {
+            @include taviraj;
+            font-size: 20px;
+            line-height: 24px;
+          }
+          .sm__price {
+            @include taviraj;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
+            text-decoration: line-through;
+            margin-bottom: 0;
+          }
+          h3 {
+            @include taviraj;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+          }
+          .small__text {
+            @include taviraj;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: #555555;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .right__select-card {
+      }
+    }
+  }
 }
 
 /*Media */
