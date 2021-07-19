@@ -1192,14 +1192,14 @@ footer {
   padding-top: 120px;
   .select {
     background: #f7f6f4;
+    padding-top: 32px;
+    padding-left: 3%;
+    padding-right: 3%;
     .select__card {
       display: flex;
       justify-content: space-between;
-      padding-left: 3%;
-      padding-right: 3%;
       .left__select-card {
         display: flex;
-        align-items: center;
         .picture__select[data-link="back__select"] {
           width: 144px;
           height: 144px;
@@ -1207,6 +1207,10 @@ footer {
           .back__select {
             @include img__backgr;
             background: url(../images/Clock2.png) no-repeat center/50%;
+          }
+          .back__select2 {
+            @include img__backgr;
+            background: url(../images/Catalog3.png) no-repeat center/50%;
           }
         }
         .info__select {
@@ -1242,7 +1246,91 @@ footer {
         }
       }
       .right__select-card {
+        p {
+          text-align: end;
+          @include taviraj;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.03em;
+          margin-bottom: 8px;
+        }
+        .form-select {
+          @include taviraj;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.03em;
+          color: #999999;
+        }
+        .trash__select {
+          display: flex;
+          align-items: flex-end;
+          .quantity {
+            display: flex;
+            margin-top: 37px;
+            .choose__quantity {
+              border: 3px solid #777777;
+              padding: 0 7px;
+              align-self: center;
+              .item {
+                font-size: 16px;
+                color: #777777;
+              }
+            }
+            .choose__quantity:hover {
+              background-color: $color;
+              border: 3px solid $color;
+              cursor: pointer;
+              .item {
+                color: #ffffff;
+              }
+            }
+            .one {
+              font-family: Taviraj;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 24px;
+              line-height: 32px;
+              letter-spacing: 0.03em;
+              align-self: center;
+              margin-left: 18px;
+              margin-right: 18px;
+
+              color: #000000;
+            }
+          }
+          h3 {
+            @include taviraj;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 0;
+            margin-left: 19px;
+          }
+          img {
+            border: 1px solid #d93f3f;
+            padding: 6px;
+            margin-left: 32px;
+          }
+          img:hover {
+            border: 3px solid #d93f3f;
+            padding: 4px;
+          }
+        }
       }
+    }
+    .last__select-card {
+      display: flex;
+      .left__last-card {
+        width: 50%;
+      }
+      .right__last-card {
+        width: 50%;
+      }
+    }
+    hr {
+      margin: 40px 0;
     }
   }
 }

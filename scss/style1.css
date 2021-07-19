@@ -1475,6 +1475,9 @@ footer .second__footer .social__link a {
 
 .black__filter .select {
   background: #f7f6f4;
+  padding-top: 32px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .black__filter .select .select__card {
@@ -1484,17 +1487,12 @@ footer .second__footer .social__link a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 3%;
-  padding-right: 3%;
 }
 
 .black__filter .select .select__card .left__select-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .black__filter .select .select__card .left__select-card .picture__select[data-link="back__select"] {
@@ -1508,6 +1506,13 @@ footer .second__footer .social__link a {
   height: inherit;
   width: inherit;
   background: url(../images/Clock2.png) no-repeat center/50%;
+}
+
+.black__filter .select .select__card .left__select-card .picture__select[data-link="back__select"] .back__select2 {
+  display: block;
+  height: inherit;
+  width: inherit;
+  background: url(../images/Catalog3.png) no-repeat center/50%;
 }
 
 .black__filter .select .select__card .left__select-card .info__select {
@@ -1560,6 +1565,129 @@ footer .second__footer .social__link a {
   letter-spacing: 0.03em;
   color: #555555;
   margin-bottom: 0;
+}
+
+.black__filter .select .select__card .right__select-card p {
+  text-align: end;
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+}
+
+.black__filter .select .select__card .right__select-card .form-select {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #999999;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 37px;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select .quantity .choose__quantity {
+  border: 3px solid #777777;
+  padding: 0 7px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select .quantity .choose__quantity .item {
+  font-size: 16px;
+  color: #777777;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select .quantity .choose__quantity:hover {
+  background-color: #d84727;
+  border: 3px solid #d84727;
+  cursor: pointer;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select .quantity .choose__quantity:hover .item {
+  color: #ffffff;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select .quantity .one {
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 18px;
+  margin-right: 18px;
+  color: #000000;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select h3 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 0;
+  margin-left: 19px;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select img {
+  border: 1px solid #d93f3f;
+  padding: 6px;
+  margin-left: 32px;
+}
+
+.black__filter .select .select__card .right__select-card .trash__select img:hover {
+  border: 3px solid #d93f3f;
+  padding: 4px;
+}
+
+.black__filter .select .last__select-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.black__filter .select .last__select-card .left__last-card {
+  width: 50%;
+}
+
+.black__filter .select .last__select-card .right__last-card {
+  width: 50%;
+}
+
+.black__filter .select hr {
+  margin: 40px 0;
 }
 
 /*Media */
