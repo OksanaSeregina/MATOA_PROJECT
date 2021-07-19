@@ -1134,30 +1134,32 @@ footer {
 
 .all__section {
   position: relative;
+  // height: 100vh;
+  // max-height: 100%;
 }
 
 // Section Page Cart
 
 .page__cart {
+  margin-top: 119px;
   .kvadr {
     width: 590px;
     max-width: 100%;
-    height: 461px;
+    height: 548px;
     background-color: #f1ddc9;
   }
-  margin-top: 80px;
 }
 
 // Section Detail Product
 .cart__product {
-  margin-top: 60px;
+  margin-top: 76px;
   margin-bottom: 0;
   .cart__detail {
-    border: 1px solid #333333;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border: 1px solid #999999;
+    padding-top: 15px;
+    padding-bottom: 15px;
     .item {
-      border-right: 1px solid #333333;
+      border-right: 1px solid #999999;
       a {
         margin-right: 20px;
         margin-left: 20px !important;
@@ -1178,9 +1180,9 @@ footer {
   }
 }
 .cart__border {
-  border-left: 1px solid #333333;
-  border-right: 1px solid #333333;
-  height: 40px;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  height: 10px;
 }
 .black__filter {
   position: absolute;
@@ -1192,14 +1194,13 @@ footer {
   padding-top: 120px;
   .select {
     background: #f7f6f4;
-    padding-top: 32px;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 32px 32px 40px 32px;
     .select__card {
       display: flex;
       justify-content: space-between;
       .left__select-card {
         display: flex;
+        width: 50%;
         .picture__select[data-link="back__select"] {
           width: 144px;
           height: 144px;
@@ -1246,6 +1247,7 @@ footer {
         }
       }
       .right__select-card {
+        width: 50%;
         p {
           text-align: end;
           @include taviraj;
@@ -1266,6 +1268,7 @@ footer {
         .trash__select {
           display: flex;
           align-items: flex-end;
+          justify-content: flex-end;
           .quantity {
             display: flex;
             margin-top: 37px;
@@ -1322,16 +1325,89 @@ footer {
     }
     .last__select-card {
       display: flex;
+      margin-top: 24px;
       .left__last-card {
         width: 50%;
+        align-self: center;
+        .kode {
+          @include taviraj;
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .kode__green {
+          @include taviraj;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #01522d;
+        }
       }
       .right__last-card {
         width: 50%;
+        .subtotal__right-card {
+          display: flex;
+          justify-content: flex-end;
+          .lf__subt {
+            align-self: center;
+            h4 {
+              @include taviraj;
+              font-size: 20px;
+              line-height: 24px;
+              margin-right: 32px;
+              margin-bottom: 0;
+            }
+          }
+          .rg__subt {
+            p {
+              text-align: end;
+              @include taviraj;
+              font-size: 16px;
+              line-height: 24px;
+              color: #777777;
+              text-decoration: line-through;
+              margin-bottom: 0;
+            }
+            h3 {
+              @include taviraj;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 32px;
+              margin-bottom: 0;
+            }
+          }
+        }
       }
     }
-    hr {
-      margin: 40px 0;
+    .button__checkout {
+      margin-top: 26px;
+      a {
+        display: block;
+        text-decoration: none;
+        background-color: $color;
+        padding: 20px 0;
+        text-align: center;
+        @include taviraj;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: #ffffff;
+      }
     }
+    .button__checkout:hover {
+      a {
+        color: #d84727;
+        background-color: rgba(216, 71, 39, 0);
+        border: 2px solid #d84727;
+        padding: 18px 0;
+      }
+    }
+  }
+  hr {
+    margin: 40px 0;
+  }
+  .second__hr-select {
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -1504,16 +1580,22 @@ footer {
     padding-top: 20px;
   }
 
-  .discover__now .card__now .item .info__name {
+  .discover__now .card__now .item .info__name,
+  .black__filter .select .select__card .left__select-card,
+  .black__filter .select .last__select-card .left__last-card {
     width: 100%;
   }
 
   .recent__news .all__recent-news,
-  .testimonials {
+  .testimonials,
+  .black__filter .select .select__card,
+  .black__filter .select .last__select-card {
     flex-wrap: wrap;
   }
 
-  .recent__news .all__recent-news .left__recent-news {
+  .recent__news .all__recent-news .left__recent-news,
+  .black__filter .select .select__card .right__select-card,
+  .black__filter .select .last__select-card .right__last-card {
     width: 100%;
     margin-top: 20px;
   }

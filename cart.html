@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="scss/style1.css" />
   </head>
   <body class="wrapper">
-    <div class="all__section">
+    <div id="my-id3" class="all__section">
       <header>
         <div class="center">
           <div class="info__header">
@@ -111,7 +111,7 @@
             </div>
             <div class="right__select-card">
               <p>Select Packaging</p>
-              <div class="col-md-11 offset-md-1">
+              <div class="col-md-7 offset-md-5">
                 <select class="form-select" aria-label="Default select example">
                   <option selected>Wooden Packaging (Rp 50.000)</option>
                   <option value="1">Default Packaging (Free)</option>
@@ -146,7 +146,7 @@
             </div>
             <div class="right__select-card">
               <p>Select Packaging</p>
-              <div class="col-md-11 offset-md-1">
+              <div class="col-md-7 offset-md-5">
                 <select class="form-select" aria-label="Default select example">
                   <option selected>Default Packaging (Free)</option>
                   <option value="1">Wooden Packaging (Rp 50.000)</option>
@@ -168,12 +168,12 @@
               </div>
             </div>
           </div>
-          <hr />
+          <hr class="second__hr-select" />
           <div class="last__select-card">
             <div class="left__last-card">
               <div class="row g-3 align-items-center">
                 <div class="col-auto">
-                  <label for="inputPassword6" class="col-form-label"
+                  <label for="inputPassword6" class="col-form-label kode"
                     >Kode Promo</label
                   >
                 </div>
@@ -182,18 +182,32 @@
                     type="text"
                     id="inputPassword6"
                     placeholder="INDONESIA"
-                    class="form-control"
+                    class="form-control kode"
                     aria-describedby="passwordHelpInline"
                   />
                 </div>
                 <div class="col-auto">
-                  <span id="passwordHelpInline" class="form-text">
+                  <span id="passwordHelpInline" class="form-text kode__green">
                     35% OFF
                   </span>
                 </div>
               </div>
             </div>
-            <div class="right__last-card"></div>
+            <div class="right__last-card">
+              <div class="subtotal__right-card">
+                <div class="lf__subt">
+                  <h4>Subtotal</h4>
+                </div>
+                <div class="rg__subt">
+                  <p>Rp 3.312.000</p>
+                  <h3>Rp 2.152.000</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button__checkout">
+            <a href="#">Checkout</a>
           </div>
         </div>
       </span>
