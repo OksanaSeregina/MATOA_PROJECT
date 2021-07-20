@@ -1189,9 +1189,9 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   background: rgba(0, 0, 0, 0.4);
   padding-top: 120px;
+  padding-bottom: 128px;
   .select {
     background: #f7f6f4;
     padding: 32px 32px 40px 32px;
@@ -1563,6 +1563,19 @@ footer {
   .product__info .all_product-info .left__product-info .mini__clock {
     left: 25%;
   }
+  .black__filter
+    .select
+    .select__card
+    .right__select-card
+    .trash__select
+    .quantity
+    .one {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .black__filter .select .select__card .right__select-card .trash__select img {
+    margin-left: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1754,6 +1767,55 @@ footer {
     margin-right: auto;
     margin-top: 40px;
   }
+  .black__filter .select .select__card .left__select-card .info__select h4,
+  .black__filter
+    .select
+    .last__select-card
+    .right__last-card
+    .subtotal__right-card
+    .lf__subt
+    h4,
+  .black__filter .select .last__select-card .left__last-card .kode {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+  .black__filter
+    .select
+    .select__card
+    .left__select-card
+    .info__select
+    .sm__price {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .black__filter .select .select__card .left__select-card .info__select h3,
+  .black__filter .select .select__card .right__select-card .trash__select h3,
+  .black__filter
+    .select
+    .last__select-card
+    .right__last-card
+    .subtotal__right-card
+    .rg__subt
+    h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .black__filter .select .select__card .left__select-card .info__select {
+    margin-left: 10px;
+  }
+  .black__filter .select {
+    padding: 3%;
+  }
+  .black__filter
+    .select
+    .select__card
+    .left__select-card
+    .info__select
+    .small__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -1806,24 +1868,69 @@ footer {
   .product__info .all_product-info .left__product-info .one__clock img {
     max-width: 60%;
   }
-  // .product__info .all_product-info .left__product-info {
-  //   width: 100%;
-  // }
-  // .product__info .all_product-info .left__product-info .mini__clock {
-  //   margin-left: 5%;
-  //   margin-right: 5%;
-  //   position: static;
-  //   flex-direction: row;
-  // }
-  // .product__info .all_product-info .left__product-info .one__clock {
-  //   position: static;
-  // }
-  // .product__info .all_product-info .left__product-info .one__clock img {
-  //   max-width: 70%;
-  //   display: block;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+  .black__filter .select .select__card .left__select-card .info__select h3 {
+    margin-bottom: 0;
+  }
+  .black__filter .select .select__card .right__select-card .trash__select,
+  .black__filter
+    .select
+    .last__select-card
+    .right__last-card
+    .subtotal__right-card {
+    justify-content: space-between;
+  }
+  .black__filter .select .select__card .left__select-card {
+    flex-wrap: wrap;
+  }
+  .black__filter
+    .select
+    .select__card
+    .left__select-card
+    .picture__select[data-link="back__select"] {
+    margin-bottom: 5%;
+    width: 100%;
+    height: 250px;
+  }
+  .black__filter .select .select__card .left__select-card .info__select {
+    width: 100%;
+    margin-left: 0;
+  }
+  .black__filter
+    .select
+    .select__card
+    .left__select-card
+    .picture__select[data-link="back__select"]
+    .back__select {
+    background: url(../images/Clock2.png) no-repeat center/40%;
+  }
+  .black__filter
+    .select
+    .select__card
+    .left__select-card
+    .picture__select[data-link="back__select"]
+    .back__select2 {
+    background: url(../images/Catalog3.png) no-repeat center/35%;
+  }
+  .black__filter .select .select__card .left__select-card .info__select h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .black__filter
+    .select
+    .select__card
+    .left__select-card
+    .info__select
+    .small__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .black__filter .select .select__card .right__select-card .trash__select img,
+  .black__filter .select .select__card .right__select-card .trash__select h3 {
+    margin: 0;
+  }
+  .black__filter .select .button__checkout a {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1891,5 +1998,25 @@ footer {
   }
   .product__info .all_product-info .left__product-info .one__clock {
     margin-right: 0;
+  }
+  .black__filter
+    .select
+    .select__card
+    .left__select-card
+    .picture__select[data-link="back__select"]
+    .back__select {
+    background: url(../images/Clock2.png) no-repeat center/50%;
+  }
+  .black__filter
+    .select
+    .select__card
+    .left__select-card
+    .picture__select[data-link="back__select"]
+    .back__select2 {
+    background: url(../images/Catalog3.png) no-repeat center/45%;
+  }
+  .black__filter .select .select__card .right__select-card .trash__select h3 {
+    line-height: 24px;
+    font-size: 18px;
   }
 }
