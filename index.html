@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Nunito:wght@300;400&family=Taviraj:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style/all.css" />
     <link rel="stylesheet" href="scss/style1.css" />
   </head>
@@ -57,7 +61,7 @@
               >
             </div>
             <div class="icon" data-link="cart">
-              <a href="#" class="cart"></a>
+              <a href="./cart.html#my-id3" target="_blank" class="cart"></a>
             </div>
           </div>
         </div>
@@ -85,7 +89,7 @@
             <hr class="discover" />
             <div class="button__pink">
               <div class="button1">
-                <a class="add__cart" href="./cart.html#my-id3" target="_blank"
+                <a class="add__cart" href="#"
                   ><i class="fas fa-cart-plus"></i>Add to cart</a
                 >
               </div>
@@ -117,10 +121,16 @@
           </p>
           <div class="link__img">
             <div class="desc">
-              <h3 class="link__discover">Discover Now</h3>
+              <a href="#"><h3 class="link__discover">Discover Now</h3></a>
               <hr />
             </div>
-            <div class="desc">
+            <div
+              class="
+                desc
+                animate__animated animate__pulse animate__infinite
+                infinite
+              "
+            >
               <img src="./images/image 7.png" />
             </div>
           </div>
@@ -133,10 +143,16 @@
           </p>
           <div class="link__img">
             <div class="desc">
-              <h3 class="link__discover">Discover Now</h3>
+              <a href="#"><h3 class="link__discover">Discover Now</h3></a>
               <hr />
             </div>
-            <div class="desc">
+            <div
+              class="
+                desc
+                animate__animated animate__pulse animate__infinite
+                infinite
+              "
+            >
               <img src="./images/image 8.png" />
             </div>
           </div>
@@ -174,7 +190,7 @@
           </div>
 
           <div class="col-lg-3 col-sm-6">
-            <div class="product__card">
+            <div id="item2" class="product__card">
               <div class="product__thumb">
                 <a href="#"><img src="./images/Mask 2.png" alt="clock" /></a>
               </div>
@@ -184,11 +200,19 @@
                 <p class="small">Rp 1.500.000</p>
                 <p class="big">Rp 1.264.000</p>
               </div>
+              <div id="text2" class="hide">
+                <div class="heart">
+                  <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                </div>
+                <div class="card__button">
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-sm-6">
-            <div class="product__card">
+            <div id="item3" class="product__card">
               <div class="product__thumb">
                 <a href="#"><img src="./images/Mask 3.png" alt="clock" /></a>
               </div>
@@ -198,11 +222,19 @@
                 <p class="small">Rp 1.280.000</p>
                 <p class="big">Rp 1.118.000</p>
               </div>
+              <div id="text3" class="hide">
+                <div class="heart">
+                  <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                </div>
+                <div class="card__button">
+                  <a href="#">Add to cart</a>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-sm-6">
-            <div class="product__card">
+            <div id="item4" class="product__card">
               <div class="product__thumb">
                 <a href="#"><img src="./images/Mask 4.png" alt="clock" /></a>
               </div>
@@ -211,6 +243,14 @@
                 <p class="percent">10% Off</p>
                 <p class="small">Rp 1.280.000</p>
                 <p class="big">Rp 1.024.000</p>
+              </div>
+              <div id="text4" class="hide">
+                <div class="heart">
+                  <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                </div>
+                <div class="card__button">
+                  <a href="#">Add to cart</a>
+                </div>
               </div>
             </div>
           </div>
@@ -384,11 +424,6 @@
         </div>
       </div>
     </section>
-
-    <div class="center arrow__black">
-      <a href="#"><img src="./images/Left.png" alt="arrow" /></a>
-      <a href="#"><img src="./images/Right.png" alt="arrow" /></a>
-    </div>
 
     <section class="center blog__instagram">
       <div class="name__section">
