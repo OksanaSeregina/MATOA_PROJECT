@@ -2088,6 +2088,10 @@ footer .second__footer .social__link a {
 
 @media screen and (max-width: 600px) {
   header .info__header .icon__header {
+    display: inherit;
+  }
+  header .info__header .icon__header .icon-search,
+  header .info__header .icon__header .icon-user {
     display: none;
   }
   .pink .pink-right .matoa__pink .button__pink .button1 .add__cart {

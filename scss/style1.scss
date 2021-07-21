@@ -1724,6 +1724,10 @@ footer {
 
 @media screen and (max-width: 600px) {
   header .info__header .icon__header {
+    display: inherit;
+  }
+  header .info__header .icon__header .icon-search,
+  header .info__header .icon__header .icon-user {
     display: none;
   }
 
