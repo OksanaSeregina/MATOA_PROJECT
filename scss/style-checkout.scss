@@ -1,0 +1,164 @@
+@mixin taviraj {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+@mixin h4__taviraj {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+}
+
+$color: #d84727;
+
+//Section Checkout Bread
+
+.breadcr {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  .items-bread {
+    a {
+      i {
+        font-size: 30px;
+        color: #999999;
+        margin-bottom: 13px;
+      }
+    }
+    .txtBread {
+      font-family: "Taviraj", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      color: #999999;
+    }
+  }
+  .hr-bread {
+    height: 1px;
+    width: 10%;
+    margin: 0 25px;
+    color: #333333;
+  }
+  .color-red {
+    a {
+      i {
+        color: $color;
+      }
+    }
+    .txtBread {
+      color: $color;
+    }
+  }
+}
+
+.media-bread-check {
+  display: none;
+}
+
+//Section Info Order
+
+.info-order {
+  margin-top: 40px;
+  .order-checkout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .detail-checkout {
+      width: 49%;
+      background: #ffffff;
+      padding: 32px;
+      h3 {
+        @include taviraj;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 40px;
+      }
+      .items {
+        display: flex;
+        .order-data {
+          @include h4__taviraj;
+          line-height: 60px;
+          width: 50%;
+        }
+        .price-order {
+          @include h4__taviraj;
+          line-height: 60px;
+          width: 50%;
+        }
+      }
+      hr {
+        height: 1px;
+        color: #333333;
+        margin: 39px 0 24px 0;
+      }
+    }
+    .address-checkout {
+      width: 49%;
+      background: #ffffff;
+      padding: 32px;
+      h3 {
+        @include taviraj;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 40px;
+      }
+      .payment-details {
+        label {
+          display: block;
+          font-family: "Taviraj", serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 32px;
+          letter-spacing: 0.03em;
+          color: #000000;
+        }
+        input {
+          width: 100%;
+          border: none;
+          border-bottom: 0.3px solid #333333;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+/*Media */
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .breadcr {
+    display: none;
+  }
+  .media-bread-check {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 425px) {
+}
+
+@media screen and (max-width: 375px) {
+}
