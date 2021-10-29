@@ -76,6 +76,7 @@ $color: #d84727;
     justify-content: space-between;
     .detail-checkout {
       width: 49%;
+      align-self: self-start;
       background: #ffffff;
       padding: 32px;
       h3 {
@@ -126,11 +127,25 @@ $color: #d84727;
           letter-spacing: 0.03em;
           color: #000000;
         }
-        input {
+        input,
+        select {
           width: 100%;
           border: none;
           border-bottom: 0.3px solid #333333;
           margin-bottom: 24px;
+        }
+        .double-input {
+          display: flex;
+          justify-content: space-between;
+          .select-city {
+            width: 49%;
+          }
+          .input-code {
+            width: 46%;
+            input {
+              padding-bottom: 5px;
+            }
+          }
         }
       }
     }
