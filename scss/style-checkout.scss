@@ -74,77 +74,114 @@ $color: #d84727;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .detail-checkout {
+    .left-content-checkout {
       width: 49%;
-      align-self: self-start;
-      background: #ffffff;
-      padding: 32px;
-      h3 {
-        @include taviraj;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 48px;
-        margin-bottom: 40px;
-      }
-      .items {
-        display: flex;
-        .order-data {
-          @include h4__taviraj;
-          line-height: 60px;
-          width: 50%;
+      //align-self: self-start;
+      .detail-checkout {
+        background: #ffffff;
+        padding: 32px;
+        h3 {
+          @include taviraj;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 48px;
+          margin-bottom: 40px;
         }
-        .price-order {
-          @include h4__taviraj;
-          line-height: 60px;
-          width: 50%;
+        .items {
+          display: flex;
+          .order-data {
+            @include h4__taviraj;
+            line-height: 60px;
+            width: 50%;
+          }
+          .price-order {
+            @include h4__taviraj;
+            line-height: 60px;
+            width: 50%;
+          }
         }
-      }
-      hr {
-        height: 1px;
-        color: #333333;
-        margin: 39px 0 24px 0;
+        hr {
+          height: 1px;
+          color: #333333;
+          margin: 39px 0 24px 0;
+        }
       }
     }
-    .address-checkout {
+    .right-content-checkout {
       width: 49%;
-      background: #ffffff;
-      padding: 32px;
-      h3 {
-        @include taviraj;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 48px;
-        margin-bottom: 40px;
-      }
-      .payment-details {
-        label {
-          display: block;
-          font-family: "Taviraj", serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 32px;
-          letter-spacing: 0.03em;
-          color: #000000;
+      .address-checkout {
+        background: #ffffff;
+        padding: 32px;
+        h3 {
+          @include taviraj;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 48px;
+          margin-bottom: 40px;
         }
-        input,
-        select {
-          width: 100%;
-          border: none;
-          border-bottom: 0.3px solid #333333;
-          margin-bottom: 24px;
-        }
-        .double-input {
-          display: flex;
-          justify-content: space-between;
-          .select-city {
-            width: 49%;
+        .payment-details {
+          label {
+            display: block;
+            font-family: "Taviraj", serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.03em;
+            color: #000000;
           }
-          .input-code {
-            width: 46%;
-            input {
-              padding-bottom: 5px;
+          input,
+          select {
+            width: 100%;
+            border: none;
+            border-bottom: 0.3px solid #333333;
+            margin-bottom: 24px;
+          }
+          .double-input {
+            display: flex;
+            justify-content: space-between;
+            .select-city {
+              width: 49%;
             }
+            .input-code {
+              width: 46%;
+              input {
+                padding-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+      .button-page-checkout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 59px;
+        .button-checkout-left {
+          //width: 48%;
+          .continue-shopping {
+            text-decoration: none;
+            @include h4__taviraj;
+            font-size: 20px;
+            color: $color;
+            border: 2px solid $color;
+            padding: 15px 27px 14px 28px;
+            display: inline-block;
+            transition: 0.5s;
+          }
+        }
+        .button-checkout-right {
+          //width: 48%;
+          .place-my-order {
+            text-decoration: none;
+            background-color: $color;
+            border: 2px solid $color;
+            padding: 15px 47px 14px 48px;
+            @include h4__taviraj;
+            font-size: 20px;
+            color: #ffffff;
+            display: inline-block;
           }
         }
       }
@@ -155,9 +192,44 @@ $color: #d84727;
 /*Media */
 
 @media screen and (max-width: 1200px) {
+  .button-checkout-left {
+    width: 100%;
+    .continue-shopping {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .button-checkout-right {
+    width: 100%;
+    .place-my-order {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .order-data,
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .price-order {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .info-order .order-checkout .right-content-checkout .address-checkout h3,
+  .info-order .order-checkout .left-content-checkout .detail-checkout h3 {
+    font-size: 33px;
+    line-height: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -167,13 +239,100 @@ $color: #d84727;
   .media-bread-check {
     display: block;
   }
+  .info-order .order-checkout .left-content-checkout {
+    width: 100%;
+  }
+  .info-order .order-checkout .right-content-checkout {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .button-checkout-left,
+  .button-checkout-right {
+    width: auto;
+  }
+  .info-order
+    .order-checkout
+    .right-content-checkout
+    .button-page-checkout
+    .button-checkout-right
+    .place-my-order {
+    margin-top: 0;
+  }
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .order-data,
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .price-order {
+    font-size: 24px;
+    line-height: 50px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .order-data,
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .price-order {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .price-order {
+    text-align: end;
+  }
+  .button-checkout-left,
+  .button-checkout-right {
+    width: 100%;
+  }
+  .info-order
+    .order-checkout
+    .right-content-checkout
+    .button-page-checkout
+    .button-checkout-right
+    .place-my-order {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 425px) {
 }
 
 @media screen and (max-width: 375px) {
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .order-data,
+  .info-order
+    .order-checkout
+    .left-content-checkout
+    .detail-checkout
+    .items
+    .price-order {
+    font-size: 15px;
+  }
+  .info-order .order-checkout .right-content-checkout .address-checkout h3,
+  .info-order .order-checkout .left-content-checkout .detail-checkout h3 {
+    font-size: 28px;
+  }
 }

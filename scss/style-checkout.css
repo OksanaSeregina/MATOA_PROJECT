@@ -62,16 +62,16 @@
           justify-content: space-between;
 }
 
-.info-order .order-checkout .detail-checkout {
+.info-order .order-checkout .left-content-checkout {
   width: 49%;
-  -ms-flex-item-align: self-start;
-      -ms-grid-row-align: self-start;
-      align-self: self-start;
+}
+
+.info-order .order-checkout .left-content-checkout .detail-checkout {
   background: #ffffff;
   padding: 32px;
 }
 
-.info-order .order-checkout .detail-checkout h3 {
+.info-order .order-checkout .left-content-checkout .detail-checkout h3 {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -83,13 +83,13 @@
   margin-bottom: 40px;
 }
 
-.info-order .order-checkout .detail-checkout .items {
+.info-order .order-checkout .left-content-checkout .detail-checkout .items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.info-order .order-checkout .detail-checkout .items .order-data {
+.info-order .order-checkout .left-content-checkout .detail-checkout .items .order-data {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: 500;
@@ -101,7 +101,7 @@
   width: 50%;
 }
 
-.info-order .order-checkout .detail-checkout .items .price-order {
+.info-order .order-checkout .left-content-checkout .detail-checkout .items .price-order {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: 500;
@@ -113,19 +113,22 @@
   width: 50%;
 }
 
-.info-order .order-checkout .detail-checkout hr {
+.info-order .order-checkout .left-content-checkout .detail-checkout hr {
   height: 1px;
   color: #333333;
   margin: 39px 0 24px 0;
 }
 
-.info-order .order-checkout .address-checkout {
+.info-order .order-checkout .right-content-checkout {
   width: 49%;
+}
+
+.info-order .order-checkout .right-content-checkout .address-checkout {
   background: #ffffff;
   padding: 32px;
 }
 
-.info-order .order-checkout .address-checkout h3 {
+.info-order .order-checkout .right-content-checkout .address-checkout h3 {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -137,7 +140,7 @@
   margin-bottom: 40px;
 }
 
-.info-order .order-checkout .address-checkout .payment-details label {
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details label {
   display: block;
   font-family: "Taviraj", serif;
   font-style: normal;
@@ -148,15 +151,15 @@
   color: #000000;
 }
 
-.info-order .order-checkout .address-checkout .payment-details input,
-.info-order .order-checkout .address-checkout .payment-details select {
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details input,
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details select {
   width: 100%;
   border: none;
   border-bottom: 0.3px solid #333333;
   margin-bottom: 24px;
 }
 
-.info-order .order-checkout .address-checkout .payment-details .double-input {
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details .double-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,25 +168,207 @@
           justify-content: space-between;
 }
 
-.info-order .order-checkout .address-checkout .payment-details .double-input .select-city {
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details .double-input .select-city {
   width: 49%;
 }
 
-.info-order .order-checkout .address-checkout .payment-details .double-input .input-code {
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details .double-input .input-code {
   width: 46%;
 }
 
-.info-order .order-checkout .address-checkout .payment-details .double-input .input-code input {
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details .double-input .input-code input {
   padding-bottom: 5px;
 }
 
+.info-order .order-checkout .right-content-checkout .button-page-checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 59px;
+}
+
+.info-order .order-checkout .right-content-checkout .button-page-checkout .button-checkout-left .continue-shopping {
+  text-decoration: none;
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  font-size: 20px;
+  color: #d84727;
+  border: 2px solid #d84727;
+  padding: 15px 27px 14px 28px;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.info-order .order-checkout .right-content-checkout .button-page-checkout .button-checkout-right .place-my-order {
+  text-decoration: none;
+  background-color: #d84727;
+  border: 2px solid #d84727;
+  padding: 15px 47px 14px 48px;
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-block;
+}
+
 /*Media */
+@media screen and (max-width: 1200px) {
+  .button-checkout-left {
+    width: 100%;
+  }
+  .button-checkout-left .continue-shopping {
+    width: 100%;
+    text-align: center;
+  }
+  .button-checkout-right {
+    width: 100%;
+  }
+  .button-checkout-right .place-my-order {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.order-data,
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.price-order {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .info-order .order-checkout .right-content-checkout .address-checkout h3,
+  .info-order .order-checkout .left-content-checkout .detail-checkout h3 {
+    font-size: 33px;
+    line-height: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .breadcr {
     display: none;
   }
   .media-bread-check {
     display: block;
+  }
+  .info-order .order-checkout .left-content-checkout {
+    width: 100%;
+  }
+  .info-order .order-checkout .right-content-checkout {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .button-checkout-left,
+  .button-checkout-right {
+    width: auto;
+  }
+  .info-order
+.order-checkout
+.right-content-checkout
+.button-page-checkout
+.button-checkout-right
+.place-my-order {
+    margin-top: 0;
+  }
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.order-data,
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.price-order {
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.order-data,
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.price-order {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.price-order {
+    text-align: end;
+  }
+  .button-checkout-left,
+  .button-checkout-right {
+    width: 100%;
+  }
+  .info-order
+.order-checkout
+.right-content-checkout
+.button-page-checkout
+.button-checkout-right
+.place-my-order {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.order-data,
+  .info-order
+.order-checkout
+.left-content-checkout
+.detail-checkout
+.items
+.price-order {
+    font-size: 15px;
+  }
+  .info-order .order-checkout .right-content-checkout .address-checkout h3,
+  .info-order .order-checkout .left-content-checkout .detail-checkout h3 {
+    font-size: 28px;
   }
 }
 /*# sourceMappingURL=style-checkout.css.map */
