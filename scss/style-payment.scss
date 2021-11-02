@@ -1,0 +1,96 @@
+@mixin taviraj {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+@mixin p__nunito {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+}
+
+$color: #d84727;
+
+.items-str {
+  display: flex;
+  margin-bottom: 24px;
+  .title-order {
+    width: 40%;
+    .text-title-order {
+      @include taviraj;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+  .info-input {
+    width: 60%;
+    .text-info-input {
+      @include taviraj;
+      font-size: 20px;
+      line-height: 32px;
+      span {
+        @include taviraj;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color;
+        margin-left: 28px;
+      }
+    }
+    .descr-info-input {
+      @include p__nunito;
+    }
+  }
+}
+.items-str:last-child {
+  margin-bottom: 0;
+}
+
+/*Media */
+
+@media screen and (max-width: 1200px) {
+  .items-str .title-order .text-title-order {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .items-str .info-input .text-info-input {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .items-str .info-input .text-info-input span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .items-str .title-order .text-title-order,
+  .items-str .info-input .text-info-input {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .items-str .info-input .text-info-input span {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .items-str .title-order .text-title-order,
+  .items-str .info-input .text-info-input {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .items-str .info-input .text-info-input span {
+    font-size: 12px;
+  }
+  .items-str .info-input .descr-info-input {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
