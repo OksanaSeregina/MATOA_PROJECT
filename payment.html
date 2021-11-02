@@ -4,7 +4,355 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Payment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Nunito:wght@300;400&family=Taviraj:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/all.css" />
+    <link rel="stylesheet" href="scss/style1.css" />
+    <link rel="stylesheet" href="scss/style-checkout.css" />
   </head>
-  <body></body>
+  <body class="wrapper">
+    <header>
+      <div class="center">
+        <div id="my-id5" class="info__header">
+          <div class="logo">
+            <a href="./index.html#my-id1">
+              <img src="./images/Logo.png" alt="logo" />
+            </a>
+          </div>
+
+          <div class="menu">
+            <div class="item">
+              <a href="#"><span>Watches</span></a>
+            </div>
+            <div class="item">
+              <a href="#"><span>Eyewear</span></a>
+            </div>
+            <div class="item">
+              <a href="#"><span>Accessories</span></a>
+            </div>
+            <div class="item">
+              <a href="#"><span>News</span></a>
+            </div>
+          </div>
+
+          <div class="icon__header">
+            <div class="icon-search">
+              <a href="#"><img src="./images/Search.png" alt="search" /></a>
+            </div>
+            <div class="icon-user">
+              <a href="#"
+                ><img src="./images/User.png" alt="user" /><span
+                  >Log In</span
+                ></a
+              >
+            </div>
+            <div class="icon" data-link="cart">
+              <a href="./cart.html#my-id3" target="_blank" class="cart"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="checkout-bread center">
+      <div class="breadcr">
+        <div class="items-bread">
+          <a href="./checkout.html#my-id4">
+            <i class="fas fa-shopping-basket"></i>
+          </a>
+          <p class="txtBread">1. Checkout</p>
+        </div>
+        <div class="hr-bread"><hr /></div>
+
+        <div class="items-bread color-red">
+          <a href="#">
+            <i class="far fa-credit-card"></i>
+          </a>
+          <p class="txtBread">2. Payment</p>
+        </div>
+
+        <div class="hr-bread"><hr /></div>
+
+        <div class="items-bread">
+          <a href="#">
+            <i class="far fa-list-alt"></i>
+          </a>
+          <p class="txtBread">3. Confirmation</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bread center media-bread-check">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="./index.html#my-id1">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="./checkout.html#my-id4">Checkout</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Payment</li>
+        </ol>
+      </nav>
+    </section>
+
+    <section class="info-order center">
+      <div class="order-checkout">
+        <div class="left-content-checkout">
+          <div class="detail-checkout">
+            <h3>Detail Order</h3>
+            <div class="items">
+              <h4 class="order-data">Subtotal</h4>
+              <h4 class="price-order">Rp 2.152.000</h4>
+            </div>
+            <div class="items">
+              <h4 class="order-data">Shipping Cost</h4>
+              <h4 class="price-order">Rp 500.000</h4>
+            </div>
+            <div class="items">
+              <h4 class="order-data">Promo Code</h4>
+              <h4 class="price-order">INDONESIA</h4>
+            </div>
+            <div class="items">
+              <h4 class="order-data">Packaging</h4>
+              <h4 class="price-order">Rp 50.000</h4>
+            </div>
+            <hr />
+            <div class="items">
+              <h4 class="order-data">Grand Total</h4>
+              <h4 class="price-order">Rp 2.702.000</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-content-checkout">
+          <div class="address-checkout">
+            <h3>Billing Address</h3>
+            <form class="payment-details">
+              <div>
+                <label for="fName">Fullname</label>
+                <input
+                  type="text"
+                  name="fName"
+                  id="fName"
+                  placeholder="Ex: Rasyidin Arsyad Nasution"
+                />
+              </div>
+              <div>
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email-Adr"
+                  placeholder="Ex: rasyid.arsyad@gmail.com"
+                />
+              </div>
+              <div>
+                <label for="tel">Phone Number</label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="phone"
+                  placeholder="Ex: 089111888999"
+                />
+              </div>
+              <div>
+                <label for="delivery">Shipping Address</label>
+                <input
+                  type="text"
+                  name="delivery"
+                  id="delivery"
+                  placeholder="Ex: Patriot Street Number 666, Ngaklik, Sleman"
+                />
+              </div>
+              <div>
+                <label for="country">Country</label>
+                <select name="country">
+                  <option value="value1" selected>
+                    United State of America (USA)
+                  </option>
+                  <option value="value2">Monaco</option>
+                  <option value="value3">Indonesia</option>
+                </select>
+              </div>
+              <div>
+                <label for="state">State/Province</label>
+                <select name="state">
+                  <option value="value1" selected>California</option>
+                  <option value="value2">Florida</option>
+                  <option value="value3">Colorado</option>
+                </select>
+              </div>
+              <div class="double-input">
+                <div class="select-city">
+                  <label for="city">City</label>
+                  <select name="city">
+                    <option value="value1" selected>San Francisco</option>
+                    <option value="value2">Mexico City</option>
+                    <option value="value3">Aleppo</option>
+                  </select>
+                </div>
+                <div class="input-code">
+                  <label for="zipCode">Zip Code</label>
+                  <input
+                    type="number"
+                    name="zipCode"
+                    id="zipCode"
+                    placeholder="Ex: 94024"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="courier">Choose Courier</label>
+                <select name="courier">
+                  <option value="value1" selected>DHL</option>
+                  <option value="value2">Skyexpress</option>
+                  <option value="value3">UPS Express</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="first__footer">
+        <div class="center payment">
+          <div class="link">
+            <a href="#"><img src="./images/icon1.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon2.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon3.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon4.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon5.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon6.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon7.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon8.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon9.png" alt="payment" /></a>
+          </div>
+          <div class="link">
+            <a href="#"><img src="./images/icon10.png" alt="payment" /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="second__footer">
+        <div class="center container">
+          <div class="row">
+            <div class="col-xl-3 col-sm-6 address">
+              <a href="./index.html#my-id1"
+                ><img
+                  class="logo__foot"
+                  src="./images/logo-foot.png"
+                  alt="logo"
+              /></a>
+              <h6>Address</h6>
+              <ul class="list-unstyled">
+                <li>Store &amp; Office</li>
+                <li>Jl. Setrasari Kun III, No. 10&ndash;12,</li>
+                <li>Sukarasa, Sukasari, Bandung,</li>
+                <li>Jawa Barat, Indonesia 40152</li>
+              </ul>
+
+              <h6>Office Hour</h6>
+              <ul class="list-unstyled">
+                <li>Monday &ndash; Sunday</li>
+                <li>10.00 &ndash; 18.00</li>
+              </ul>
+            </div>
+
+            <div class="col-xl-3 col-sm-6">
+              <h5>Get in touch</h5>
+              <hr />
+              <ul class="list-unstyled">
+                <li>
+                  <h6>Phone</h6>
+                  <a href="tel:02220277564">022&ndash;20277564</a>
+                </li>
+                <li>
+                  <h6>Service Center</h6>
+                  <a href="tel:08112338899">0811&ndash;233&ndash;8899</a>
+                </li>
+                <li>
+                  <h6>Customer Service</h6>
+                  <a href="tel:08112359988">0811&ndash;235&ndash;9988</a>
+                </li>
+              </ul>
+              <div class="social__link">
+                <a href="#"
+                  ><img src="./images/Facebook.png" alt="facebook"
+                /></a>
+                <a href="#"
+                  ><img src="./images/Instagram.png" alt="instagram"
+                /></a>
+                <a href="#"><img src="./images/Twitter.png" alt="twitter" /></a>
+                <a href="#"><img src="./images/Youtube.png" alt="youtube" /></a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-sm-6">
+              <h5>Useful Link</h5>
+              <hr />
+              <ul class="list-unstyled">
+                <li><a href="#">Warranty &amp; Complaints</a></li>
+                <li><a href="#">Order &amp; Shipping</a></li>
+                <li><a href="#">Tracking Order</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Repair</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="col-xl-3 col-sm-6">
+              <h5>Campaign</h5>
+              <hr />
+              <ul class="list-unstyled">
+                <li><a href="#">Mengenal Arti Cukup</a></li>
+                <li><a href="#">Tell Your Difference</a></li>
+                <li><a href="#">Waykambas</a></li>
+                <li><a href="#">Rebrand</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Singo</a></li>
+                <li><a href="#">Rakai</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
