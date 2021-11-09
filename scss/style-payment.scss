@@ -63,11 +63,40 @@ $color: #d84727;
     display: inherit;
   }
   .payment-method {
+    background: #ffffff;
+    padding: 32px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    h3 {
+      @include taviraj;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 40px;
+    }
     .form-payment-radio {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       .input-radio:nth-child(5) {
         grid-column: 1 / span 2;
+      }
+      .input-radio {
+        input {
+          width: 24px;
+          height: 24px;
+          vertical-align: sub;
+          margin-right: 16px;
+        }
+        .title-payment {
+          @include taviraj;
+          font-size: 20px;
+          line-height: 32px;
+        }
+        .img-payment {
+          img {
+            margin-right: 30px;
+          }
+        }
       }
     }
   }
