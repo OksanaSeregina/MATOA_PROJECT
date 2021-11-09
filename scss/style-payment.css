@@ -2,6 +2,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 24px;
 }
 
@@ -98,6 +100,16 @@
   .items-str .info-input .descr-info-input {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .items-str .title-order {
+    width: 100%;
+  }
+  .items-str .info-input {
+    width: 100%;
+    text-align: end;
   }
 }
 /*# sourceMappingURL=style-payment.css.map */

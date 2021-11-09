@@ -20,6 +20,7 @@ $color: #d84727;
 
 .items-str {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 24px;
   .title-order {
     width: 40%;
@@ -92,5 +93,15 @@ $color: #d84727;
   .items-str .info-input .descr-info-input {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .items-str .title-order {
+    width: 100%;
+  }
+  .items-str .info-input {
+    width: 100%;
+    text-align: end;
   }
 }
