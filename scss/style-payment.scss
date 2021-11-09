@@ -65,8 +65,10 @@ $color: #d84727;
   .payment-method {
     .form-payment-radio {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      .input-radio:nth-child(5) {
+        grid-column: 1 / span 2;
+      }
     }
   }
 }
