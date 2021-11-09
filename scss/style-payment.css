@@ -66,6 +66,70 @@
   display: inherit;
 }
 
+.order-checkout .right-content-checkout .items-str {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.order-checkout .right-content-checkout .items-str .title-order {
+  width: 40%;
+}
+
+.order-checkout .right-content-checkout .items-str .title-order .text-title-order {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.order-checkout .right-content-checkout .items-str .info-input {
+  width: 60%;
+}
+
+.order-checkout .right-content-checkout .items-str .info-input .text-info-input {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.order-checkout .right-content-checkout .items-str .info-input .text-info-input span {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #d84727;
+  margin-left: 28px;
+}
+
+.order-checkout .right-content-checkout .items-str .info-input .descr-info-input {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+}
+
+.order-checkout .right-content-checkout .items-str:last-child {
+  margin-bottom: 0;
+}
+
 .order-checkout .payment-method {
   background: #ffffff;
   padding: 32px;
@@ -120,81 +184,52 @@
   margin-right: 30px;
 }
 
-.items-str {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 24px;
+.order-checkout .button-payment {
+  width: 100%;
+  text-align: end;
 }
 
-.items-str .title-order {
-  width: 40%;
-}
-
-.items-str .title-order .text-title-order {
+.order-checkout .button-payment .proceed-payment {
+  text-decoration: none;
+  background-color: #d84727;
+  border: 2px solid #d84727;
+  padding: 15px 47px 14px 48px;
   font-family: "Taviraj", serif;
   font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
   color: #333333;
   font-size: 20px;
-  line-height: 32px;
-}
-
-.items-str .info-input {
-  width: 60%;
-}
-
-.items-str .info-input .text-info-input {
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.02em;
-  color: #333333;
-  font-size: 20px;
-  line-height: 32px;
-}
-
-.items-str .info-input .text-info-input span {
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.02em;
-  color: #333333;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #d84727;
-  margin-left: 28px;
-}
-
-.items-str .info-input .descr-info-input {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #777777;
-}
-
-.items-str:last-child {
-  margin-bottom: 0;
+  color: #ffffff;
+  display: inline-block;
 }
 
 /*Media */
 @media screen and (max-width: 1200px) {
-  .items-str .title-order .text-title-order {
+  .order-checkout
+.right-content-checkout
+.items-str
+.title-order
+.text-title-order {
     font-size: 18px;
     line-height: 26px;
   }
-  .items-str .info-input .text-info-input {
+  .order-checkout
+.right-content-checkout
+.items-str
+.info-input
+.text-info-input {
     font-size: 15px;
     line-height: 26px;
   }
-  .items-str .info-input .text-info-input span {
+  .order-checkout
+.right-content-checkout
+.items-str
+.info-input
+.text-info-input
+span {
     font-size: 12px;
   }
   .order-checkout
@@ -244,12 +279,25 @@
 }
 
 @media screen and (max-width: 768px) {
-  .items-str .title-order .text-title-order,
-  .items-str .info-input .text-info-input {
+  .order-checkout
+.right-content-checkout
+.items-str
+.title-order
+.text-title-order,
+  .order-checkout
+.right-content-checkout
+.items-str
+.info-input
+.text-info-input {
     font-size: 20px;
     line-height: 32px;
   }
-  .items-str .info-input .text-info-input span {
+  .order-checkout
+.right-content-checkout
+.items-str
+.info-input
+.text-info-input
+span {
     font-size: 16px;
   }
   .order-checkout
@@ -274,15 +322,32 @@
 }
 
 @media screen and (max-width: 600px) {
-  .items-str .title-order .text-title-order,
-  .items-str .info-input .text-info-input {
+  .order-checkout
+.right-content-checkout
+.items-str
+.title-order
+.text-title-order,
+  .order-checkout
+.right-content-checkout
+.items-str
+.info-input
+.text-info-input {
     font-size: 15px;
     line-height: 20px;
   }
-  .items-str .info-input .text-info-input span {
+  .order-checkout
+.right-content-checkout
+.items-str
+.info-input
+.text-info-input
+span {
     font-size: 12px;
   }
-  .items-str .info-input .descr-info-input {
+  .order-checkout
+.right-content-checkout
+.items-str
+.info-input
+.descr-info-input {
     font-size: 12px;
     line-height: 18px;
   }
@@ -314,13 +379,17 @@
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
   }
+  .order-checkout .button-payment .proceed-payment {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 425px) {
-  .items-str .title-order {
+  .order-checkout .right-content-checkout .items-str .title-order {
     width: 100%;
   }
-  .items-str .info-input {
+  .order-checkout .right-content-checkout .items-str .info-input {
     width: 100%;
     text-align: end;
   }
@@ -348,7 +417,7 @@
 .time-container
 .title-h3,
   .order-checkout .payment-method h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
   .order-checkout
 .left-content-checkout
@@ -357,6 +426,14 @@
 .descr-payment-detail {
     line-height: 20px;
     font-size: 14px;
+  }
+  .order-checkout
+.payment-method
+.form-payment-radio
+.input-radio
+.title-payment {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=style-payment.css.map */
