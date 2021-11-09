@@ -67,6 +67,7 @@ $color: #d84727;
     padding: 32px;
     margin-top: 30px;
     margin-bottom: 40px;
+    width: 100%;
     h3 {
       @include taviraj;
       font-weight: 600;
@@ -177,7 +178,8 @@ $color: #d84727;
     .payment-detail
     .title-payment-detail
     .time-container
-    .title-h3 {
+    .title-h3,
+  .order-checkout .payment-method h3 {
     font-size: 33px;
     line-height: 25px;
   }
@@ -187,6 +189,12 @@ $color: #d84727;
     .title-payment-detail
     .descr-payment-detail {
     text-align: justify;
+  }
+  .order-checkout .payment-method .form-payment-radio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .order-checkout .payment-method .form-payment-radio .input-radio {
+    margin-bottom: 20px;
   }
 }
 
@@ -256,6 +264,9 @@ $color: #d84727;
     .descr-payment-detail {
     line-height: 24px;
   }
+  .order-checkout .payment-method .form-payment-radio .input-radio {
+    grid-column: 1 / span 2;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -282,7 +293,14 @@ $color: #d84727;
     .payment-detail
     .title-payment-detail
     .time-container
-    .title-h3 {
+    .title-h3,
+  .order-checkout
+    .left-content-checkout
+    .payment-detail
+    .title-payment-detail
+    .time-container
+    .title-h3,
+  .order-checkout .payment-method h3 {
     font-size: 27px;
   }
   .order-checkout

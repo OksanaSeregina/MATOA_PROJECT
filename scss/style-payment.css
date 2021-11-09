@@ -71,6 +71,7 @@
   padding: 32px;
   margin-top: 30px;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .order-checkout .payment-method h3 {
@@ -221,7 +222,8 @@
 .payment-detail
 .title-payment-detail
 .time-container
-.title-h3 {
+.title-h3,
+  .order-checkout .payment-method h3 {
     font-size: 33px;
     line-height: 25px;
   }
@@ -231,6 +233,13 @@
 .title-payment-detail
 .descr-payment-detail {
     text-align: justify;
+  }
+  .order-checkout .payment-method .form-payment-radio {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .order-checkout .payment-method .form-payment-radio .input-radio {
+    margin-bottom: 20px;
   }
 }
 
@@ -300,6 +309,11 @@
 .descr-payment-detail {
     line-height: 24px;
   }
+  .order-checkout .payment-method .form-payment-radio .input-radio {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -326,7 +340,14 @@
 .payment-detail
 .title-payment-detail
 .time-container
-.title-h3 {
+.title-h3,
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container
+.title-h3,
+  .order-checkout .payment-method h3 {
     font-size: 27px;
   }
   .order-checkout
