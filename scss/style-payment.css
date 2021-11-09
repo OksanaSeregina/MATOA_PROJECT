@@ -1,3 +1,71 @@
+.order-checkout {
+  margin-bottom: 30px;
+}
+
+.order-checkout .left-content-checkout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+}
+
+.order-checkout .left-content-checkout .payment-detail {
+  background: #ffffff;
+  padding: 32px;
+}
+
+.order-checkout .left-content-checkout .payment-detail .title-payment-detail .time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order-checkout .left-content-checkout .payment-detail .title-payment-detail .time-container .title-h3 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+
+.order-checkout .left-content-checkout .payment-detail .title-payment-detail .time-container .time {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #d93f3f;
+}
+
+.order-checkout .left-content-checkout .payment-detail .title-payment-detail .descr-payment-detail {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.order-checkout .right-content-checkout {
+  display: inherit;
+}
+
 .items-str {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,6 +143,42 @@
   .items-str .info-input .text-info-input span {
     font-size: 12px;
   }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container
+.time {
+    width: 100%;
+    text-align: end;
+  }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container
+.title-h3 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container
+.title-h3 {
+    font-size: 33px;
+    line-height: 25px;
+  }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.descr-payment-detail {
+    text-align: justify;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -85,6 +189,25 @@
   }
   .items-str .info-input .text-info-input span {
     font-size: 16px;
+  }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container
+.time {
+    line-height: 25px;
+    width: 30%;
+  }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container {
+    margin-bottom: 30px;
+  }
+  .info-order .order-checkout .right-content-checkout {
+    display: block;
   }
 }
 
@@ -101,6 +224,29 @@
     font-size: 12px;
     line-height: 18px;
   }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container
+.time {
+    width: 100%;
+    line-height: 48px;
+  }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container {
+    margin-bottom: 0;
+  }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.descr-payment-detail {
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -110,6 +256,33 @@
   .items-str .info-input {
     width: 100%;
     text-align: end;
+  }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container
+.time {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.time-container
+.title-h3 {
+    font-size: 27px;
+  }
+  .order-checkout
+.left-content-checkout
+.payment-detail
+.title-payment-detail
+.descr-payment-detail {
+    line-height: 20px;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style-payment.css.map */
