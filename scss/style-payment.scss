@@ -62,6 +62,13 @@ $color: #d84727;
   .right-content-checkout {
     display: inherit;
   }
+  .payment-method {
+    .form-payment-radio {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
 }
 
 .items-str {
