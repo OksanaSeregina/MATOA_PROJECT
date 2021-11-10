@@ -30,27 +30,6 @@ $color: #d84727;
 
 .info-order {
   .order-checkout {
-    .delivery-details {
-      display: flex;
-      margin-bottom: 30px;
-      .time-delivery {
-        margin-right: 40px;
-        .text-deliv {
-          margin-left: 8px;
-          @include p__nunito;
-          line-height: 32px;
-          color: #333333;
-        }
-      }
-      .courier-delivery {
-        .text-deliv {
-          margin-left: 8px;
-          @include p__nunito;
-          line-height: 32px;
-          color: #333333;
-        }
-      }
-    }
     .left-content-confirmation {
       width: 49%;
       .order-confirmed {
@@ -63,6 +42,27 @@ $color: #d84727;
       .check-order {
         background: #ffffff;
         padding: 32px;
+        .delivery-details {
+          display: flex;
+          margin-bottom: 30px;
+          .time-delivery {
+            margin-right: 40px;
+            .text-deliv {
+              margin-left: 8px;
+              @include p__nunito;
+              line-height: 32px;
+              color: #333333;
+            }
+          }
+          .courier-delivery {
+            .text-deliv {
+              margin-left: 8px;
+              @include p__nunito;
+              line-height: 32px;
+              color: #333333;
+            }
+          }
+        }
         .info-order-confr {
           .text-confr {
             @include taviraj;

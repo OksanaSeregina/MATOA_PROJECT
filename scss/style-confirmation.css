@@ -1,40 +1,3 @@
-.info-order .order-checkout .delivery-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.info-order .order-checkout .delivery-details .time-delivery {
-  margin-right: 40px;
-}
-
-.info-order .order-checkout .delivery-details .time-delivery .text-deliv {
-  margin-left: 8px;
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #777777;
-  line-height: 32px;
-  color: #333333;
-}
-
-.info-order .order-checkout .delivery-details .courier-delivery .text-deliv {
-  margin-left: 8px;
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #777777;
-  line-height: 32px;
-  color: #333333;
-}
-
 .info-order .order-checkout .left-content-confirmation {
   width: 49%;
 }
@@ -51,6 +14,43 @@
 .info-order .order-checkout .right-content-confirmation .check-order {
   background: #ffffff;
   padding: 32px;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .delivery-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .delivery-details .time-delivery {
+  margin-right: 40px;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .delivery-details .time-delivery .text-deliv {
+  margin-left: 8px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+  line-height: 32px;
+  color: #333333;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .delivery-details .courier-delivery .text-deliv {
+  margin-left: 8px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+  line-height: 32px;
+  color: #333333;
 }
 
 .info-order .order-checkout .right-content-confirmation .check-order .info-order-confr .text-confr {
