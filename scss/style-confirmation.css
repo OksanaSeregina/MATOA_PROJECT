@@ -1,10 +1,71 @@
+.info-order .order-checkout {
+  margin-bottom: 86px;
+}
+
 .info-order .order-checkout .left-content-confirmation {
   width: 49%;
 }
 
 .info-order .order-checkout .left-content-confirmation .order-confirmed {
   background: #ffffff;
-  padding: 32px;
+  padding: 60px 15.5% 42px 15.5%;
+  height: 100%;
+}
+
+.info-order .order-checkout .left-content-confirmation .order-confirmed img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 100px;
+}
+
+.info-order .order-checkout .left-content-confirmation .order-confirmed h4 {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.info-order .order-checkout .left-content-confirmation .order-confirmed p {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.info-order .order-checkout .left-content-confirmation .order-confirmed .button-confirm {
+  text-align: center;
+}
+
+.info-order .order-checkout .left-content-confirmation .order-confirmed .button-confirm .track-page {
+  text-decoration: none;
+  background-color: #d84727;
+  border: 2px solid #d84727;
+  padding: 15px 47px 14px 48px;
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-block;
+  width: 100%;
 }
 
 .info-order .order-checkout .right-content-confirmation {

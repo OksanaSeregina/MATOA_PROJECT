@@ -26,15 +26,53 @@
   color: #777777;
 }
 
+@mixin images {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 $color: #d84727;
 
 .info-order {
   .order-checkout {
+    margin-bottom: 86px;
     .left-content-confirmation {
       width: 49%;
       .order-confirmed {
         background: #ffffff;
-        padding: 32px;
+        padding: 60px 15.5% 42px 15.5%;
+        height: 100%;
+        img {
+          @include images;
+          margin-bottom: 100px;
+        }
+        h4 {
+          @include h4__taviraj;
+          letter-spacing: 0.02em;
+          text-align: center;
+          margin-bottom: 16px;
+        }
+        p {
+          @include p__nunito;
+          color: #333333;
+          text-align: center;
+          margin-bottom: 60px;
+        }
+        .button-confirm {
+          text-align: center;
+          .track-page {
+            text-decoration: none;
+            background-color: $color;
+            border: 2px solid $color;
+            padding: 15px 47px 14px 48px;
+            @include h4__taviraj;
+            font-size: 20px;
+            color: #ffffff;
+            display: inline-block;
+            width: 100%;
+          }
+        }
       }
     }
     .right-content-confirmation {
