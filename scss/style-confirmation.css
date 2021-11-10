@@ -1,1 +1,147 @@
-/* No CSS *//*# sourceMappingURL=style-confirmation.css.map */
+.info-order .order-checkout .delivery-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.info-order .order-checkout .delivery-details .time-delivery {
+  margin-right: 40px;
+}
+
+.info-order .order-checkout .delivery-details .time-delivery .text-deliv {
+  margin-left: 8px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+  line-height: 32px;
+  color: #333333;
+}
+
+.info-order .order-checkout .delivery-details .courier-delivery .text-deliv {
+  margin-left: 8px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+  line-height: 32px;
+  color: #333333;
+}
+
+.info-order .order-checkout .left-content-confirmation {
+  width: 49%;
+}
+
+.info-order .order-checkout .left-content-confirmation .order-confirmed {
+  background: #ffffff;
+  padding: 32px;
+}
+
+.info-order .order-checkout .right-content-confirmation {
+  width: 49%;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order {
+  background: #ffffff;
+  padding: 32px;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .info-order-confr .text-confr {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .info-order-confr .descr-confr {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .item-conf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .item-conf .order-data {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  line-height: 60px;
+  width: 50%;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .item-conf .price-order {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  line-height: 60px;
+  width: 50%;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order hr {
+  height: 1px;
+  color: #333333;
+  margin: 24px 0 16px 0;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .items-str {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .items-str .title-order {
+  width: 40%;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .items-str .title-order .text-title-order {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .items-str .info-input {
+  width: 60%;
+}
+
+.info-order .order-checkout .right-content-confirmation .check-order .items-str .info-input .text-info-input {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 20px;
+  line-height: 32px;
+}
+/*# sourceMappingURL=style-confirmation.css.map */

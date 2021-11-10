@@ -1,0 +1,117 @@
+@mixin h4__taviraj {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #333333;
+}
+
+@mixin taviraj {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+@mixin p__nunito {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #777777;
+}
+
+$color: #d84727;
+
+.info-order {
+  .order-checkout {
+    .delivery-details {
+      display: flex;
+      margin-bottom: 30px;
+      .time-delivery {
+        margin-right: 40px;
+        .text-deliv {
+          margin-left: 8px;
+          @include p__nunito;
+          line-height: 32px;
+          color: #333333;
+        }
+      }
+      .courier-delivery {
+        .text-deliv {
+          margin-left: 8px;
+          @include p__nunito;
+          line-height: 32px;
+          color: #333333;
+        }
+      }
+    }
+    .left-content-confirmation {
+      width: 49%;
+      .order-confirmed {
+        background: #ffffff;
+        padding: 32px;
+      }
+    }
+    .right-content-confirmation {
+      width: 49%;
+      .check-order {
+        background: #ffffff;
+        padding: 32px;
+        .info-order-confr {
+          .text-confr {
+            @include taviraj;
+            font-size: 20px;
+            line-height: 32px;
+          }
+          .descr-confr {
+            @include p__nunito;
+          }
+        }
+        .item-conf {
+          display: flex;
+          .order-data {
+            @include h4__taviraj;
+            line-height: 60px;
+            width: 50%;
+          }
+          .price-order {
+            @include h4__taviraj;
+            line-height: 60px;
+            width: 50%;
+          }
+        }
+        hr {
+          height: 1px;
+          color: #333333;
+          margin: 24px 0 16px 0;
+        }
+        .items-str {
+          display: flex;
+          flex-wrap: wrap;
+          .title-order {
+            width: 40%;
+            .text-title-order {
+              @include taviraj;
+              font-size: 20px;
+              line-height: 32px;
+            }
+          }
+          .info-input {
+            width: 60%;
+            .text-info-input {
+              @include taviraj;
+              font-size: 20px;
+              line-height: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
