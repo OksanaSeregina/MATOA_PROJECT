@@ -39,6 +39,10 @@ header .info__header .logo a img {
   vertical-align: baseline;
 }
 
+header .info__header .header-menu {
+  display: contents;
+}
+
 header .info__header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +148,31 @@ header .info__header .menu .item a:hover::after {
 
 header .info__header .menu .item a span:hover {
   color: #d84727;
+}
+
+#burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+#burger i {
+  display: none;
+  width: 24px;
+  height: 3px;
+  margin: 3px;
+  background-color: #d84727;
+}
+
+#close {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-size: 32px;
+  color: #ffffff;
 }
 
 /* Section Pink  */
@@ -1889,14 +1918,61 @@ footer .second__footer .social__link a {
 }
 
 @media screen and (max-width: 1024px) {
+  header .info__header .header-menu {
+    opacity: 0;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 0;
+    width: 112%;
+    left: -112%;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  header .info__header .menu,
+  header .info__header .icon__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  header .info__header .icon__header .icon-user,
   header .info__header .menu {
-    display: none;
+    margin: 0;
+  }
+  header a {
+    color: #d84727;
+  }
+  header .info__header .show {
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    opacity: 1;
+    left: -6%;
   }
   header .info__header {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    position: relative;
+  }
+  #burger,
+  #burger i {
+    display: block;
   }
   .pink {
     -ms-flex-wrap: wrap;
@@ -2090,10 +2166,10 @@ footer .second__footer .social__link a {
   header .info__header .icon__header {
     display: inherit;
   }
-  header .info__header .icon__header .icon-search,
+  /* header .info__header .icon__header .icon-search,
   header .info__header .icon__header .icon-user {
     display: none;
-  }
+  } */
   .pink .pink-right .matoa__pink .button__pink .button1 .add__cart {
     font-size: 16px;
     line-height: 26px;
