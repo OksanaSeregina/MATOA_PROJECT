@@ -11,11 +11,11 @@ function openBurger() {
   menuList.classList.add("show");
   hideSearch.innerHTML = "<span>Search</span>";
   hideUser.style.display = "none";
-  closeBtn.style.display = "block";
+  setTimeout('closeBtn.style.display = "block"', 1000);
 }
 
 function closeBurger() {
-  burgerMenu.style.display = "block";
+  setTimeout('burgerMenu.style.display = "block"', 500);
   menuList.classList.remove("show");
   closeBtn.style.display = "none";
   setTimeout('hideUser.style.display = "inline-block"', 1000);
