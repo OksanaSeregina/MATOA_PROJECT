@@ -173,6 +173,7 @@ header .info__header .menu .item a span:hover {
   top: 0px;
   font-size: 32px;
   color: #ffffff;
+  z-index: 2;
 }
 
 /* Section Pink  */
@@ -1964,6 +1965,7 @@ footer .second__footer .social__link a {
     transition: 1s ease-in-out;
     opacity: 1;
     left: -6%;
+    z-index: 1;
   }
   header .info__header {
     /* display: grid;
