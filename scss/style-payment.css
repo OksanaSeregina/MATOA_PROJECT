@@ -114,6 +114,7 @@
   line-height: 24px;
   color: #d84727;
   margin-left: 28px;
+  cursor: pointer;
 }
 
 .order-checkout .right-content-checkout .items-str .info-input .descr-info-input {

@@ -56,3 +56,38 @@ const getInfoInput = () => {
 };
 
 getInfoInput();
+
+//Timer
+
+const startTimer = (duration, display) => {
+  let timer = duration;
+  let minutes = 0;
+  let seconds = 0;
+  setInterval(() => {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    if (minutes < 10) {
+      minutes += minutes;
+    } else {
+      minutes = minutes;
+    }
+
+    if (seconds < 10) {
+      seconds += seconds;
+    } else {
+      seconds = seconds;
+    }
+
+    display.textContent = `${minutes}:${seconds}`;
+
+    if (--timer < 0) {
+      display.textContent = `Time is up`;
+    }
+  }, 1000);
+};
+
+document.addEventListener(
+  "DOMContentLoaded",
+  startTimer(720, document.querySelector(".time"))
+);
