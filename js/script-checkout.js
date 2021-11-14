@@ -27,3 +27,86 @@ function closeBurger() {
 
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
+
+//Valid form
+
+let inputFName = document.querySelector("input[name='fName']");
+let inputEmail = document.querySelector("input[name='email']");
+let inputTel = document.querySelector("input[name='tel']");
+let inputDelivery = document.querySelector("input[name='delivery']");
+let inputZipCode = document.querySelector("input[name='zipCode']");
+let form = document.querySelector(".payment-details");
+let submitForm = document.querySelector(".place-my-order");
+
+let inputsRequired = document.querySelectorAll("[data-type='required']");
+let errors = {};
+
+// Set error for all required fields
+for (let input of inputsRequired) {
+  let key = input.name;
+  errors[key] = true;
+}
+
+function inputHandler(event) {
+  let key = event.target.name;
+  let currentData = this.value;
+  let errorMesage = document.querySelector(`span[data-error='${key}']`);
+
+  // required validator
+  let isValid = currentData.charAt(0) !== " " && currentData.length;
+
+  if (!isValid) {
+    errorMesage.classList.add("error");
+    errors[key] = true;
+  } else {
+    errorMesage.classList.remove("error");
+    errors[key] = false;
+  }
+}
+
+function submitHandler(event) {
+  let hasFormError = false;
+  let input = null;
+
+  event.preventDefault();
+  // check and show all errors on submit button click
+  for (let key in errors) {
+    if (errors[key]) {
+      let errorMesage = document.querySelector(`span[data-error='${key}']`);
+      errorMesage.classList.add("error");
+      hasFormError = true;
+
+      // set first input with error and scroll to
+      if (!input) {
+        input = document.querySelector(`input[name='${key}']`);
+        input.focus();
+        input.scrollIntoView();
+      }
+    }
+  }
+
+  if (!hasFormError) {
+    //form.submit();
+    window.location.href = "./payment.html#my-id5";
+  }
+}
+
+inputFName.addEventListener("input", inputHandler);
+inputFName.addEventListener("blur", inputHandler, { once: true });
+
+inputEmail.addEventListener("input", inputHandler);
+inputEmail.addEventListener("blur", inputHandler, { once: true });
+
+inputTel.addEventListener("input", inputHandler);
+inputTel.addEventListener("blur", inputHandler, { once: true });
+
+inputDelivery.addEventListener("input", inputHandler);
+inputDelivery.addEventListener("blur", inputHandler, { once: true });
+
+inputZipCode.addEventListener("input", inputHandler);
+inputZipCode.addEventListener("blur", inputHandler, { once: true });
+
+//form.addEventListener("submit", submitHandler);
+//submitHandler();
+
+submitForm.addEventListener("click", submitHandler);

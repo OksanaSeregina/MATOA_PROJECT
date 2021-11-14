@@ -117,7 +117,7 @@ $color: #d84727;
           font-weight: 600;
           font-size: 36px;
           line-height: 48px;
-          margin-bottom: 40px;
+          margin-bottom: 16px;
         }
         .payment-details {
           label {
@@ -129,13 +129,20 @@ $color: #d84727;
             line-height: 32px;
             letter-spacing: 0.03em;
             color: #000000;
+            margin-top: 24px;
           }
           input,
           select {
             width: 100%;
             border: none;
             border-bottom: 0.3px solid #333333;
-            margin-bottom: 24px;
+          }
+          .red-text {
+            display: none;
+            color: red;
+          }
+          .error {
+            display: block;
           }
           .double-input {
             display: flex;

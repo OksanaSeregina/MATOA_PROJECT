@@ -137,7 +137,7 @@
   font-weight: 600;
   font-size: 36px;
   line-height: 48px;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .info-order .order-checkout .right-content-checkout .address-checkout .payment-details label {
@@ -149,6 +149,7 @@
   line-height: 32px;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-top: 24px;
 }
 
 .info-order .order-checkout .right-content-checkout .address-checkout .payment-details input,
@@ -156,7 +157,15 @@
   width: 100%;
   border: none;
   border-bottom: 0.3px solid #333333;
-  margin-bottom: 24px;
+}
+
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details .red-text {
+  display: none;
+  color: red;
+}
+
+.info-order .order-checkout .right-content-checkout .address-checkout .payment-details .error {
+  display: block;
 }
 
 .info-order .order-checkout .right-content-checkout .address-checkout .payment-details .double-input {
