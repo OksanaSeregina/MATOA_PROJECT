@@ -30,14 +30,18 @@ closeBtn.addEventListener("click", closeBurger);
 
 //Local Storage
 
-let textOrder = document.getElementsByClassName("text-info-input");
+const getInfoInput = () => {
+  let textOrder = document.getElementsByClassName("text-info-input");
 
-for (let elem of textOrder) {
-  //let data;
-  for (let key in localStorage) {
-    let data = key;
-    if (elem.dataset.info === data) {
-      elem.textContent = localStorage.getItem(data);
+  for (let elem of textOrder) {
+    for (let key in localStorage) {
+      let data = key;
+
+      if (elem.dataset.info === data) {
+        elem.textContent = localStorage.getItem(data);
+      }
     }
   }
-}
+};
+
+getInfoInput();
