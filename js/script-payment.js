@@ -28,6 +28,16 @@ function closeBurger() {
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
 
+//Time now
+
+const getTimeNow = () => {
+  let justNow = new Date();
+
+  document.querySelector(
+    '[data-time="now"]'
+  ).textContent = `${justNow.toLocaleDateString()} ${justNow.toLocaleTimeString()}`;
+};
+
 //Local Storage
 
 const getInfoInput = () => {
@@ -42,6 +52,7 @@ const getInfoInput = () => {
       }
     }
   }
+  getTimeNow();
 };
 
 getInfoInput();
