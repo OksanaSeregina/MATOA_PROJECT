@@ -27,3 +27,17 @@ function closeBurger() {
 
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
+
+//Local Storage
+
+let textOrder = document.getElementsByClassName("text-info-input");
+
+for (let elem of textOrder) {
+  //let data;
+  for (let key in localStorage) {
+    let data = key;
+    if (elem.dataset.info === data) {
+      elem.textContent = localStorage.getItem(data);
+    }
+  }
+}

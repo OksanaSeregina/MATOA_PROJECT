@@ -52,6 +52,8 @@ function inputHandler(event) {
   let currentData = this.value;
   let errorMesage = document.querySelector(`span[data-error='${key}']`);
 
+  localStorage.setItem(`${key}`, currentData);
+
   // required validator
   let isValid = currentData.charAt(0) !== " " && currentData.length;
 
@@ -86,7 +88,6 @@ function submitHandler(event) {
   }
 
   if (!hasFormError) {
-    //form.submit();
     window.location.href = "./payment.html#my-id5";
   }
 }
@@ -106,7 +107,6 @@ inputDelivery.addEventListener("blur", inputHandler, { once: true });
 inputZipCode.addEventListener("input", inputHandler);
 inputZipCode.addEventListener("blur", inputHandler, { once: true });
 
-//form.addEventListener("submit", submitHandler);
-//submitHandler();
-
 submitForm.addEventListener("click", submitHandler);
+
+//Local storage
