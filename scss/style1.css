@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
 }
 
+.fas {
+  pointer-events: none;
+}
+
 /* Header */
 header {
   padding-top: 35px;
