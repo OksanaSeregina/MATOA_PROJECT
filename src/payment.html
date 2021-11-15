@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Confirmation</title>
+    <title>Payment</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,12 +22,11 @@
     <link rel="stylesheet" href="scss/style1.css" />
     <link rel="stylesheet" href="scss/style-checkout.css" />
     <link rel="stylesheet" href="scss/style-payment.css" />
-    <link rel="stylesheet" href="scss/style-confirmation.css" />
   </head>
   <body class="wrapper">
     <header>
       <div class="center">
-        <div id="my-id6" class="info__header">
+        <div id="my-id5" class="info__header">
           <div class="logo">
             <a href="./index.html#my-id1">
               <img src="./images/Logo.png" alt="logo" />
@@ -90,8 +90,8 @@
         </div>
         <div class="hr-bread"><hr /></div>
 
-        <div class="items-bread">
-          <a href="./payment.html#my-id5">
+        <div class="items-bread color-red">
+          <a href="#">
             <i class="far fa-credit-card"></i>
           </a>
           <p class="txtBread">2. Payment</p>
@@ -99,7 +99,7 @@
 
         <div class="hr-bread"><hr /></div>
 
-        <div class="items-bread color-red">
+        <div class="items-bread">
           <a href="#">
             <i class="far fa-list-alt"></i>
           </a>
@@ -117,87 +117,216 @@
           <li class="breadcrumb-item">
             <a href="./checkout.html#my-id4">Checkout</a>
           </li>
-          <li class="breadcrumb-item">
-            <a href="./payment.html#my-id5">Payment</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Confirmation
-          </li>
+          <li class="breadcrumb-item active" aria-current="page">Payment</li>
         </ol>
       </nav>
     </section>
 
     <section class="info-order center">
       <div class="order-checkout">
-        <div class="left-content-confirmation">
-          <div class="order-confirmed">
-            <img src="./images/images-confirmation/image.jpg" alt="img" />
-            <h4>Order Confirmed</h4>
-            <p>
-              Your order have been confirmed, please wait and track your order
-            </p>
-            <div class="button-confirm">
-              <a class="track-page" href="#">Go to track page</a>
+        <div class="left-content-checkout">
+          <div class="detail-checkout">
+            <h3>Detail Order</h3>
+            <div class="items">
+              <h4 class="order-data">Subtotal</h4>
+              <h4 class="price-order">Rp 2.152.000</h4>
+            </div>
+            <div class="items">
+              <h4 class="order-data">Shipping Cost</h4>
+              <h4 class="price-order">Rp 500.000</h4>
+            </div>
+            <div class="items">
+              <h4 class="order-data">Promo Code</h4>
+              <h4 class="price-order">INDONESIA</h4>
+            </div>
+            <div class="items">
+              <h4 class="order-data">Packaging</h4>
+              <h4 class="price-order">Rp 50.000</h4>
+            </div>
+            <hr />
+            <div class="items">
+              <h4 class="order-data">Grand Total</h4>
+              <h4 class="price-order">Rp 2.702.000</h4>
+            </div>
+          </div>
+          <div class="payment-detail">
+            <div class="title-payment-detail">
+              <div class="time-container">
+                <div class="title-h3">Payment Detail</div>
+                <div class="time"></div>
+              </div>
+              <p class="descr-payment-detail">
+                Please make a payment according with the limit time specified,
+                starting from now
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="right-content-confirmation">
-          <div class="check-order">
-            <div class="delivery-details">
-              <div class="time-delivery">
-                <img src="./images/images-confirmation/time.png" alt="time" />
-                <span class="text-deliv">10 days delivery</span>
+        <div class="right-content-checkout">
+          <div class="address-checkout">
+            <h3>Billing Address</h3>
+            <div class="items-str">
+              <div class="title-order">
+                <h2 class="text-title-order">Order Number</h2>
               </div>
-              <div class="courier-delivery">
-                <img
-                  src="./images/images-confirmation/courier.png"
-                  alt="courier"
-                />
-                <span class="text-deliv">DHL Express</span>
+              <div class="info-input">
+                <h2 class="text-info-input">
+                  MTAWEB-3A86D4DB<span>COPY</span>
+                </h2>
+                <p class="descr-info-input">
+                  Always remember Order Number for easy tracking
+                </p>
               </div>
             </div>
 
-            <div class="info-order-confr">
-              <h2 class="text-confr">Way Kambas Mini Ebony</h2>
-              <p class="descr-confr">2 x IDR 1.024.000</p>
-              <h2 class="text-confr">Sikka (Ebony & Mapple)</h2>
-              <p class="descr-confr">1 x IDR 1.264.000</p>
+            <div class="items-str">
+              <div class="title-order">
+                <h2 class="text-title-order">Purchase Date</h2>
+              </div>
+              <div class="info-input">
+                <h2 class="text-info-input" data-time="now">
+                  2019-11-07 14:01:48
+                </h2>
+              </div>
             </div>
 
-            <div class="item-conf">
-              <h4 class="order-data">Subtotal</h4>
-              <h4 class="price-order">Rp 2.152.000</h4>
-            </div>
-            <div class="item-conf">
-              <h4 class="order-data">Shipping Cost</h4>
-              <h4 class="price-order">Rp 500.000</h4>
-            </div>
-            <div class="item-conf">
-              <h4 class="order-data">Packaging</h4>
-              <h4 class="price-order">Rp 50.000</h4>
-            </div>
-
-            <hr />
-
-            <div class="item-conf">
-              <h4 class="order-data">Grand Total</h4>
-              <h4 class="price-order">Rp 2.702.000</h4>
+            <div class="items-str">
+              <div class="title-order">
+                <h2 class="text-title-order">Items</h2>
+              </div>
+              <div class="info-input">
+                <h2 class="text-info-input">Way Kambas Mini Ebony</h2>
+                <p class="descr-info-input">2 x IDR 1.024.000</p>
+                <h2 class="text-info-input">Sikka (Ebony & Mapple)</h2>
+                <p class="descr-info-input">1 x IDR 1.264.000</p>
+              </div>
             </div>
 
-            <hr />
+            <div class="items-str">
+              <div class="title-order">
+                <h2 class="text-title-order">Name</h2>
+              </div>
+              <div class="info-input">
+                <h2 class="text-info-input" data-info="fName">
+                  Rasyidin Arsyad Nasution
+                </h2>
+              </div>
+            </div>
+
+            <div class="items-str">
+              <div class="title-order">
+                <h2 class="text-title-order">Phone</h2>
+              </div>
+              <div class="info-input">
+                <h2 class="text-info-input" data-info="tel">+18911188899</h2>
+              </div>
+            </div>
+
+            <div class="items-str">
+              <div class="title-order">
+                <h2 class="text-title-order">Email</h2>
+              </div>
+              <div class="info-input">
+                <h2 class="text-info-input" data-info="email">
+                  rasyid.arsyad@gmail.com
+                </h2>
+              </div>
+            </div>
 
             <div class="items-str">
               <div class="title-order">
                 <h2 class="text-title-order">Shipping Address</h2>
               </div>
               <div class="info-input">
-                <h2 class="text-info-input">
+                <h2 class="text-info-input" data-info="delivery">
                   18 Richardson Drive Fountain Valley, CA 92708
                 </h2>
               </div>
             </div>
           </div>
+        </div>
+        <div class="payment-method">
+          <h3>Payment Method</h3>
+          <form class="form-payment-radio">
+            <div class="input-radio">
+              <input name="dzen" type="radio" value="1" /><span
+                class="title-payment"
+                >BNI Cicilan 0%</span
+              >
+              <div class="img-payment">
+                <img src="./images/images-payment/BNI.png" alt="BNI" />
+              </div>
+            </div>
+            <div class="input-radio">
+              <input name="dzen" type="radio" value="2" /><span
+                class="title-payment"
+                >Mandiri Cicilan 0%
+              </span>
+              <div class="img-payment">
+                <img src="./images/images-payment/Mandiri.png" alt="Mandiri" />
+              </div>
+            </div>
+            <div class="input-radio">
+              <input name="dzen" type="radio" value="3" /><span
+                class="title-payment"
+                >Bank Transfer</span
+              >
+              <div class="img-payment">
+                <img src="./images/images-payment/Permata.png" alt="Permata" />
+              </div>
+            </div>
+            <div class="input-radio">
+              <input name="dzen" type="radio" value="4" /><span
+                class="title-payment"
+                >Credit Card</span
+              >
+              <div class="img-payment">
+                <img
+                  src="./images/images-payment/MasterCard.png"
+                  alt="MasterCard"
+                />
+                <img src="./images/images-payment/Visa.png" alt="Visa" />
+              </div>
+            </div>
+            <div class="input-radio">
+              <input name="dzen" type="radio" value="5" /><span
+                class="title-payment"
+                >Credit Card Cicilan 0% (Danamon, UOB & Standard Chartered)
+              </span>
+              <div class="img-payment">
+                <img src="./images/images-payment/Danamon.png" alt="Danamon" />
+                <img src="./images/images-payment/UOB.png" alt="UOB" />
+                <img
+                  src="./images/images-payment/Standard.png"
+                  alt="Standard"
+                />
+              </div>
+            </div>
+            <div class="input-radio">
+              <input name="dzen" type="radio" value="6" /><span
+                class="title-payment"
+                >GO-PAY</span
+              >
+              <div class="img-payment">
+                <img src="./images/images-payment/GoPay.png" alt="GoPay" />
+              </div>
+            </div>
+            <div class="input-radio">
+              <input name="dzen" type="radio" value="7" checked /><span
+                class="title-payment"
+                >Krdivo</span
+              >
+              <div class="img-payment">
+                <img src="./images/images-payment/Kredivo.png" alt="Kredivo" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="button-payment">
+          <a class="proceed-payment" href="./confirmation.html#my-id6"
+            >Proceed Payment</a
+          >
         </div>
       </div>
     </section>
@@ -324,7 +453,7 @@
       </section>
     </footer>
 
-    <script src="./js/script-confirmation.js"></script>
+    <script src="./js/script-payment.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
