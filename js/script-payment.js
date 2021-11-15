@@ -59,22 +59,19 @@ getInfoInput();
 
 //Timer
 
-const startTimer = (duration, display) => {
-  let timer = duration;
-  let minutes = 0;
-  let seconds = 0;
+const startTimer = (timer, display) => {
   setInterval(() => {
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
+    let minutes = parseInt(timer / 60, 10);
+    let seconds = parseInt(timer % 60, 10);
 
     if (minutes < 10) {
-      minutes += minutes;
+      minutes = "0" + minutes;
     } else {
       minutes = minutes;
     }
 
     if (seconds < 10) {
-      seconds += seconds;
+      seconds = "0" + seconds;
     } else {
       seconds = seconds;
     }
