@@ -38,8 +38,8 @@ const showDescr = (e) => {
   e.preventDefault();
 
   if (e.target.textContent === "Detail") {
-    document.querySelector(".descr__detail").classList.remove("hide");
-    document.querySelector(".selected-link").classList.remove("hide");
+    document.querySelector(".descr__detail").classList.remove("hide-descr");
+    document.querySelector(".selected-link").classList.remove("hide-descr");
 
     if (e.target.tagName === "SPAN") {
       e.target.classList.add("color-red");
