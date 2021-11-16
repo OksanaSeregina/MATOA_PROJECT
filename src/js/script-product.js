@@ -31,3 +31,20 @@ function closeBurger() {
 
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
+
+//Show descr
+
+const showDescr = (e) => {
+  e.preventDefault();
+
+  if (e.target.textContent === "Detail") {
+    document.querySelector(".descr__detail").classList.remove("hide");
+    document.querySelector(".selected-link").classList.remove("hide");
+
+    if (e.target.tagName === "SPAN") {
+      e.target.classList.add("color-red");
+    }
+  }
+};
+
+document.querySelector(".detail__product").addEventListener("click", showDescr);

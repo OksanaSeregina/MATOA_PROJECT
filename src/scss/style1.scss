@@ -84,6 +84,18 @@ $color: #d84727;
   transform: scale(0);
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.color-red {
+  color: $color;
+}
+
 /* Header */
 header {
   padding-top: 35px;
@@ -1084,8 +1096,14 @@ footer {
         color: #999999;
         margin-left: 40px;
       }
+      .selected-link {
+        border: 1px solid $color;
+        margin: 0;
+        width: inherit;
+        margin-left: 40px;
+      }
     }
-    .item:first-child {
+    /* .item:first-child {
       a {
         @include taviraj;
         font-weight: 600;
@@ -1099,10 +1117,10 @@ footer {
         width: 62px;
         margin-left: 40px;
       }
-    }
-    .item a span:hover {
+    } */
+    /* .item a span:hover {
       color: $color;
-    }
+    } */
   }
   hr {
     margin-top: 12px;
@@ -1126,6 +1144,20 @@ footer {
       margin-right: auto;
       max-width: 100%;
       object-fit: cover;
+    }
+  }
+  .warranty-descr {
+    display: none;
+    .name__warranty {
+      @include taviraj;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 24px;
+    }
+    .warranty__text {
+      @include p__nunito;
+      letter-spacing: 0.02em;
+      color: #555555;
     }
   }
 }
@@ -1790,7 +1822,8 @@ footer {
   footer .first__footer .payment .link:nth-child(9) {
     text-align: start;
   }
-  .detail__product .descr__detail .descr__text {
+  .detail__product .descr__detail .descr__text,
+  .detail__product .warranty-descr .warranty__text {
     text-align: justify;
   }
   .detail__product .descr__detail .detail__img,

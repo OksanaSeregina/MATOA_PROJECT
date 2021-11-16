@@ -21,6 +21,18 @@ body {
   pointer-events: none;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.color-red {
+  color: #d84727;
+}
+
 /* Header */
 header {
   padding-top: 35px;
@@ -1324,6 +1336,24 @@ footer .second__footer .social__link a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /* .item:first-child {
+      a {
+        @include taviraj;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: $color;
+      }
+      hr {
+        border: 1px solid $color;
+        margin: 0;
+        width: 62px;
+        margin-left: 40px;
+      }
+    } */
+  /* .item a span:hover {
+      color: $color;
+    } */
 }
 
 .detail__product .link__detail .item a {
@@ -1340,27 +1370,11 @@ footer .second__footer .social__link a {
   margin-left: 40px;
 }
 
-.detail__product .link__detail .item:first-child a {
-  font-family: "Taviraj", serif;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.02em;
-  color: #333333;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
-  color: #d84727;
-}
-
-.detail__product .link__detail .item:first-child hr {
+.detail__product .link__detail .item .selected-link {
   border: 1px solid #d84727;
   margin: 0;
-  width: 62px;
+  width: inherit;
   margin-left: 40px;
-}
-
-.detail__product .link__detail .item a span:hover {
-  color: #d84727;
 }
 
 .detail__product hr {
@@ -1398,6 +1412,33 @@ footer .second__footer .social__link a {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.detail__product .warranty-descr {
+  display: none;
+}
+
+.detail__product .warranty-descr .name__warranty {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 24px;
+}
+
+.detail__product .warranty-descr .warranty__text {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  letter-spacing: 0.02em;
+  color: #555555;
 }
 
 .second__monthly {
@@ -2161,7 +2202,8 @@ footer .second__footer .social__link a {
   footer .first__footer .payment .link:nth-child(9) {
     text-align: start;
   }
-  .detail__product .descr__detail .descr__text {
+  .detail__product .descr__detail .descr__text,
+  .detail__product .warranty-descr .warranty__text {
     text-align: justify;
   }
   .detail__product .descr__detail .detail__img,
