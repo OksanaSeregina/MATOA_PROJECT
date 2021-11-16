@@ -56,7 +56,8 @@ function inputHandler(event) {
 
   // required validator
   let isValid = currentData.charAt(0) !== " " && currentData.length;
-  let letters = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
+  let nameEmail = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
+  let numbTel = /^\d[\d\(\)\ -]{4,14}\d$/;
 
   if (!isValid) {
     errorMesage.classList.add("error");
@@ -67,7 +68,17 @@ function inputHandler(event) {
   }
 
   if (currentData === inputEmail.value) {
-    if (!letters.test(inputEmail.value)) {
+    if (!nameEmail.test(inputEmail.value)) {
+      errorMesage.classList.add("error");
+      errors[key] = true;
+    } else {
+      errorMesage.classList.remove("error");
+      errors[key] = false;
+    }
+  }
+
+  if (currentData === inputTel.value) {
+    if (!numbTel.test(inputTel.value)) {
       errorMesage.classList.add("error");
       errors[key] = true;
     } else {
