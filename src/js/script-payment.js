@@ -60,7 +60,7 @@ getInfoInput();
 //Timer
 
 const startTimer = (timer, display) => {
-  setInterval(() => {
+  let timer1 = setInterval(() => {
     let minutes = parseInt(timer / 60, 10);
     let seconds = parseInt(timer % 60, 10);
 
@@ -80,6 +80,7 @@ const startTimer = (timer, display) => {
 
     if (--timer < 0) {
       display.textContent = `Time is up`;
+      clearInterval(timer1);
     }
   }, 1000);
 };
