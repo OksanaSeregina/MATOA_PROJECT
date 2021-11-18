@@ -198,31 +198,35 @@ header .info__header .menu .item a span:hover {
 .pink {
   background: #f1ddc9;
   margin-top: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.pink a {
+/* .pink a {
   text-decoration: none;
-}
-
-.pink .pink-left img {
+} */
+/* .pink .pink-left img {
   position: relative;
   top: 130px;
   left: 8px;
-}
-
-.pink .pink-left {
+} */
+/* .pink .pink-left {
   width: 36%;
-}
-
-.pink .pink-right {
+} */
+/* .pink .pink-right {
   padding-top: 56px;
   width: 64%;
+} */
+.carousel-caption {
+  left: 37%;
+  right: 0;
+  text-align: start;
+  position: absolute;
+  bottom: 1.25 rem;
+  padding-top: 1.25 rem;
+  padding-bottom: 1.25 rem;
+  color: #fff;
 }
 
-.pink .pink-right .matoa__pink h1 {
+.pink .way {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -234,7 +238,7 @@ header .info__header .menu .item a span:hover {
   text-transform: uppercase;
 }
 
-.pink .pink-right .matoa__pink hr {
+.pink .under-way {
   width: 95px;
   border: 1px solid #000000;
   margin-top: 8px;
@@ -242,7 +246,7 @@ header .info__header .menu .item a span:hover {
   margin-left: 0;
 }
 
-.pink .pink-right .matoa__pink .text__pink {
+.pink .text__pink {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -255,7 +259,7 @@ header .info__header .menu .item a span:hover {
   margin-bottom: 8px;
 }
 
-.pink .pink-right .matoa__pink .text__discover {
+.pink .text__discover {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -267,7 +271,7 @@ header .info__header .menu .item a span:hover {
   line-height: 27px;
 }
 
-.pink .pink-right .matoa__pink .discover {
+.pink .discover {
   border: 1px solid #333333;
   width: 74px;
   margin-top: 0;

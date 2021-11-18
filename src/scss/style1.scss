@@ -235,34 +235,48 @@ header .info__header .menu .item a span:hover {
 .pink {
   background: #f1ddc9;
   margin-top: 90px;
-  display: flex;
+  //@extend: flex;
 }
 
-.pink a {
+/* .pink a {
   text-decoration: none;
-}
+} */
 
-.pink .pink-left img {
+/* .pink .pink-left img {
   position: relative;
   top: 130px;
   left: 8px;
-}
+} */
 
-.pink .pink-left {
+/* .pink .pink-left {
   width: 36%;
-}
+} */
 
-.pink .pink-right {
+/* .pink .pink-right {
   padding-top: 56px;
   width: 64%;
+} */
+
+.carousel-caption {
+  left: 37%;
+  right: 0;
+  text-align: start;
+  position: absolute;
+  //right: 15%;
+  bottom: 1.25 rem;
+  //left: 15%;
+  padding-top: 1.25 rem;
+  padding-bottom: 1.25 rem;
+  color: #fff;
+  //text-align: center;
 }
 
-.pink .pink-right .matoa__pink h1 {
+.pink .way {
   @include text__h1;
   text-transform: uppercase;
 }
 
-.pink .pink-right .matoa__pink hr {
+.pink .under-way {
   width: 95px;
   border: 1px solid #000000;
   margin-top: 8px;
@@ -270,14 +284,14 @@ header .info__header .menu .item a span:hover {
   margin-left: 0;
 }
 
-.pink .pink-right .matoa__pink .text__pink {
+.pink .text__pink {
   @include p__nunito;
   line-height: 22px;
   width: 70%;
   margin-bottom: 8px;
 }
 
-.pink .pink-right .matoa__pink .text__discover {
+.pink .text__discover {
   @include taviraj;
   letter-spacing: 0.03em;
   font-weight: 600;
@@ -285,7 +299,7 @@ header .info__header .menu .item a span:hover {
   line-height: 27px;
 }
 
-.pink .pink-right .matoa__pink .discover {
+.pink .discover {
   border: 1px solid #333333;
   width: 74px;
   margin-top: 0;
