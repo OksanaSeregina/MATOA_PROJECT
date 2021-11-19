@@ -23,6 +23,7 @@ body {
 
 .show {
   display: block;
+  margin-top: 32px;
 }
 
 .hide-descr {
@@ -839,6 +840,10 @@ header .info__header .menu .item a span:hover {
 
 .catalog__clock .series .title:hover {
   border: 1px solid #d84727;
+}
+
+.catalog__clock .hiden-series {
+  display: none;
 }
 
 .catalog__clock .button__more {

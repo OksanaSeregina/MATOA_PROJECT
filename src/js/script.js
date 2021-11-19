@@ -45,3 +45,14 @@ function closeBurger() {
 
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
+
+//Open catalog
+
+const showCatalog = (e) => {
+  e.preventDefault();
+  if (e.target.textContent === "See More") {
+    document.querySelector(".show").classList.toggle("hiden-series");
+  }
+};
+
+document.querySelector(".see__more").addEventListener("click", showCatalog);

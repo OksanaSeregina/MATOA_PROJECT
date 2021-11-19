@@ -86,6 +86,7 @@ $color: #d84727;
 
 .show {
   display: block;
+  margin-top: 32px;
 }
 
 .hide-descr {
@@ -728,6 +729,9 @@ header .info__header .menu .item a span:hover {
     .title:hover {
       border: 1px solid $color;
     }
+  }
+  .hiden-series {
+    display: none;
   }
   .button__more {
     display: flex;
