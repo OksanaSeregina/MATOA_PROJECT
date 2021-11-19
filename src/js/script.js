@@ -56,3 +56,105 @@ const showCatalog = (e) => {
 };
 
 document.querySelector(".see__more").addEventListener("click", showCatalog);
+
+//Getting data from the server
+
+let INFO_URL = "http://localhost:3000/profile";
+
+const getResourse = async (url) => {
+  const res = await fetch(url);
+
+  if (!res.ok) {
+    throw new Error(`${res.status}!!!!!`);
+  }
+  return res.json();
+};
+
+//Request to the server
+
+const getInfo = async () => {
+  const res = await getResourse(INFO_URL);
+
+  return res;
+};
+
+//Render info
+
+const renderInfo = async () => {
+  const data = await getInfo();
+  //console.log(data);
+  for (let key in data) {
+    console.log(data[key]);
+    document.querySelector(".carousel-inner").innerHTML = "";
+    document.querySelector(".carousel-inner").innerHTML += `
+    <div class="carousel-item active" data-bs-interval="10000">
+    <img src=${data[key].image} class="d-block w-36" alt="clock" />
+    <div class="carousel-caption d-none d-md-block">
+      <h1 class="way">${data[key].name}</h1>
+      <hr class="under-way" />
+      <p class="text__pink">${data[key].detail}</p>
+      <h3 class="text__discover">Discover</h3>
+      <hr class="discover" />
+      <div class="button__pink">
+        <div class="button1">
+          <a class="add__cart" href="#"
+            ><i class="fas fa-cart-plus"></i>Add to cart</a
+          >
+        </div>
+        <div class="button2">
+          <a class="cicil" href="#"
+            ><img src="./images/Cicil.png" alt="cicil"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="2000">
+    <img src=${data[key].image} class="d-block w-36" alt="..." />
+    <div class="carousel-caption d-none d-md-block">
+      <h1 class="way">${data[key].name}</h1>
+      <hr class="under-way" />
+      <p class="text__pink">${data[key].detail}</p>
+      <h3 class="text__discover">Discover</h3>
+      <hr class="discover" />
+      <div class="button__pink">
+        <div class="button1">
+          <a class="add__cart" href="#"
+            ><i class="fas fa-cart-plus"></i>Add to cart</a
+          >
+        </div>
+        <div class="button2">
+          <a class="cicil" href="#"
+            ><img src="./images/Cicil.png" alt="cicil"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img src=${data[key].image} class="d-block w-36" alt="..." />
+    <div class="carousel-caption d-none d-md-block carous-text">
+      <h1 class="way">${data[key].name}</h1>
+      <hr class="under-way" />
+      <p class="text__pink">${data[key].detail}</p>
+      <h3 class="text__discover">Discover</h3>
+      <hr class="discover" />
+      <div class="button__pink">
+        <div class="button1">
+          <a class="add__cart" href="#"
+            ><i class="fas fa-cart-plus"></i>Add to cart</a
+          >
+        </div>
+        <div class="button2">
+          <a class="cicil" href="#"
+            ><img src="./images/Cicil.png" alt="cicil"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
+  }
+};
+
+renderInfo();
