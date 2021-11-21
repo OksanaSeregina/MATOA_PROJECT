@@ -2,6 +2,7 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-implied-eval */
 import { getModal } from "./shared";
+import { Carousel } from "./components";
 import "../style/global.scss";
 
 document.querySelector("#item1").onclick = function () {
@@ -82,61 +83,10 @@ const getInfo = async () => {
 const shuffled = (array) => array.sort(() => 0.5 - Math.random());
 
 // Render info carousel
-const render = async () => {
+const renderCarousel = async () => {
     const products = await getInfo().then((allProducts) => shuffled(allProducts).slice(0, 5));
-    const carouselItems = document.querySelector(".carousel-inner");
-    const carouselIndicators = document.querySelector(".carousel-indicators");
-    carouselItems.innerHTML = "";
-    carouselIndicators.innerHTML = "";
-
-    for (const product of products) {
-        let carouselIndicator;
-        if (products[0] === product) {
-            carouselIndicator = `<button
-                              type="button"
-                              data-bs-target="#carouselExampleDark"
-                              data-bs-slide-to="${products.indexOf(product)}"
-                              class="active"
-                              aria-current="true"
-                              aria-label=""
-                            ></button>`;
-        } else {
-            carouselIndicator = `<button
-                              type="button"
-                              data-bs-target="#carouselExampleDark"
-                              data-bs-slide-to="${products.indexOf(product)}"
-                              aria-label=""
-                            ></button>`;
-        }
-
-        const carouselItem = `
-    <div class="carousel-item ${products[0] === product ? "active" : ""}" data-bs-interval="2000">
-          <img src=${product.image} class="d-block w-36" alt="clock" />
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="way">${product.name}</h1>
-            <hr class="under-way" />
-            <p class="text__pink">${product.detail}</p>
-            <h3 class="text__discover">Discover</h3>
-            <hr class="discover" />
-            <div class="button__pink">
-              <div class="button1">
-                <a data-id=${product.id} class="add__cart" href="#"
-                  ><i class="fas fa-cart-plus"></i>Add to cart</a
-                >
-              </div>
-              <div class="button2">
-                <a class="cicil" href="#"
-                  ><img src="./images/Cicil.png" alt="cicil"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        `;
-
-        carouselIndicators.innerHTML += carouselIndicator;
-        carouselItems.innerHTML += carouselItem;
-    }
+    const carousel = new Carousel("[data-element='carousel']", products);
+    carousel.render();
 };
 
 // Select product Catalog Clock
@@ -151,4 +101,4 @@ const selectionProduct = (e) => {
 
 document.querySelector(".catalog__clock").addEventListener("click", selectionProduct);
 
-render().then(() => getModal());
+renderCarousel().then(() => getModal());
