@@ -2,7 +2,7 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-implied-eval */
 import { getModal } from "./shared";
-import { Carousel } from "./components";
+import { Carousel, Catalog } from "./components";
 import "../style/global.scss";
 
 document.querySelector("#item1").onclick = function () {
@@ -50,17 +50,6 @@ function closeBurger() {
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
 
-// Open catalog
-
-const showCatalog = (e) => {
-    e.preventDefault();
-    if (e.target.textContent === "See More") {
-        document.querySelector(".show").classList.toggle("hiden-series");
-    }
-};
-
-document.querySelector(".see__more").addEventListener("click", showCatalog);
-
 // Getting data from the server
 const INFO_URL = "http://localhost:3000/profile";
 
@@ -82,23 +71,21 @@ const getInfo = async () => {
 
 const shuffled = (array) => array.sort(() => 0.5 - Math.random());
 
-// Render info carousel
+// Carousel
 const renderCarousel = async () => {
     const products = await getInfo().then((allProducts) => shuffled(allProducts).slice(0, 5));
     const carousel = new Carousel("[data-element='carousel']", products);
     carousel.render();
 };
 
-// Select product Catalog Clock
-const selectionProduct = (e) => {
-    e.preventDefault();
-    const { id } = e.target.dataset;
-    if (!id) {
-        return;
-    }
-    window.location = `product.html?id=${e.target.dataset.id}`;
+// Catalog
+const renderCatalog = async () => {
+    const products = await getInfo();
+    const catalog = new Catalog("[data-element='catalog']", products);
+    catalog.render();
+    catalog.control();
 };
 
-document.querySelector(".catalog__clock").addEventListener("click", selectionProduct);
-
-renderCarousel().then(() => getModal());
+renderCarousel();
+renderCatalog();
+getModal();

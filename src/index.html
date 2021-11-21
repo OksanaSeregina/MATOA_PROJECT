@@ -1,824 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matoa</title>
-    <link rel="icon" href="./images/cropped-favicon.ico" type="image/icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Nunito:wght@300;400&family=Taviraj:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
-  <body class="wrapper">
-    <header>
-      <div class="center">
-        <div id="my-id1" class="info__header">
-          <div class="logo">
-            <a href="#">
-              <img src="./images/Logo.png" alt="logo" />
-            </a>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Matoa</title>
+        <link rel="icon" href="./images/cropped-favicon.ico" type="image/icon" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Nunito:wght@300;400&family=Taviraj:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+    <body class="wrapper">
+        <header>
+            <div class="center">
+                <div id="my-id1" class="info__header">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./images/Logo.png" alt="logo" />
+                        </a>
+                    </div>
 
-          <div class="header-menu">
-            <div class="menu">
-              <div class="item">
-                <a href="#"><span>Watches</span></a>
-              </div>
-              <div class="item">
-                <a href="#"><span>Eyewear</span></a>
-              </div>
-              <div class="item">
-                <a href="#"><span>Accessories</span></a>
-              </div>
-              <div class="item">
-                <a href="#"><span>News</span></a>
-              </div>
-            </div>
+                    <div class="header-menu">
+                        <div class="menu">
+                            <div class="item">
+                                <a href="#"><span>Watches</span></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><span>Eyewear</span></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><span>Accessories</span></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><span>News</span></a>
+                            </div>
+                        </div>
 
-            <div class="icon__header">
-              <div class="icon-search">
-                <a class="hide-search" href="#"
-                  ><img src="./images/Search.png" alt="search"
-                /></a>
-              </div>
-              <div class="icon-user">
-                <a href="#"
-                  ><img
-                    class="hide-user"
-                    src="./images/User.png"
-                    alt="user"
-                  /><span>Log In</span></a
-                >
-              </div>
-              <div class="icon" data-link="cart">
-                <a href="#" class="cart"></a>
-              </div>
-            </div>
-          </div>
+                        <div class="icon__header">
+                            <div class="icon-search">
+                                <a class="hide-search" href="#"><img src="./images/Search.png" alt="search" /></a>
+                            </div>
+                            <div class="icon-user">
+                                <a href="#"
+                                    ><img class="hide-user" src="./images/User.png" alt="user" /><span>Log In</span></a
+                                >
+                            </div>
+                            <div class="icon" data-link="cart">
+                                <a href="#" class="cart"></a>
+                            </div>
+                        </div>
+                    </div>
 
-          <span id="burger">
-            <i></i>
-            <i></i>
-            <i></i>
-          </span>
-          <span id="close">&#10005;</span>
-        </div>
-      </div>
-    </header>
-
-    <!-- <section class="pink center">
-      <div class="pink-left">
-        <a href="./product.html#my-id2"
-          ><img class="hide" src="./images/Clock.png" alt="clock"
-        /></a>
-      </div>
-
-      <div class="pink-right">
-        <div class="matoa__pink">
-          <a href="./product.html#my-id2"
-            ><h1>WAY KAMBAS MINI EBONY</h1>
-            <hr />
-            <p class="text__pink">
-              MATOA Way Kambas &ndash; This wood is chosen to represent the
-              Sumatran Rhino's skin which is designed with an overlap effect on
-              its strap to represent Rhino&prime;s skin.
-            </p>
-            <h3 class="text__discover">Discover</h3>
-            <hr class="discover"
-          /></a>
-          <div class="button__pink">
-            <div class="button1">
-              <a class="add__cart" href="#"
-                ><i class="fas fa-cart-plus"></i>Add to cart</a
-              >
-            </div>
-            <div class="button2">
-              <a class="cicil" href="#"
-                ><img src="./images/Cicil.png" alt="cicil"
-              /></a>
-            </div>
-          </div>
-          <div class="arrow__pink">
-            <div class="arrow">
-              <a class="item" href="#"><i class="fas fa-chevron-left"></i></a>
-            </div>
-            <div class="arrow">
-              <a class="item" href="#"><i class="fas fa-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <div data-element="carousel"><!-- Carousel --></div>
-
-    <section class="center discover__now">
-      <div class="card__now">
-        <div class="item">
-          <h2 class="name">Luxurious <span>Eyewear</span></h2>
-          <p class="info__name">
-            See the beauty of exotic world with the luxurious glasses
-          </p>
-          <div class="link__img">
-            <div class="desc">
-              <a href="#"><h3 class="link__discover">Discover Now</h3></a>
-              <hr />
-            </div>
-            <div
-              class="
-                desc
-                animate__animated animate__pulse animate__infinite
-                infinite
-              "
-            >
-              <img src="./images/image7.png" alt="glasses" />
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <h2 class="name">Comfortable <span>Watches</span></h2>
-          <p class="info__name">
-            Feels the balancing function and beauty in our wooden watches
-          </p>
-          <div class="link__img">
-            <div class="desc">
-              <a href="#"><h3 class="link__discover">Discover Now</h3></a>
-              <hr />
-            </div>
-            <div
-              class="
-                desc
-                animate__animated animate__pulse animate__infinite
-                infinite
-              "
-            >
-              <img src="./images/image8.png" alt="clock" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="center monthly__deals">
-      <div class="name__section">
-        <h3 class="name">Monthly Deals</h3>
-        <hr class="name__hr" />
-      </div>
-      <div class="container-fluids">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div id="item1" class="product__card">
-              <div class="product__thumb">
-                <a href="#"><img src="./images/Mask1.png" alt="clock" /></a>
-              </div>
-              <div class="product__details">
-                <h4><a href="#">Singo Maple</a></h4>
-                <p class="percent">20% Off</p>
-                <p class="small">Rp 1.500.000</p>
-                <p class="big">Rp 1.264.000</p>
-              </div>
-              <div id="text1" class="hide">
-                <div class="heart">
-                  <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                    <span id="burger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                    <span id="close">&#10005;</span>
                 </div>
-                <div class="card__button">
-                  <a href="#">Add to cart</a>
+            </div>
+        </header>
+
+        <div data-element="carousel"><!-- Carousel --></div>
+
+        <section class="center discover__now">
+            <div class="card__now">
+                <div class="item">
+                    <h2 class="name">Luxurious <span>Eyewear</span></h2>
+                    <p class="info__name">See the beauty of exotic world with the luxurious glasses</p>
+                    <div class="link__img">
+                        <div class="desc">
+                            <a href="#"><h3 class="link__discover">Discover Now</h3></a>
+                            <hr />
+                        </div>
+                        <div class="desc animate__animated animate__pulse animate__infinite infinite">
+                            <img src="./images/image7.png" alt="glasses" />
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div id="item2" class="product__card">
-              <div class="product__thumb">
-                <a href="#"><img src="./images/Mask2.png" alt="clock" /></a>
-              </div>
-              <div class="product__details">
-                <h4><a href="#">Singo Ebony</a></h4>
-                <p class="percent">20% Off</p>
-                <p class="small">Rp 1.500.000</p>
-                <p class="big">Rp 1.264.000</p>
-              </div>
-              <div id="text2" class="hide">
-                <div class="heart">
-                  <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                <div class="item">
+                    <h2 class="name">Comfortable <span>Watches</span></h2>
+                    <p class="info__name">Feels the balancing function and beauty in our wooden watches</p>
+                    <div class="link__img">
+                        <div class="desc">
+                            <a href="#"><h3 class="link__discover">Discover Now</h3></a>
+                            <hr />
+                        </div>
+                        <div class="desc animate__animated animate__pulse animate__infinite infinite">
+                            <img src="./images/image8.png" alt="clock" />
+                        </div>
+                    </div>
                 </div>
-                <div class="card__button">
-                  <a href="#">Add to cart</a>
+            </div>
+        </section>
+
+        <section class="center monthly__deals">
+            <div class="name__section">
+                <h3 class="name">Monthly Deals</h3>
+                <hr class="name__hr" />
+            </div>
+            <div class="container-fluids">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div id="item1" class="product__card">
+                            <div class="product__thumb">
+                                <a href="#"><img src="./images/Mask1.png" alt="clock" /></a>
+                            </div>
+                            <div class="product__details">
+                                <h4><a href="#">Singo Maple</a></h4>
+                                <p class="percent">20% Off</p>
+                                <p class="small">Rp 1.500.000</p>
+                                <p class="big">Rp 1.264.000</p>
+                            </div>
+                            <div id="text1" class="hide">
+                                <div class="heart">
+                                    <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                                </div>
+                                <div class="card__button">
+                                    <a href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div id="item2" class="product__card">
+                            <div class="product__thumb">
+                                <a href="#"><img src="./images/Mask2.png" alt="clock" /></a>
+                            </div>
+                            <div class="product__details">
+                                <h4><a href="#">Singo Ebony</a></h4>
+                                <p class="percent">20% Off</p>
+                                <p class="small">Rp 1.500.000</p>
+                                <p class="big">Rp 1.264.000</p>
+                            </div>
+                            <div id="text2" class="hide">
+                                <div class="heart">
+                                    <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                                </div>
+                                <div class="card__button">
+                                    <a href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div id="item3" class="product__card">
+                            <div class="product__thumb">
+                                <a href="#"><img src="./images/Mask3.png" alt="clock" /></a>
+                            </div>
+                            <div class="product__details">
+                                <h4><a href="#">Rakai Ebony</a></h4>
+                                <p class="percent">15% Off</p>
+                                <p class="small">Rp 1.280.000</p>
+                                <p class="big">Rp 1.118.000</p>
+                            </div>
+                            <div id="text3" class="hide">
+                                <div class="heart">
+                                    <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                                </div>
+                                <div class="card__button">
+                                    <a href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div id="item4" class="product__card">
+                            <div class="product__thumb">
+                                <a href="#"><img src="./images/Mask4.png" alt="clock" /></a>
+                            </div>
+                            <div class="product__details">
+                                <h4><a href="#">Way Kambas Mini</a></h4>
+                                <p class="percent">10% Off</p>
+                                <p class="small">Rp 1.280.000</p>
+                                <p class="big">Rp 1.024.000</p>
+                            </div>
+                            <div id="text4" class="hide">
+                                <div class="heart">
+                                    <a href="#"><img src="./images/love.png" alt="heart" /></a>
+                                </div>
+                                <div class="card__button">
+                                    <a href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <div class="col-lg-3 col-sm-6">
-            <div id="item3" class="product__card">
-              <div class="product__thumb">
-                <a href="#"><img src="./images/Mask3.png" alt="clock" /></a>
-              </div>
-              <div class="product__details">
-                <h4><a href="#">Rakai Ebony</a></h4>
-                <p class="percent">15% Off</p>
-                <p class="small">Rp 1.280.000</p>
-                <p class="big">Rp 1.118.000</p>
-              </div>
-              <div id="text3" class="hide">
-                <div class="heart">
-                  <a href="#"><img src="./images/love.png" alt="heart" /></a>
+        <section class="recent__news">
+            <div class="center name__section">
+                <h3 class="name">Recent News</h3>
+                <hr class="name__hr" />
+            </div>
+
+            <div class="all__recent-news">
+                <div class="left__recent-news">
+                    <p>Where To Travel</p>
+                    <h3>Matoa Where To Travel? Yogyakarta</h3>
+                    <div class="button__recent-news">
+                        <a href="#">Discover</a>
+                    </div>
                 </div>
-                <div class="card__button">
-                  <a href="#">Add to cart</a>
+
+                <div class="right__receht-news">
+                    <img src="./images/Hand.png" alt="hand   " />
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <div class="col-lg-3 col-sm-6">
-            <div id="item4" class="product__card">
-              <div class="product__thumb">
-                <a href="#"><img src="./images/Mask4.png" alt="clock" /></a>
-              </div>
-              <div class="product__details">
-                <h4><a href="#">Way Kambas Mini</a></h4>
-                <p class="percent">10% Off</p>
-                <p class="small">Rp 1.280.000</p>
-                <p class="big">Rp 1.024.000</p>
-              </div>
-              <div id="text4" class="hide">
-                <div class="heart">
-                  <a href="#"><img src="./images/love.png" alt="heart" /></a>
+        <section data-element="catalog" class="center catalog__clock"><!-- Catalog --></section>
+
+        <section class="testimonials">
+            <div class="left__testimonials">
+                <img class="girl" src="./images/Girl.png" alt="girl" />
+            </div>
+
+            <div class="right__testimonials">
+                <div class="sub__container">
+                    <h3 class="name">Testimonials</h3>
+                    <hr class="name__hr" />
+
+                    <p class="nunito">
+                        Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch local brand that uses
+                        wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian
+                        heritage.
+                    </p>
+                    <h4>Gita Savitri</h4>
+                    <p>Content Creator &frasl; Influencer</p>
                 </div>
-                <div class="card__button">
-                  <a href="#">Add to cart</a>
+            </div>
+        </section>
+
+        <section class="center blog__instagram">
+            <div class="name__section">
+                <h3 class="name">Instagram</h3>
+                <hr class="name__hr" />
+            </div>
+            <div class="img__blog">
+                <div>
+                    <img src="./images/Blog1.jpg" alt="img" />
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="recent__news">
-      <div class="center name__section">
-        <h3 class="name">Recent News</h3>
-        <hr class="name__hr" />
-      </div>
-
-      <div class="all__recent-news">
-        <div class="left__recent-news">
-          <p>Where To Travel</p>
-          <h3>Matoa Where To Travel? Yogyakarta</h3>
-          <div class="button__recent-news">
-            <a href="#">Discover</a>
-          </div>
-        </div>
-
-        <div class="right__receht-news">
-          <img src="./images/Hand.png" alt="hand   " />
-        </div>
-      </div>
-    </section>
-
-    <section class="center catalog__clock">
-      <div class="series">
-        <div>
-          <h3 class="name">Maple Series</h3>
-          <hr class="name__hr" />
-        </div>
-        <div>
-          <h3 class="name">Ebony Series</h3>
-          <hr class="name__hr" />
-        </div>
-        <div>
-          <h3 class="name">Featured</h3>
-          <hr class="name__hr" />
-        </div>
-        <div class="title" data-id="1">
-          <div class="picture" data-link="back" data-id="1">
-            <a href="#" class="back1" data-id="1"></a>
-          </div>
-          <a href="#" data-id="1">
-            <div class="info__product" data-id="1">
-              <h4 data-id="1">Way Kambas Maple</h4>
-              <h3 data-id="1">Rp 1.280.000</h3>
-            </div>
-          </a>
-        </div>
-        <div class="title" data-id="4">
-          <div class="picture" data-link="back" data-id="4">
-            <a href="#" class="back2" data-id="4"></a>
-          </div>
-          <a href="#" data-id="4">
-            <div class="info__product" data-id="4">
-              <h4 data-id="4">Tomia Ebony</h4>
-              <p data-id="4">Rp 1.280.000</p>
-              <h3 data-id="4">Rp 960.000</h3>
-            </div>
-          </a>
-        </div>
-        <div class="title" data-id="7">
-          <div class="picture" data-link="back" data-id="7">
-            <a href="#" class="back3" data-id="7"></a>
-          </div>
-          <a href="#" data-id="7">
-            <div class="info__product" data-id="7">
-              <h4 data-id="7">Sikka (Ebony &amp; Maple)</h4>
-              <h3 data-id="7">Rp 1.198.000</h3>
-            </div>
-          </a>
-        </div>
-        <div class="title" data-id="2">
-          <div class="picture" data-link="back" data-id="2">
-            <a href="#" class="back4" data-id="2"></a>
-          </div>
-          <a href="#" data-id="2">
-            <div class="info__product" data-id="2">
-              <h4 data-id="2">Kaili</h4>
-              <h3 data-id="2">Rp 950.000</h3>
-            </div>
-          </a>
-        </div>
-        <div class="title" data-id="5">
-          <div class="picture" data-link="back" data-id="5">
-            <a href="#" class="back5" data-id="5"></a>
-          </div>
-          <a href="#" data-id="5">
-            <div class="info__product" data-id="5">
-              <h4 data-id="5">Mori</h4>
-              <h3 data-id="5">Rp 950.000</h3>
-            </div>
-          </a>
-        </div>
-        <div class="title" data-id="8">
-          <div class="picture" data-link="back" data-id="8">
-            <a href="#" class="back6" data-id="8"></a>
-          </div>
-          <a href="#" data-id="8">
-            <div class="info__product" data-id="8">
-              <h4 data-id="8">Lore Walnut</h4>
-              <h3 data-id="8">Rp 1.280.000</h3>
-            </div>
-          </a>
-        </div>
-        <div class="title" data-id="3">
-          <div class="picture" data-link="back" data-id="3">
-            <a href="#" class="back7" data-id="3"></a>
-          </div>
-          <a href="#" data-id="3">
-            <div class="info__product" data-id="3">
-              <h4 data-id="3">Sunda</h4>
-              <h3 data-id="3">Rp 1.170.000</h3>
-            </div>
-          </a>
-        </div>
-        <div class="title" data-id="6">
-          <div class="picture" data-link="back" data-id="6">
-            <a href="#" class="back8" data-id="6"></a>
-          </div>
-          <a href="#" data-id="6">
-            <div class="info__product" data-id="6">
-              <h4 data-id="6">Alor</h4>
-              <h3 data-id="6">Rp 1.170.000</h3>
-            </div>
-          </a>
-        </div>
-        <div class="title" data-id="9">
-          <div class="picture" data-link="back" data-id="9">
-            <a href="#" class="back9" data-id="9"></a>
-          </div>
-          <a href="#" data-id="9">
-            <div class="info__product" data-id="9">
-              <h4 data-id="9">Way Kambas Limited Edition</h4>
-              <h3 data-id="9">Rp 1.170.000</h3>
-            </div>
-          </a>
-        </div>
-        </div>
-
-        <div class="series show hiden-series">
-          <div class="title" data-id="10">
-            <div class="picture" data-link="back"  data-id="10">
-              <a href="#" class="back1"  data-id="10"></a>
-            </div>
-            <a href="#"  data-id="10">
-              <div class="info__product"  data-id="10">
-                <h4  data-id="10">Way Kambas Maple</h4>
-                <h3  data-id="10">Rp 1.280.000</h3>
-              </div>
-            </a>
-          </div>
-          <div class="title" data-id="13">
-            <div class="picture" data-link="back" data-id="13">
-              <a href="#" class="back2" data-id="13"></a>
-            </div>
-            <a href="#" data-id="13">
-              <div class="info__product" data-id="13">
-                <h4 data-id="13">Tomia Ebony</h4>
-                <p data-id="13">Rp 1.280.000</p>
-                <h3 data-id="13">Rp 960.000</h3>
-              </div>
-            </a>
-          </div>
-          <div class="title" data-id="16">
-            <div class="picture" data-link="back" data-id="16">
-              <a href="#" class="back3" data-id="16"></a>
-            </div>
-            <a href="#" data-id="16">
-              <div class="info__product" data-id="16">
-                <h4 data-id="16">Sikka (Ebony &amp; Maple)</h4>
-                <h3 data-id="16">Rp 1.198.000</h3>
-              </div>
-            </a>
-          </div>
-          <div class="title" data-id="11">
-            <div class="picture" data-link="back" data-id="11">
-              <a href="#" class="back4" data-id="11"></a>
-            </div>
-            <a href="#" data-id="11">
-              <div class="info__product" data-id="11">
-                <h4 data-id="11">Kaili</h4>
-                <h3 data-id="11">Rp 950.000</h3>
-              </div>
-            </a>
-          </div>
-          <div class="title" data-id="14">
-            <div class="picture" data-link="back" data-id="14">
-              <a href="#" class="back5" data-id="14"></a>
-            </div>
-            <a href="#" data-id="14">
-              <div class="info__product" data-id="14">
-                <h4 data-id="14">Mori</h4>
-                <h3 data-id="14">Rp 950.000</h3>
-              </div>
-            </a>
-          </div>
-          <div class="title" data-id="17">
-            <div class="picture" data-link="back" data-id="17">
-              <a href="#" class="back6" data-id="17"></a>
-            </div>
-            <a href="#" data-id="17">
-              <div class="info__product" data-id="17">
-                <h4 data-id="17">Lore Walnut</h4>
-                <h3 data-id="17">Rp 1.280.000</h3>
-              </div>
-            </a>
-          </div>
-          <div class="title" data-id="12">
-            <div class="picture" data-link="back" data-id="12">
-              <a href="#" class="back7" data-id="12"></a>
-            </div>
-            <a href="#" data-id="12">
-              <div class="info__product" data-id="12">
-                <h4 data-id="12">Sunda</h4>
-                <h3 data-id="12">Rp 1.170.000</h3>
-              </div>
-            </a>
-          </div>
-          <div class="title" data-id="15">
-            <div class="picture" data-link="back" data-id="15">
-              <a href="#" class="back8" data-id="15"></a>
-            </div>
-            <a href="#" data-id="15">
-              <div class="info__product" data-id="15">
-                <h4 data-id="15">Alor</h4>
-                <h3 data-id="15">Rp 1.170.000</h3>
-              </div>
-            </a>
-          </div>
-          <div class="title" data-id="18">
-            <div class="picture" data-link="back" data-id="18">
-              <a href="#" class="back9" data-id="18"></a>
-            </div>
-            <a href="#" data-id="18">
-              <div class="info__product" data-id="18">
-                <h4 data-id="18">Way Kambas Limited Edition</h4>
-                <h3 data-id="18">Rp 1.170.000</h3>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="button__more">
-        <hr />
-        <div class="see__more">
-          <a href="#">See More</a>
-        </div>
-        <hr />
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <div class="left__testimonials">
-        <img class="girl" src="./images/Girl.png" alt="girl" />
-      </div>
-
-      <div class="right__testimonials">
-        <div class="sub__container">
-          <h3 class="name">Testimonials</h3>
-          <hr class="name__hr" />
-
-          <p class="nunito">
-            Loving my new KAILI watch from @matoa_id, the first ever Indonesian
-            watch local brand that uses wood as their main material. Like any
-            other Matoa products, KAILI is inspired by Indonesian heritage.
-          </p>
-          <h4>Gita Savitri</h4>
-          <p>Content Creator &frasl; Influencer</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="center blog__instagram">
-      <div class="name__section">
-        <h3 class="name">Instagram</h3>
-        <hr class="name__hr" />
-      </div>
-      <div class="img__blog">
-        <div>
-          <img src="./images/Blog1.jpg" alt="img" />
-        </div>
-        <div>
-          <img src="./images/Blog2.jpg" alt="img" />
-        </div>
-        <div>
-          <img src="./images/Blog3.jpg" alt="img" />
-        </div>
-        <div>
-          <img src="./images/Blog4.jpg" alt="img" />
-        </div>
-        <div>
-          <img src="./images/Blog5.jpg" alt="img" />
-        </div>
-      </div>
-    </section>
-
-    <section class="overlay" id="modal-history">
-      <div class="select overlay-dialog">
-        <span id="close-modal">&#10005;</span>
-        <div class="select__card">
-          <div class="left__select-card">
-            <div class="picture__select" data-link="back__select">
-              <a href="#" class="back__select"></a>
-            </div>
-            <div class="info__select">
-              <h4>Way Kambas Mini Ebony</h4>
-              <p class="sm__price">Rp 1.280.000</p>
-              <h3>Rp 1.024.000</h3>
-              <p class="small__text">Custom Engrave</p>
-              <p class="small__text">“Happy | Birthday | from”</p>
-            </div>
-          </div>
-          <div class="right__select-card">
-            <p>Select Packaging</p>
-            <div class="col-md-7 offset-md-5">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Wooden Packaging (Rp 50.000)</option>
-                <option value="1">Default Packaging (Free)</option>
-              </select>
-            </div>
-
-            <div class="trash__select">
-              <div class="quantity">
-                <div class="choose__quantity">
-                  <a class="item" data-action="remove" href="#"
-                    ><i class="fas fa-minus"></i
-                  ></a>
+                <div>
+                    <img src="./images/Blog2.jpg" alt="img" />
                 </div>
-                <span class="one">2</span>
-                <div class="choose__quantity">
-                  <a class="item" data-action="add" href="#"
-                    ><i class="fas fa-plus"></i
-                  ></a>
+                <div>
+                    <img src="./images/Blog3.jpg" alt="img" />
                 </div>
-              </div>
-              <h3>Rp 2.048.000</h3>
-              <img src="./images/trash.png" alt="trash" />
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="select__card">
-          <div class="left__select-card">
-            <div class="picture__select" data-link="back__select">
-              <a href="#" class="back__select2"></a>
-            </div>
-            <div class="info__select">
-              <h4>Sikka (Ebony & Maple)</h4>
-              <h3>Rp 1.264.000</h3>
-            </div>
-          </div>
-          <div class="right__select-card">
-            <p>Select Packaging</p>
-            <div class="col-md-7 offset-md-5">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Default Packaging (Free)</option>
-                <option value="1">Wooden Packaging (Rp 50.000)</option>
-              </select>
-            </div>
-
-            <div class="trash__select">
-              <div class="quantity">
-                <div class="choose__quantity">
-                  <a class="item" data-action="remove" href="#"
-                    ><i class="fas fa-minus"></i
-                  ></a>
+                <div>
+                    <img src="./images/Blog4.jpg" alt="img" />
                 </div>
-                <span class="one">1</span>
-                <div class="choose__quantity">
-                  <a class="item" data-action="add" href="#"
-                    ><i class="fas fa-plus"></i
-                  ></a>
+                <div>
+                    <img src="./images/Blog5.jpg" alt="img" />
                 </div>
-              </div>
-              <h3>Rp 1.264.000</h3>
-              <img src="./images/trash.png" alt="trash" />
             </div>
-          </div>
-        </div>
-        <hr class="second__hr-select" />
-        <div class="last__select-card">
-          <div class="left__last-card">
-            <div class="row g-3 align-items-center">
-              <div class="col-auto">
-                <label for="inputPassword6" class="col-form-label kode"
-                  >Kode Promo</label
-                >
-              </div>
-              <div class="col-auto">
-                <input
-                  type="text"
-                  id="inputPassword6"
-                  placeholder="INDONESIA"
-                  class="form-control kode"
-                  aria-describedby="passwordHelpInline"
-                />
-              </div>
-              <div class="col-auto">
-                <span id="passwordHelpInline" class="form-text kode__green">
-                  35% OFF
-                </span>
-              </div>
+        </section>
+
+        <section class="overlay" id="modal-history">
+            <div class="select overlay-dialog">
+                <span id="close-modal">&#10005;</span>
+                <div class="select__card">
+                    <div class="left__select-card">
+                        <div class="picture__select" data-link="back__select">
+                            <a href="#" class="back__select"></a>
+                        </div>
+                        <div class="info__select">
+                            <h4>Way Kambas Mini Ebony</h4>
+                            <p class="sm__price">Rp 1.280.000</p>
+                            <h3>Rp 1.024.000</h3>
+                            <p class="small__text">Custom Engrave</p>
+                            <p class="small__text">“Happy | Birthday | from”</p>
+                        </div>
+                    </div>
+                    <div class="right__select-card">
+                        <p>Select Packaging</p>
+                        <div class="col-md-7 offset-md-5">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Wooden Packaging (Rp 50.000)</option>
+                                <option value="1">Default Packaging (Free)</option>
+                            </select>
+                        </div>
+
+                        <div class="trash__select">
+                            <div class="quantity">
+                                <div class="choose__quantity">
+                                    <a class="item" data-action="remove" href="#"><i class="fas fa-minus"></i></a>
+                                </div>
+                                <span class="one">2</span>
+                                <div class="choose__quantity">
+                                    <a class="item" data-action="add" href="#"><i class="fas fa-plus"></i></a>
+                                </div>
+                            </div>
+                            <h3>Rp 2.048.000</h3>
+                            <img src="./images/trash.png" alt="trash" />
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="select__card">
+                    <div class="left__select-card">
+                        <div class="picture__select" data-link="back__select">
+                            <a href="#" class="back__select2"></a>
+                        </div>
+                        <div class="info__select">
+                            <h4>Sikka (Ebony & Maple)</h4>
+                            <h3>Rp 1.264.000</h3>
+                        </div>
+                    </div>
+                    <div class="right__select-card">
+                        <p>Select Packaging</p>
+                        <div class="col-md-7 offset-md-5">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Default Packaging (Free)</option>
+                                <option value="1">Wooden Packaging (Rp 50.000)</option>
+                            </select>
+                        </div>
+
+                        <div class="trash__select">
+                            <div class="quantity">
+                                <div class="choose__quantity">
+                                    <a class="item" data-action="remove" href="#"><i class="fas fa-minus"></i></a>
+                                </div>
+                                <span class="one">1</span>
+                                <div class="choose__quantity">
+                                    <a class="item" data-action="add" href="#"><i class="fas fa-plus"></i></a>
+                                </div>
+                            </div>
+                            <h3>Rp 1.264.000</h3>
+                            <img src="./images/trash.png" alt="trash" />
+                        </div>
+                    </div>
+                </div>
+                <hr class="second__hr-select" />
+                <div class="last__select-card">
+                    <div class="left__last-card">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label kode">Kode Promo</label>
+                            </div>
+                            <div class="col-auto">
+                                <input
+                                    type="text"
+                                    id="inputPassword6"
+                                    placeholder="INDONESIA"
+                                    class="form-control kode"
+                                    aria-describedby="passwordHelpInline"
+                                />
+                            </div>
+                            <div class="col-auto">
+                                <span id="passwordHelpInline" class="form-text kode__green"> 35% OFF </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right__last-card">
+                        <div class="subtotal__right-card">
+                            <div class="lf__subt">
+                                <h4>Subtotal</h4>
+                            </div>
+                            <div class="rg__subt">
+                                <p>Rp 3.312.000</p>
+                                <h3>Rp 2.152.000</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button__checkout">
+                    <a href="./checkout.html#my-id4">Checkout</a>
+                </div>
             </div>
-          </div>
-          <div class="right__last-card">
-            <div class="subtotal__right-card">
-              <div class="lf__subt">
-                <h4>Subtotal</h4>
-              </div>
-              <div class="rg__subt">
-                <p>Rp 3.312.000</p>
-                <h3>Rp 2.152.000</h3>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="button__checkout">
-          <a href="./checkout.html#my-id4">Checkout</a>
-        </div>
-      </div>
-    </section>
+        <footer>
+            <section class="first__footer">
+                <div class="center payment">
+                    <div class="link">
+                        <a href="#"><img src="./images/icon1.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon2.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon3.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon4.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon5.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon6.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon7.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon8.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon9.png" alt="payment" /></a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><img src="./images/icon10.png" alt="payment" /></a>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-      <section class="first__footer">
-        <div class="center payment">
-          <div class="link">
-            <a href="#"><img src="./images/icon1.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon2.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon3.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon4.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon5.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon6.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon7.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon8.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon9.png" alt="payment" /></a>
-          </div>
-          <div class="link">
-            <a href="#"><img src="./images/icon10.png" alt="payment" /></a>
-          </div>
-        </div>
-      </section>
+            <section class="second__footer">
+                <div class="center container">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 address">
+                            <a href="#"><img class="logo__foot" src="./images/logo-foot.png" alt="logo" /></a>
+                            <h6>Address</h6>
+                            <ul class="list-unstyled">
+                                <li>Store &amp; Office</li>
+                                <li>Jl. Setrasari Kun III, No. 10&ndash;12,</li>
+                                <li>Sukarasa, Sukasari, Bandung,</li>
+                                <li>Jawa Barat, Indonesia 40152</li>
+                            </ul>
 
-      <section class="second__footer">
-        <div class="center container">
-          <div class="row">
-            <div class="col-xl-3 col-sm-6 address">
-              <a href="#"
-                ><img
-                  class="logo__foot"
-                  src="./images/logo-foot.png"
-                  alt="logo"
-              /></a>
-              <h6>Address</h6>
-              <ul class="list-unstyled">
-                <li>Store &amp; Office</li>
-                <li>Jl. Setrasari Kun III, No. 10&ndash;12,</li>
-                <li>Sukarasa, Sukasari, Bandung,</li>
-                <li>Jawa Barat, Indonesia 40152</li>
-              </ul>
+                            <h6>Office Hour</h6>
+                            <ul class="list-unstyled">
+                                <li>Monday &ndash; Sunday</li>
+                                <li>10.00 &ndash; 18.00</li>
+                            </ul>
+                        </div>
 
-              <h6>Office Hour</h6>
-              <ul class="list-unstyled">
-                <li>Monday &ndash; Sunday</li>
-                <li>10.00 &ndash; 18.00</li>
-              </ul>
-            </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <h5>Get in touch</h5>
+                            <hr />
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h6>Phone</h6>
+                                    <a href="tel:02220277564">022&ndash;20277564</a>
+                                </li>
+                                <li>
+                                    <h6>Service Center</h6>
+                                    <a href="tel:08112338899">0811&ndash;233&ndash;8899</a>
+                                </li>
+                                <li>
+                                    <h6>Customer Service</h6>
+                                    <a href="tel:08112359988">0811&ndash;235&ndash;9988</a>
+                                </li>
+                            </ul>
+                            <div class="social__link">
+                                <a href="#"><img src="./images/Facebook.png" alt="facebook" /></a>
+                                <a href="#"><img src="./images/Instagram.png" alt="instagram" /></a>
+                                <a href="#"><img src="./images/Twitter.png" alt="twitter" /></a>
+                                <a href="#"><img src="./images/Youtube.png" alt="youtube" /></a>
+                            </div>
+                        </div>
 
-            <div class="col-xl-3 col-sm-6">
-              <h5>Get in touch</h5>
-              <hr />
-              <ul class="list-unstyled">
-                <li>
-                  <h6>Phone</h6>
-                  <a href="tel:02220277564">022&ndash;20277564</a>
-                </li>
-                <li>
-                  <h6>Service Center</h6>
-                  <a href="tel:08112338899">0811&ndash;233&ndash;8899</a>
-                </li>
-                <li>
-                  <h6>Customer Service</h6>
-                  <a href="tel:08112359988">0811&ndash;235&ndash;9988</a>
-                </li>
-              </ul>
-              <div class="social__link">
-                <a href="#"
-                  ><img src="./images/Facebook.png" alt="facebook"
-                /></a>
-                <a href="#"
-                  ><img src="./images/Instagram.png" alt="instagram"
-                /></a>
-                <a href="#"><img src="./images/Twitter.png" alt="twitter" /></a>
-                <a href="#"><img src="./images/Youtube.png" alt="youtube" /></a>
-              </div>
-            </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <h5>Useful Link</h5>
+                            <hr />
+                            <ul class="list-unstyled">
+                                <li><a href="#">Warranty &amp; Complaints</a></li>
+                                <li><a href="#">Order &amp; Shipping</a></li>
+                                <li><a href="#">Tracking Order</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Repair</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
 
-            <div class="col-xl-3 col-sm-6">
-              <h5>Useful Link</h5>
-              <hr />
-              <ul class="list-unstyled">
-                <li><a href="#">Warranty &amp; Complaints</a></li>
-                <li><a href="#">Order &amp; Shipping</a></li>
-                <li><a href="#">Tracking Order</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Repair</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </div>
-
-            <div class="col-xl-3 col-sm-6">
-              <h5>Campaign</h5>
-              <hr />
-              <ul class="list-unstyled">
-                <li><a href="#">Mengenal Arti Cukup</a></li>
-                <li><a href="#">Tell Your Difference</a></li>
-                <li><a href="#">Waykambas</a></li>
-                <li><a href="#">Rebrand</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Singo</a></li>
-                <li><a href="#">Rakai</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+                        <div class="col-xl-3 col-sm-6">
+                            <h5>Campaign</h5>
+                            <hr />
+                            <ul class="list-unstyled">
+                                <li><a href="#">Mengenal Arti Cukup</a></li>
+                                <li><a href="#">Tell Your Difference</a></li>
+                                <li><a href="#">Waykambas</a></li>
+                                <li><a href="#">Rebrand</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Singo</a></li>
+                                <li><a href="#">Rakai</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

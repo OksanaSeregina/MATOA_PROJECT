@@ -1,0 +1,179 @@
+$color: #d84727;
+
+@mixin taviraj {
+    font-family: "Taviraj", serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+
+@mixin img__backgr {
+    display: block;
+    height: inherit;
+    width: inherit;
+}
+
+.catalog__clock {
+    margin-top: 133px;
+    .series,
+    .header {
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-row-gap: 32px;
+        div {
+            .name {
+                font-weight: normal;
+            }
+            .name__hr {
+                width: 65px;
+                border: 1px solid #333333;
+            }
+            .picture[data-link="back"] {
+                width: 131px;
+                height: 131px;
+                background: #f1ddc9;
+                .back {
+                    @include img__backgr;
+                }
+            }
+        }
+        .title {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(216, 71, 39, 0);
+
+            a {
+                text-decoration: none;
+                .info__product {
+                    margin-left: 24px;
+                    max-height: 131px;
+                    h4 {
+                        @include taviraj;
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                    p {
+                        @include taviraj;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #777777;
+                        text-decoration: line-through;
+                        margin-bottom: 0;
+                    }
+                    h3 {
+                        @include taviraj;
+                        font-weight: 500;
+                        font-size: 28px;
+                        line-height: 40px;
+                        color: #222222;
+                    }
+                }
+            }
+        }
+        .title:hover {
+            border: 1px solid $color;
+        }
+    }
+    .hiden-series {
+        display: none;
+    }
+    .button__more {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+        hr {
+            border: 0.3px solid #999999;
+            width: 30%;
+            align-self: center;
+        }
+        .see__more {
+            a {
+                text-decoration: none;
+                @include taviraj;
+                font-size: 20px;
+                line-height: 34px;
+                letter-spacing: 0.03em;
+                color: $color;
+                border: 1px solid $color;
+                padding: 16px 91px 16px 92px;
+                display: inline-block;
+                transition: 0.5s;
+            }
+            a:hover {
+                color: #ffffff;
+                background-color: $color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .catalog__clock .series .title a .info__product h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .catalog__clock .series .title a .info__product h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .catalog__clock .series {
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalog__clock {
+        margin-top: 200px;
+    }
+
+    .catalog__clock .button__more hr {
+        width: 25%;
+    }
+
+    .catalog__clock .button__more .see__more a {
+        padding: 15px 47px 16px 47px;
+        font-size: 16px;
+        line-height: 27px;
+        border: 2px solid $color;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .catalog__clock .series {
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+    }
+
+    .catalog__clock .series div:nth-child(2) {
+        grid-row: 6;
+    }
+    .catalog__clock .series .title a .info__product h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .catalog__clock .series .title a .info__product h3 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .catalog__clock .button__more hr {
+        display: none;
+    }
+
+    .catalog__clock .button__more {
+        margin-top: 30px;
+    }
+
+    .catalog__clock .series .title a .info__product h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .catalog__clock .series .title a .info__product h3 {
+        font-size: 20px;
+    }
+}
