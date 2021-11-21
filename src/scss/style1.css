@@ -721,67 +721,11 @@ header .info__header .menu .item a span:hover {
   background: #f1ddc9;
 }
 
-.catalog__clock .series div .picture[data-link="back"] .back1 {
+.catalog__clock .series div .picture[data-link="back"] .back {
   display: block;
   height: inherit;
   width: inherit;
   background: url(../images/Catalog1.png) no-repeat center/50%;
-}
-
-.catalog__clock .series div .picture[data-link="back"] .back2 {
-  display: block;
-  height: inherit;
-  width: inherit;
-  background: url(../images/Catalog2.png) no-repeat center/50%;
-}
-
-.catalog__clock .series div .picture[data-link="back"] .back3 {
-  display: block;
-  height: inherit;
-  width: inherit;
-  background: url(../images/Catalog3.png) no-repeat center/50%;
-}
-
-.catalog__clock .series div .picture[data-link="back"] .back4 {
-  display: block;
-  height: inherit;
-  width: inherit;
-  background: url(../images/Catalog4.png) no-repeat center/50%;
-}
-
-.catalog__clock .series div .picture[data-link="back"] .back5 {
-  display: block;
-  height: inherit;
-  width: inherit;
-  background: url(../images/Catalog5.png) no-repeat center/40%;
-}
-
-.catalog__clock .series div .picture[data-link="back"] .back6 {
-  display: block;
-  height: inherit;
-  width: inherit;
-  background: url(../images/Catalog6.png) no-repeat center/80%;
-}
-
-.catalog__clock .series div .picture[data-link="back"] .back7 {
-  display: block;
-  height: inherit;
-  width: inherit;
-  background: url(../images/Catalog7.png) no-repeat center/50%;
-}
-
-.catalog__clock .series div .picture[data-link="back"] .back8 {
-  display: block;
-  height: inherit;
-  width: inherit;
-  background: url(../images/Catalog8.png) no-repeat center/50%;
-}
-
-.catalog__clock .series div .picture[data-link="back"] .back9 {
-  display: block;
-  height: inherit;
-  width: inherit;
-  background: url(../images/Catalog9.png) no-repeat center/50%;
 }
 
 .catalog__clock .series .title {
@@ -1501,76 +1445,12 @@ footer .second__footer .social__link a {
   left: 60%;
 }
 
-.all__section {
-  position: relative;
-}
-
-.page__cart {
-  margin-top: 119px;
-}
-
-.page__cart .kvadr {
-  width: 590px;
-  max-width: 100%;
-  height: 548px;
-  background-color: #f1ddc9;
-}
-
-.cart__product {
-  margin-top: 76px;
-  margin-bottom: 0;
-}
-
-.cart__product .cart__detail {
-  border: 1px solid #999999;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.cart__product .cart__detail .item {
-  border-right: 1px solid #999999;
-}
-
-.cart__product .cart__detail .item a {
-  margin-right: 20px;
-  margin-left: 20px !important;
-  color: #333333 !important;
-}
-
-.cart__product .cart__detail .item hr {
-  margin-left: 20px !important;
-}
-
-.cart__product .cart__detail .item:last-child {
-  border-right: none;
-}
-
-.cart__product .cart__detail .item:first-child a {
-  color: #d84727 !important;
-}
-
-.cart__border {
-  border-left: 1px solid #999999;
-  border-right: 1px solid #999999;
-  height: 10px;
-}
-
-.black__filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  padding-top: 120px;
-  padding-bottom: 128px;
-}
-
-.black__filter .select {
+.select {
   background: #f7f6f4;
-  padding: 32px 32px 40px 32px;
+  padding: 60px 32px 40px 32px;
 }
 
-.black__filter .select .select__card {
+.select .select__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1579,39 +1459,39 @@ footer .second__footer .social__link a {
           justify-content: space-between;
 }
 
-.black__filter .select .select__card .left__select-card {
+.select .select__card .left__select-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
 
-.black__filter .select .select__card .left__select-card .picture__select[data-link="back__select"] {
+.select .select__card .left__select-card .picture__select[data-link="back__select"] {
   width: 144px;
   height: 144px;
   background: #f1ddc9;
 }
 
-.black__filter .select .select__card .left__select-card .picture__select[data-link="back__select"] .back__select {
+.select .select__card .left__select-card .picture__select[data-link="back__select"] .back__select {
   display: block;
   height: inherit;
   width: inherit;
   background: url(../images/Clock2.png) no-repeat center/50%;
 }
 
-.black__filter .select .select__card .left__select-card .picture__select[data-link="back__select"] .back__select2 {
+.select .select__card .left__select-card .picture__select[data-link="back__select"] .back__select2 {
   display: block;
   height: inherit;
   width: inherit;
   background: url(../images/Catalog3.png) no-repeat center/50%;
 }
 
-.black__filter .select .select__card .left__select-card .info__select {
+.select .select__card .left__select-card .info__select {
   margin-left: 32px;
   max-height: 144px;
 }
 
-.black__filter .select .select__card .left__select-card .info__select h4 {
+.select .select__card .left__select-card .info__select h4 {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1621,7 +1501,7 @@ footer .second__footer .social__link a {
   line-height: 24px;
 }
 
-.black__filter .select .select__card .left__select-card .info__select .sm__price {
+.select .select__card .left__select-card .info__select .sm__price {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1634,7 +1514,7 @@ footer .second__footer .social__link a {
   margin-bottom: 0;
 }
 
-.black__filter .select .select__card .left__select-card .info__select h3 {
+.select .select__card .left__select-card .info__select h3 {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1645,7 +1525,7 @@ footer .second__footer .social__link a {
   line-height: 32px;
 }
 
-.black__filter .select .select__card .left__select-card .info__select .small__text {
+.select .select__card .left__select-card .info__select .small__text {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1658,11 +1538,11 @@ footer .second__footer .social__link a {
   margin-bottom: 0;
 }
 
-.black__filter .select .select__card .right__select-card {
+.select .select__card .right__select-card {
   width: 50%;
 }
 
-.black__filter .select .select__card .right__select-card p {
+.select .select__card .right__select-card p {
   text-align: end;
   font-family: "Taviraj", serif;
   font-style: normal;
@@ -1676,7 +1556,7 @@ footer .second__footer .social__link a {
   margin-bottom: 8px;
 }
 
-.black__filter .select .select__card .right__select-card .form-select {
+.select .select__card .right__select-card .form-select {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1689,7 +1569,7 @@ footer .second__footer .social__link a {
   color: #999999;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select {
+.select .select__card .right__select-card .trash__select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1701,14 +1581,14 @@ footer .second__footer .social__link a {
           justify-content: flex-end;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select .quantity {
+.select .select__card .right__select-card .trash__select .quantity {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 37px;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select .quantity .choose__quantity {
+.select .select__card .right__select-card .trash__select .quantity .choose__quantity {
   border: 3px solid #777777;
   padding: 0 7px;
   -ms-flex-item-align: center;
@@ -1716,22 +1596,22 @@ footer .second__footer .social__link a {
       align-self: center;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select .quantity .choose__quantity .item {
+.select .select__card .right__select-card .trash__select .quantity .choose__quantity .item {
   font-size: 16px;
   color: #777777;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select .quantity .choose__quantity:hover {
+.select .select__card .right__select-card .trash__select .quantity .choose__quantity:hover {
   background-color: #d84727;
   border: 3px solid #d84727;
   cursor: pointer;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select .quantity .choose__quantity:hover .item {
+.select .select__card .right__select-card .trash__select .quantity .choose__quantity:hover .item {
   color: #ffffff;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select .quantity .one {
+.select .select__card .right__select-card .trash__select .quantity .one {
   font-family: Taviraj;
   font-style: normal;
   font-weight: normal;
@@ -1746,7 +1626,7 @@ footer .second__footer .social__link a {
   color: #000000;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select h3 {
+.select .select__card .right__select-card .trash__select h3 {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1759,33 +1639,33 @@ footer .second__footer .social__link a {
   margin-left: 19px;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select img {
+.select .select__card .right__select-card .trash__select img {
   border: 1px solid #d93f3f;
   padding: 6px;
   margin-left: 32px;
   cursor: pointer;
 }
 
-.black__filter .select .select__card .right__select-card .trash__select img:hover {
+.select .select__card .right__select-card .trash__select img:hover {
   border: 3px solid #d93f3f;
   padding: 4px;
 }
 
-.black__filter .select .last__select-card {
+.select .last__select-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 24px;
 }
 
-.black__filter .select .last__select-card .left__last-card {
+.select .last__select-card .left__last-card {
   width: 50%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.black__filter .select .last__select-card .left__last-card .kode {
+.select .last__select-card .left__last-card .kode {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1795,7 +1675,7 @@ footer .second__footer .social__link a {
   line-height: 24px;
 }
 
-.black__filter .select .last__select-card .left__last-card .kode__green {
+.select .last__select-card .left__last-card .kode__green {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1807,11 +1687,11 @@ footer .second__footer .social__link a {
   color: #01522d;
 }
 
-.black__filter .select .last__select-card .right__last-card {
+.select .last__select-card .right__last-card {
   width: 50%;
 }
 
-.black__filter .select .last__select-card .right__last-card .subtotal__right-card {
+.select .last__select-card .right__last-card .subtotal__right-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1820,13 +1700,13 @@ footer .second__footer .social__link a {
           justify-content: flex-end;
 }
 
-.black__filter .select .last__select-card .right__last-card .subtotal__right-card .lf__subt {
+.select .last__select-card .right__last-card .subtotal__right-card .lf__subt {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.black__filter .select .last__select-card .right__last-card .subtotal__right-card .lf__subt h4 {
+.select .last__select-card .right__last-card .subtotal__right-card .lf__subt h4 {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1838,7 +1718,7 @@ footer .second__footer .social__link a {
   margin-bottom: 0;
 }
 
-.black__filter .select .last__select-card .right__last-card .subtotal__right-card .rg__subt p {
+.select .last__select-card .right__last-card .subtotal__right-card .rg__subt p {
   text-align: end;
   font-family: "Taviraj", serif;
   font-style: normal;
@@ -1852,7 +1732,7 @@ footer .second__footer .social__link a {
   margin-bottom: 0;
 }
 
-.black__filter .select .last__select-card .right__last-card .subtotal__right-card .rg__subt h3 {
+.select .last__select-card .right__last-card .subtotal__right-card .rg__subt h3 {
   font-family: "Taviraj", serif;
   font-style: normal;
   font-weight: normal;
@@ -1864,11 +1744,11 @@ footer .second__footer .social__link a {
   margin-bottom: 0;
 }
 
-.black__filter .select .button__checkout {
+.select .button__checkout {
   margin-top: 26px;
 }
 
-.black__filter .select .button__checkout a {
+.select .button__checkout a {
   display: block;
   text-decoration: none;
   background-color: #d84727;
@@ -1885,18 +1765,18 @@ footer .second__footer .social__link a {
   color: #ffffff;
 }
 
-.black__filter .select .button__checkout:hover a {
+.select .button__checkout:hover a {
   color: #d84727;
   background-color: rgba(216, 71, 39, 0);
   border: 2px solid #d84727;
   padding: 18px 0;
 }
 
-.black__filter hr {
+hr {
   margin: 40px 0;
 }
 
-.black__filter .second__hr-select {
+.second__hr-select {
   margin-top: 40px;
   margin-bottom: 0;
 }
