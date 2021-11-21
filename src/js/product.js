@@ -1,76 +1,76 @@
+/* eslint-disable no-implied-eval */
+import { getQuantity, getModal } from "./shared";
+import "../style/global.scss";
+
 const ID = window.location.search.replace("?id=", "");
 
-let burgerMenu = document.querySelector("#burger");
-let menuList = document.querySelector(".header-menu");
-let leftPproductInfo = document.querySelector(".left__product-info");
-let hideSearch = document.querySelector(".hide-search");
-let hideUser = document.querySelector(".hide-user");
-let closeBtn = document.querySelector("#close");
+const burgerMenu = document.querySelector("#burger");
+const menuList = document.querySelector(".header-menu");
+const leftPproductInfo = document.querySelector(".left__product-info");
+const hideSearch = document.querySelector(".hide-search");
+const hideUser = document.querySelector(".hide-user");
+const closeBtn = document.querySelector("#close");
 
 function openBurger() {
-  burgerMenu.style.display = "none";
-  menuList.classList.add("show");
-  //hideImg.style.position = "static";
-  hideSearch.innerHTML = "<span>Search</span>";
-  hideUser.style.display = "none";
-  setTimeout('closeBtn.style.display = "block"', 1000);
-  leftPproductInfo.style.zIndex = "-1";
+    burgerMenu.style.display = "none";
+    menuList.classList.add("show");
+    // hideImg.style.position = "static";
+    hideSearch.innerHTML = "<span>Search</span>";
+    hideUser.style.display = "none";
+    setTimeout('closeBtn.style.display = "block"', 1000);
+    leftPproductInfo.style.zIndex = "-1";
 }
 
 function closeBurger() {
-  setTimeout('burgerMenu.style.display = "block"', 500);
-  menuList.classList.remove("show");
-  closeBtn.style.display = "none";
-  setTimeout(
-    `hideSearch.innerHTML ='<img src="./images/Search.png" alt="search"/>'`,
-    1000
-  );
-  setTimeout('hideUser.style.display = "inline-block"', 1000);
-  setTimeout('leftPproductInfo.style.zIndex = "0"', 1000);
+    setTimeout('burgerMenu.style.display = "block"', 500);
+    menuList.classList.remove("show");
+    closeBtn.style.display = "none";
+    setTimeout(`hideSearch.innerHTML ='<img src="./images/Search.png" alt="search"/>'`, 1000);
+    setTimeout('hideUser.style.display = "inline-block"', 1000);
+    setTimeout('leftPproductInfo.style.zIndex = "0"', 1000);
 }
 
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
 
-//Show descr
+// Show descr
 const showDescr = (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  if (e.target.textContent === "Detail") {
-    document.querySelector(".descr__detail").classList.remove("hide-descr");
-    document.querySelector(".selected-link").classList.remove("hide-descr");
+    if (e.target.textContent === "Detail") {
+        document.querySelector(".descr__detail").classList.remove("hide-descr");
+        document.querySelector(".selected-link").classList.remove("hide-descr");
 
-    if (e.target.tagName === "SPAN") {
-      e.target.classList.add("color-red");
+        if (e.target.tagName === "SPAN") {
+            e.target.classList.add("color-red");
+        }
     }
-  }
 };
 
 document.querySelector(".detail__product").addEventListener("click", showDescr);
 
-//Getting data from the server
-let INFO_URL = "http://localhost:3000/profile";
+// Getting data from the server
+const INFO_URL = "http://localhost:3000/profile";
 
 const getResourse = async (url) => {
-  const res = await fetch(url);
+    const res = await fetch(url);
 
-  if (!res.ok) {
-    throw new Error(`${res.status}!!!!!`);
-  }
-  return res.json();
+    if (!res.ok) {
+        throw new Error(`${res.status}!!!!!`);
+    }
+    return res.json();
 };
 
-//Request to the server
+// Request to the server
 const findProduct = async () => {
-  const products = await getResourse(INFO_URL);
-  return products.find((product) => product.id === ID);
+    const products = await getResourse(INFO_URL);
+    return products.find((product) => product.id === ID);
 };
 
-//Render info product
+// Render info product
 const renderProductInfo = async () => {
-  const product = await findProduct();
-  console.log(product);
-  const template = `
+    const product = await findProduct();
+    const template = `
     <div class="left__product-info">
           <div class="mini__clock">
             <div>
@@ -97,9 +97,7 @@ const renderProductInfo = async () => {
         <div class="right__product-info">
           <div class="info__model">
             <h1>${product.name}</h1>
-            <p class="old__price">${
-              product.smallPrice === undefined ? "" : product.smallPrice
-            }</p>
+            <p class="old__price">${product.smallPrice === undefined ? "" : product.smallPrice}</p>
             <p class="new__price">${product.bigPrice}</p>
             <p class="choose">Choose Model</p>
             <img class="model" src="./images/Color.png" alt="color" />
@@ -138,8 +136,12 @@ const renderProductInfo = async () => {
         </div>
     `;
 
-  const block = document.querySelector(".all_product-info");
-  block.innerHTML = "";
-  block.innerHTML = template;
+    const block = document.querySelector(".all_product-info");
+    block.innerHTML = "";
+    block.innerHTML = template;
 };
-renderProductInfo();
+
+renderProductInfo().then(() => {
+    getQuantity();
+    getModal();
+});
