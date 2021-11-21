@@ -41,7 +41,7 @@ module.exports = {
         payment: ["@babel/polyfill", "./js/payment.js"],
         product: ["@babel/polyfill", "./js/product.js"],
         confirmation: ["@babel/polyfill", "./js/confirmation.js"],
-        checkout: ["@babel/polyfill", "./js/confirmation.js"]
+        checkout: ["@babel/polyfill", "./js/checkout.js"]
     },
     output: {
         path: path.resolve(__dirname, "dist"),
