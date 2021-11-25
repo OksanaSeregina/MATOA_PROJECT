@@ -57,6 +57,7 @@
                             </div>
                             <div class="icon" data-link="cart">
                                 <a href="#" class="cart"></a>
+                                <span class="quantity-cart">1</span>
                             </div>
                         </div>
                     </div>
@@ -71,7 +72,7 @@
             </div>
         </header>
 
-        <div data-element="carousel"><!-- Carousel --></div>
+        <div data-element="carousel" class="center"><!-- Carousel --></div>
 
         <section class="center discover__now">
             <div class="card__now">
@@ -105,103 +106,7 @@
             </div>
         </section>
 
-        <section class="center monthly__deals">
-            <div class="name__section">
-                <h3 class="name">Monthly Deals</h3>
-                <hr class="name__hr" />
-            </div>
-            <div class="container-fluids">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div id="item1" class="product__card">
-                            <div class="product__thumb">
-                                <a href="#"><img src="./images/Mask1.png" alt="clock" /></a>
-                            </div>
-                            <div class="product__details">
-                                <h4><a href="#">Singo Maple</a></h4>
-                                <p class="percent">20% Off</p>
-                                <p class="small">Rp 1.500.000</p>
-                                <p class="big">Rp 1.264.000</p>
-                            </div>
-                            <div id="text1" class="hide">
-                                <div class="heart">
-                                    <a href="#"><img src="./images/love.png" alt="heart" /></a>
-                                </div>
-                                <div class="card__button">
-                                    <a href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div id="item2" class="product__card">
-                            <div class="product__thumb">
-                                <a href="#"><img src="./images/Mask2.png" alt="clock" /></a>
-                            </div>
-                            <div class="product__details">
-                                <h4><a href="#">Singo Ebony</a></h4>
-                                <p class="percent">20% Off</p>
-                                <p class="small">Rp 1.500.000</p>
-                                <p class="big">Rp 1.264.000</p>
-                            </div>
-                            <div id="text2" class="hide">
-                                <div class="heart">
-                                    <a href="#"><img src="./images/love.png" alt="heart" /></a>
-                                </div>
-                                <div class="card__button">
-                                    <a href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div id="item3" class="product__card">
-                            <div class="product__thumb">
-                                <a href="#"><img src="./images/Mask3.png" alt="clock" /></a>
-                            </div>
-                            <div class="product__details">
-                                <h4><a href="#">Rakai Ebony</a></h4>
-                                <p class="percent">15% Off</p>
-                                <p class="small">Rp 1.280.000</p>
-                                <p class="big">Rp 1.118.000</p>
-                            </div>
-                            <div id="text3" class="hide">
-                                <div class="heart">
-                                    <a href="#"><img src="./images/love.png" alt="heart" /></a>
-                                </div>
-                                <div class="card__button">
-                                    <a href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div id="item4" class="product__card">
-                            <div class="product__thumb">
-                                <a href="#"><img src="./images/Mask4.png" alt="clock" /></a>
-                            </div>
-                            <div class="product__details">
-                                <h4><a href="#">Way Kambas Mini</a></h4>
-                                <p class="percent">10% Off</p>
-                                <p class="small">Rp 1.280.000</p>
-                                <p class="big">Rp 1.024.000</p>
-                            </div>
-                            <div id="text4" class="hide">
-                                <div class="heart">
-                                    <a href="#"><img src="./images/love.png" alt="heart" /></a>
-                                </div>
-                                <div class="card__button">
-                                    <a href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section data-element="offers" class="center monthly__deals"><!-- Offers --></section>
 
         <section class="recent__news">
             <div class="center name__section">
@@ -267,121 +172,6 @@
                 </div>
                 <div>
                     <img src="./images/Blog5.jpg" alt="img" />
-                </div>
-            </div>
-        </section>
-
-        <section class="overlay" id="modal-history">
-            <div class="select overlay-dialog">
-                <span id="close-modal">&#10005;</span>
-                <div class="select__card">
-                    <div class="left__select-card">
-                        <div class="picture__select" data-link="back__select">
-                            <a href="#" class="back__select"></a>
-                        </div>
-                        <div class="info__select">
-                            <h4>Way Kambas Mini Ebony</h4>
-                            <p class="sm__price">Rp 1.280.000</p>
-                            <h3>Rp 1.024.000</h3>
-                            <p class="small__text">Custom Engrave</p>
-                            <p class="small__text">“Happy | Birthday | from”</p>
-                        </div>
-                    </div>
-                    <div class="right__select-card">
-                        <p>Select Packaging</p>
-                        <div class="col-md-7 offset-md-5">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Wooden Packaging (Rp 50.000)</option>
-                                <option value="1">Default Packaging (Free)</option>
-                            </select>
-                        </div>
-
-                        <div class="trash__select">
-                            <div class="quantity">
-                                <div class="choose__quantity">
-                                    <a class="item" data-action="remove" href="#"><i class="fas fa-minus"></i></a>
-                                </div>
-                                <span class="one">2</span>
-                                <div class="choose__quantity">
-                                    <a class="item" data-action="add" href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                            </div>
-                            <h3>Rp 2.048.000</h3>
-                            <img src="./images/trash.png" alt="trash" />
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="select__card">
-                    <div class="left__select-card">
-                        <div class="picture__select" data-link="back__select">
-                            <a href="#" class="back__select2"></a>
-                        </div>
-                        <div class="info__select">
-                            <h4>Sikka (Ebony & Maple)</h4>
-                            <h3>Rp 1.264.000</h3>
-                        </div>
-                    </div>
-                    <div class="right__select-card">
-                        <p>Select Packaging</p>
-                        <div class="col-md-7 offset-md-5">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Default Packaging (Free)</option>
-                                <option value="1">Wooden Packaging (Rp 50.000)</option>
-                            </select>
-                        </div>
-
-                        <div class="trash__select">
-                            <div class="quantity">
-                                <div class="choose__quantity">
-                                    <a class="item" data-action="remove" href="#"><i class="fas fa-minus"></i></a>
-                                </div>
-                                <span class="one">1</span>
-                                <div class="choose__quantity">
-                                    <a class="item" data-action="add" href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                            </div>
-                            <h3>Rp 1.264.000</h3>
-                            <img src="./images/trash.png" alt="trash" />
-                        </div>
-                    </div>
-                </div>
-                <hr class="second__hr-select" />
-                <div class="last__select-card">
-                    <div class="left__last-card">
-                        <div class="row g-3 align-items-center">
-                            <div class="col-auto">
-                                <label for="inputPassword6" class="col-form-label kode">Kode Promo</label>
-                            </div>
-                            <div class="col-auto">
-                                <input
-                                    type="text"
-                                    id="inputPassword6"
-                                    placeholder="INDONESIA"
-                                    class="form-control kode"
-                                    aria-describedby="passwordHelpInline"
-                                />
-                            </div>
-                            <div class="col-auto">
-                                <span id="passwordHelpInline" class="form-text kode__green"> 35% OFF </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right__last-card">
-                        <div class="subtotal__right-card">
-                            <div class="lf__subt">
-                                <h4>Subtotal</h4>
-                            </div>
-                            <div class="rg__subt">
-                                <p>Rp 3.312.000</p>
-                                <h3>Rp 2.152.000</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="button__checkout">
-                    <a href="./checkout.html#my-id4">Checkout</a>
                 </div>
             </div>
         </section>

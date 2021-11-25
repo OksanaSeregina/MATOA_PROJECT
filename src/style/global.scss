@@ -115,6 +115,7 @@ header .info__header .logo a img {
 
 header .info__header .header-menu {
     display: contents;
+    margin: 0;
 }
 
 header .info__header .menu {
@@ -173,6 +174,18 @@ header .info__header .icon__header .icon .cart {
     height: inherit;
     width: inherit;
     background: url(../images/Cart.png) no-repeat center/50%;
+    position: absolute;
+}
+header .info__header .icon__header .icon .quantity-cart {
+    position: relative;
+    color: #fff;
+    background: $color;
+    border-radius: 50%;
+    padding: 0 7px;
+    font-size: small;
+    font-weight: 600;
+    right: -75%;
+    top: -12%;
 }
 
 header a {
@@ -220,94 +233,20 @@ header .info__header .menu .item a span:hover {
 
 #close {
     display: none;
-    position: absolute;
-    right: 0;
-    top: 0px;
+    position: fixed;
+    right: 5%;
+    top: 3%;
     font-size: 32px;
     color: #ffffff;
     z-index: 2;
     cursor: pointer;
 }
 
-/* Section Pink  */
-
-.pink {
-    background: #f1ddc9;
-    margin-top: 90px;
-    //@extend: flex;
-}
-
-/* .pink a {
-  text-decoration: none;
-} */
-
-/* .pink .pink-left img {
-  position: relative;
-  top: 130px;
-  left: 8px;
-} */
-
-/* .pink .pink-left {
-  width: 36%;
-} */
-
-/* .pink .pink-right {
-  padding-top: 56px;
-  width: 64%;
-} */
-
-.carousel-caption {
-    left: 37%;
-    right: 0;
-    text-align: start;
-    position: absolute;
-    //right: 15%;
-    bottom: 1.25 rem;
-    //left: 15%;
-    padding-top: 1.25 rem;
-    padding-bottom: 1.25 rem;
-    color: #fff;
-    //text-align: center;
-}
-
-.pink .way {
-    @include text__h1;
-    text-transform: uppercase;
-}
-
-.pink .under-way {
-    width: 95px;
-    border: 1px solid #000000;
-    margin-top: 8px;
-    margin-bottom: 24px;
-    margin-left: 0;
-}
-
-.pink .text__pink {
-    @include p__nunito;
-    line-height: 22px;
-    width: 70%;
-    margin-bottom: 8px;
-}
-
-.pink .text__discover {
-    @include taviraj;
-    letter-spacing: 0.03em;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 27px;
-}
-
-.pink .discover {
-    border: 1px solid #333333;
-    width: 74px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
+/* Carousel */
 .button__pink {
     display: flex;
     margin-top: 44px;
+    margin-bottom: 60px;
 }
 
 .button__pink .button1 {
@@ -347,39 +286,6 @@ header .info__header .menu .item a span:hover {
 .button__pink .button2 .cicil img:hover {
     border: 4px solid $color;
     padding: 13px 40px 12px 41px;
-}
-
-.arrow__pink {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 9px;
-    position: relative;
-    top: 27px;
-}
-
-.arrow__pink .arrow {
-    border: 3px solid #d84727;
-    padding: 0 12px;
-}
-
-.arrow__pink .arrow:last-child {
-    // background-color: #d84727;
-    margin-left: 15px;
-    margin-right: 31px;
-}
-
-.arrow__pink .arrow .item {
-    font-size: 30px;
-    color: #d84727;
-}
-
-.arrow__pink .arrow:hover {
-    background-color: #d84727;
-    cursor: pointer;
-
-    .item {
-        color: #fff;
-    }
 }
 
 /* Section Discover Now */
@@ -523,22 +429,21 @@ header .info__header .menu .item a span:hover {
     padding-bottom: 8px;
 }
 
-.product__card .hide {
+.product__card .show-but {
     display: flex;
     margin-left: 26px;
     margin-right: 24px;
     margin-top: 24px;
     padding-bottom: 16px;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .product__card .heart {
     border: 1px solid #d84727;
     padding: 7px 8px 5px 7px;
     display: inline-block;
-    margin-left: 24px;
     margin-right: 8px;
-    margin-bottom: 30px;
 }
 
 .product__card .heart:hover {
@@ -557,7 +462,7 @@ header .info__header .menu .item a span:hover {
     line-height: 24px;
     color: #ffffff;
     background: #d84727;
-    padding: 7px 35px 6px 35px;
+    padding: 7px;
     display: inline-block;
     transition: 0.5s;
     border: 1px solid rgba(216, 71, 39, 0);
@@ -577,6 +482,7 @@ header .info__header .menu .item a span:hover {
 // Section Recent News
 
 .recent__news {
+    margin-bottom: 133px;
     .name__section {
         margin-top: 57px;
     }
@@ -875,7 +781,7 @@ footer {
             }
             .one__clock {
                 position: absolute;
-                right: -23%;
+                right: -40%;
                 top: 24px;
                 img {
                     @include images;
@@ -932,6 +838,7 @@ footer {
                             .item {
                                 font-size: 16px;
                                 color: #777777;
+                                pointer-events: none;
                             }
                         }
                         .choose__quantity:hover {
@@ -1113,11 +1020,6 @@ footer {
                 background: #f1ddc9;
                 .back__select {
                     @include img__backgr;
-                    background: url(../images/Clock2.png) no-repeat center/50%;
-                }
-                .back__select2 {
-                    @include img__backgr;
-                    background: url(../images/Catalog3.png) no-repeat center/50%;
                 }
             }
             .info__select {
@@ -1185,6 +1087,7 @@ footer {
                         .item {
                             font-size: 16px;
                             color: #777777;
+                            pointer-events: none;
                         }
                     }
                     .choose__quantity:hover {
@@ -1369,7 +1272,6 @@ hr {
 
 @media screen and (max-width: 1024px) {
     header .info__header .header-menu {
-        //display: none;
         opacity: 0;
         min-height: 100vh;
         background: rgba(0, 0, 0, 0.8);
@@ -1400,7 +1302,6 @@ hr {
     }
 
     header .info__header .show {
-        //display: flex;
         transition: 1s ease-in-out;
         opacity: 1;
         left: -6%;
@@ -1408,43 +1309,12 @@ hr {
     }
 
     header .info__header {
-        /* display: grid;
-    grid-template-columns: 1fr 1fr; */
         position: relative;
     }
 
     #burger,
     #burger i {
         display: block;
-    }
-
-    .pink {
-        flex-wrap: wrap;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .pink .pink-left,
-    .black__filter .select .select__card .left__select-card {
-        width: 100%;
-    }
-
-    .pink .pink-right {
-        padding-top: 100px;
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .pink .pink-right .matoa__pink .arrow__pink .arrow:last-child {
-        margin-right: 0;
-    }
-
-    .pink .pink-right .matoa__pink h1 {
-        width: 100%;
-    }
-
-    .pink .pink-left img {
-        top: 40px;
     }
 
     .recent__news .all__recent-news .left__recent-news h3 {
@@ -1502,10 +1372,6 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-    .pink .pink-right .matoa__pink .text__pink {
-        width: 100%;
-    }
-
     .discover__now .card__now {
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
@@ -1599,20 +1465,6 @@ hr {
     header .info__header .icon__header {
         display: inherit;
     }
-    /* header .info__header .icon__header .icon-search,
-  header .info__header .icon__header .icon-user {
-    display: none;
-  } */
-
-    .pink .pink-right .matoa__pink .button__pink .button1 .add__cart {
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .pink .pink-right .matoa__pink .button__pink .button1 .add__cart img {
-        margin-right: 0;
-        vertical-align: text-bottom;
-    }
 
     .testimonials .right__testimonials {
         margin-top: 150px;
@@ -1701,10 +1553,30 @@ hr {
 }
 
 @media screen and (max-width: 425px) {
-    .pink .pink-right .matoa__pink h1,
     .product__info .all_product-info .right__product-info .info__model h1 {
         font-size: 40px;
         line-height: 60px;
+    }
+
+    .button__pink {
+        flex-wrap: wrap;
+    }
+
+    .button__pink .button1 {
+        width: 100%;
+    }
+
+    .button__pink .button1 .add__cart,
+    .product__info .all_product-info .right__product-info .info__model .button__quantity .quantity,
+    .button__pink .button1 .add__cart {
+        font-size: 12px;
+        padding: 16px 28px 16px 25px;
+    }
+
+    .product__info .all_product-info .right__product-info .info__model .button__quantity .quantity,
+    .button__pink .button2 {
+        width: 100%;
+        margin-top: 20px;
     }
 
     .recent__news .all__recent-news .right__receht-news {
@@ -1769,41 +1641,9 @@ hr {
     .black__filter .select .button__checkout a {
         font-size: 20px;
     }
-    .button__pink .button1 .add__cart {
-        padding: 18px 19px 14px 18px;
-    }
 }
 
 @media screen and (max-width: 375px) {
-    .pink .pink-right .matoa__pink .button__pink,
-    .product__info .all_product-info .right__product-info .info__model .button__quantity .quantity,
-    .button__pink {
-        flex-wrap: wrap;
-    }
-
-    .pink .pink-right .matoa__pink .button__pink .button1 {
-        width: 100%;
-    }
-
-    .pink .pink-right .matoa__pink .button__pink .button1 .add__cart,
-    .product__info .all_product-info .right__product-info .info__model .button__quantity .quantity,
-    .button__pink .button1 .add__cart {
-        font-size: 12px;
-        padding: 16px 28px 16px 25px;
-    }
-
-    .pink .pink-right .matoa__pink .button__pink .button2,
-    .product__info .all_product-info .right__product-info .info__model .button__quantity .quantity,
-    .button__pink .button2 {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .pink .pink-left img {
-        width: 100%;
-        max-width: 100%;
-    }
-
     .name {
         font-size: 30px;
     }

@@ -1,0 +1,112 @@
+@mixin text__h1 {
+    font-family: "Taviraj", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+    color: #333333;
+    width: 60%;
+}
+
+@mixin p__nunito {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+
+@mixin taviraj {
+    font-family: "Taviraj", serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+
+.pink {
+    background: #f1ddc9;
+    margin-top: 90px;
+    .carousel-inner {
+        .carousel-item {
+            .carousel-caption {
+                left: 50%;
+                right: 0;
+                text-align: start;
+                position: absolute;
+                padding-top: 1.25rem;
+                padding-bottom: 1.25rem;
+                color: #fff;
+                .way {
+                    @include text__h1;
+                    text-transform: uppercase;
+                }
+                .under-way {
+                    width: 95px;
+                    border: 1px solid #000000;
+                    margin-top: 8px;
+                    margin-bottom: 24px;
+                    margin-left: 0;
+                }
+                .text__pink {
+                    @include p__nunito;
+                    line-height: 22px;
+                    width: 70%;
+                    margin-bottom: 8px;
+                }
+                .text__discover {
+                    @include taviraj;
+                    letter-spacing: 0.03em;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+                .discover {
+                    border: 1px solid #333333;
+                    width: 74px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/*Media */
+@media screen and (max-width: 1024px) {
+    .pink {
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pink .carousel-inner .carousel-item .carousel-caption .way,
+    .pink .carousel-inner .carousel-item .carousel-caption .text__pink {
+        width: 100%;
+    }
+
+    .pink .text__pink {
+        text-align: justify;
+    }
+
+    .carousel-dark .carousel-caption {
+        display: contents;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pink .carousel-inner .carousel-item .carousel-caption .way {
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: -370px;
+    }
+}
+@media screen and (max-width: 1200px) {
+}

@@ -2,12 +2,11 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-implied-eval */
-import { getModal } from "./shared";
+import { Cart, Detail } from "./shared";
 import "../style/global.scss";
 import "../style/checkout.scss";
 
 // Burger menu
-
 const burgerMenu = document.querySelector("#burger");
 const menuList = document.querySelector(".header-menu");
 const hideSearch = document.querySelector(".hide-search");
@@ -19,29 +18,36 @@ function openBurger() {
     menuList.classList.add("show");
     hideSearch.innerHTML = "<span>Search</span>";
     hideUser.style.display = "none";
-    setTimeout('closeBtn.style.display = "block"', 1000);
+    setTimeout(() => {
+        closeBtn.style.display = "block";
+    }, 1000);
 }
 
 function closeBurger() {
-    setTimeout('burgerMenu.style.display = "block"', 500);
+    setTimeout(() => {
+        burgerMenu.style.display = "block";
+    }, 500);
     menuList.classList.remove("show");
     closeBtn.style.display = "none";
-    setTimeout('hideUser.style.display = "inline-block"', 1000);
-    setTimeout(`hideSearch.innerHTML ='<img src="./images/Search.png" alt="search"/>'`, 1000);
+    setTimeout(() => {
+        hideSearch.innerHTML = '<img src="./images/Search.png" alt="search"/>';
+    }, 1000);
+    setTimeout(() => {
+        hideUser.style.display = "inline-block";
+    }, 1000);
 }
 
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
 
 // Valid form
-
 const inputFName = document.querySelector("input[name='fName']");
 const inputEmail = document.querySelector("input[name='email']");
 const inputTel = document.querySelector("input[name='tel']");
 const inputDelivery = document.querySelector("input[name='delivery']");
 const inputZipCode = document.querySelector("input[name='zipCode']");
-const form = document.querySelector(".payment-details");
 const submitForm = document.querySelector(".place-my-order");
+const courier = document.querySelector("select[name='courier']");
 
 const inputsRequired = document.querySelectorAll("[data-type='required']");
 const errors = {};
@@ -119,6 +125,11 @@ function submitHandler(event) {
     }
 }
 
+courier.addEventListener("change", () => {
+    const currentCourier = courier.options[courier.selectedIndex].text;
+    localStorage.setItem("courier", currentCourier);
+});
+
 inputFName.addEventListener("input", inputHandler);
 inputFName.addEventListener("blur", inputHandler, { once: true });
 
@@ -136,6 +147,8 @@ inputZipCode.addEventListener("blur", inputHandler, { once: true });
 
 submitForm.addEventListener("click", submitHandler);
 
-getModal();
+const cart = new Cart();
+cart.init();
 
-// Local storage
+const detail = new Detail('[data-element="detail"]');
+detail.init();

@@ -1,7 +1,7 @@
 export const template = `
   <div
       id="carouselExampleDark"
-      class="carousel carousel-dark slide pink center"
+      class="carousel carousel-dark slide pink"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators"><!-- Carousel Indicators --></div>

@@ -1,31 +1,16 @@
 /* eslint-disable func-names */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-implied-eval */
-import { getModal } from "./shared";
-import { Carousel, Catalog } from "./components";
+import { Cart, INFO_URL, OFFER_URL } from "./shared";
+import { Carousel, Catalog, Offer } from "./components";
 import "../style/global.scss";
 
-document.querySelector("#item1").onclick = function () {
-    document.querySelector("#text1").classList.toggle("hide");
-};
-
-document.querySelector("#item2").onclick = function () {
-    document.querySelector("#text2").classList.toggle("hide");
-};
-
-document.querySelector("#item3").onclick = function () {
-    document.querySelector("#text3").classList.toggle("hide");
-};
-
-document.querySelector("#item4").onclick = function () {
-    document.querySelector("#text4").classList.toggle("hide");
-};
+const cart = new Cart();
+cart.init();
 
 // Burger menu
-
 const burgerMenu = document.querySelector("#burger");
 const menuList = document.querySelector(".header-menu");
-const hideImg = document.querySelector(".hide");
 const hideSearch = document.querySelector(".hide-search");
 const hideUser = document.querySelector(".hide-user");
 const closeBtn = document.querySelector("#close");
@@ -33,25 +18,30 @@ const closeBtn = document.querySelector("#close");
 function openBurger() {
     burgerMenu.style.display = "none";
     menuList.classList.add("show");
-    hideImg.style.position = "static";
     hideSearch.innerHTML = "<span>Search</span>";
     hideUser.style.display = "none";
-    setTimeout('closeBtn.style.display = "block"', 1000);
+    setTimeout(() => {
+        closeBtn.style.display = "block";
+    }, 1000);
 }
 
 function closeBurger() {
-    setTimeout('burgerMenu.style.display = "block"', 500);
+    setTimeout(() => {
+        burgerMenu.style.display = "block";
+    }, 500);
     menuList.classList.remove("show");
     closeBtn.style.display = "none";
-    setTimeout(`hideSearch.innerHTML ='<img src="./images/Search.png" alt="search"/>'`, 1000);
-    setTimeout('hideUser.style.display = "inline-block"', 1000);
+    setTimeout(() => {
+        hideSearch.innerHTML = '<img src="./images/Search.png" alt="search"/>';
+    }, 1000);
+    setTimeout(() => {
+        hideUser.style.display = "inline-block";
+    }, 1000);
+    document.querySelector(".pink").style.zIndex = "-1";
 }
 
 burgerMenu.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
-
-// Getting data from the server
-const INFO_URL = "http://localhost:3000/profile";
 
 const getResourse = async (url) => {
     const res = await fetch(url);
@@ -69,23 +59,35 @@ const getInfo = async () => {
     return res;
 };
 
+const getOfferInfo = async () => {
+    const res = await getResourse(OFFER_URL);
+
+    return res;
+};
+
 const shuffled = (array) => array.sort(() => 0.5 - Math.random());
 
 // Carousel
 const renderCarousel = async () => {
     const products = await getInfo().then((allProducts) => shuffled(allProducts).slice(0, 5));
-    const carousel = new Carousel("[data-element='carousel']", products);
-    carousel.render();
+    const carousel = new Carousel("[data-element='carousel']", products, cart);
+    carousel.init();
 };
 
 // Catalog
 const renderCatalog = async () => {
     const products = await getInfo();
     const catalog = new Catalog("[data-element='catalog']", products);
-    catalog.render();
-    catalog.control();
+    catalog.init();
+};
+
+// Offer
+const renderOffer = async () => {
+    const products = await getOfferInfo().then((allProducts) => shuffled(allProducts).slice(0, 4));
+    const offers = new Offer("[data-element='offers']", products, cart);
+    offers.init();
 };
 
 renderCarousel();
 renderCatalog();
-getModal();
+renderOffer();

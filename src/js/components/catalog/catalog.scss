@@ -15,7 +15,6 @@ $color: #d84727;
 }
 
 .catalog__clock {
-    margin-top: 133px;
     .series,
     .header {
         display: grid;
@@ -119,9 +118,14 @@ $color: #d84727;
 }
 
 @media screen and (max-width: 1024px) {
-    .catalog__clock .series {
+    .catalog__clock .series,
+    .catalog__clock .header {
         grid-template-columns: 50% 50%;
         grid-column-gap: 5px;
+    }
+    .catalog__clock .header div:last-child,
+    .catalog__clock .series .title:last-child {
+        display: none;
     }
 }
 
@@ -143,13 +147,19 @@ $color: #d84727;
 }
 
 @media screen and (max-width: 600px) {
-    .catalog__clock .series {
+    .catalog__clock .series,
+    .catalog__clock .header {
         grid-template-columns: 100%;
         grid-row-gap: 10px;
     }
-
+    .catalog__clock .header div:first-child {
+        display: none;
+    }
     .catalog__clock .series div:nth-child(2) {
         grid-row: 6;
+    }
+    .catalog__clock .series .title:last-child {
+        display: flex;
     }
     .catalog__clock .series .title a .info__product h4 {
         font-size: 24px;

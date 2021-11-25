@@ -8,6 +8,11 @@ export class Catalog {
         this.rootElement = document.querySelector(selector);
     }
 
+    init() {
+        this.render();
+        this.control();
+    }
+
     render() {
         this.rootElement.innerHTML = template;
 
