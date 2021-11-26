@@ -355,6 +355,36 @@
         }
       ],
       "id": 23
+    },
+    {
+      "order": {
+        "fName": "Oksana",
+        "email": "a.siarohin@gmail.com",
+        "tel": "5643423",
+        "delivery": "Minsk, Chkalova 23/2-10",
+        "zipCode": "00000",
+        "courier": "Skyexpress"
+      },
+      "cart": [
+        {
+          "image": "../src/images/images-serever/image9.png",
+          "name": "Way Kambas Limited Edition",
+          "bigPrice": "Rp 1.170.000",
+          "detail": "MATOA Way Kambas Limited Edition – This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino′s skin.",
+          "id": "18",
+          "count": "1"
+        },
+        {
+          "image": "./src/images/Mask2.png",
+          "name": "Singo Ebony",
+          "smallPrice": "Rp 1.500.000",
+          "bigPrice": "Rp 1.264.000",
+          "detail": "MATOA Singo Ebony – This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino′s skin.",
+          "id": "2",
+          "count": "1"
+        }
+      ],
+      "id": 24
     }
   ],
   "profile": [
