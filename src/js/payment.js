@@ -1,8 +1,3 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable no-param-reassign */
-/* eslint-disable guard-for-in */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-implied-eval */
 import { Cart, Detail } from "./shared";
 import "../style/global.scss";
 import "../style/checkout.scss";

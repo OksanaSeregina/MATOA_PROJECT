@@ -1,6 +1,3 @@
-/* eslint-disable func-names */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-implied-eval */
 import { Cart, INFO_URL, OFFER_URL } from "./shared";
 import { Carousel, Catalog, Offer } from "./components";
 import "../style/global.scss";

@@ -1,7 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-useless-escape */
-/* eslint-disable no-implied-eval */
 import { Cart, Detail } from "./shared";
 import "../style/global.scss";
 import "../style/checkout.scss";
@@ -81,8 +77,8 @@ function inputHandler(event) {
 
     // required validator
     const isValid = currentData.charAt(0) !== " " && currentData.length;
-    const nameEmail = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
-    const numbTel = /^\d[\d\(\)\ -]{4,14}\d$/;
+    const nameEmail = /^[\w]{1}[\w-.]*@[\w-]+\.[a-z]{2,4}$/i;
+    const numbTel = /^\d[\d() -]{4,14}\d$/;
 
     if (!isValid) {
         errorMesage.classList.add("error");

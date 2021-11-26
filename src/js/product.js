@@ -1,4 +1,3 @@
-/* eslint-disable no-implied-eval */
 import { Cart } from "./shared";
 import "../style/global.scss";
 

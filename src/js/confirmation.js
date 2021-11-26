@@ -1,4 +1,3 @@
-/* eslint-disable no-implied-eval */
 import { Cart, SHIPPING_COST_MOCK, PACKAGING_COST_MOCK, ORDER_URL } from "./shared";
 import "../style/global.scss";
 import "../style/checkout.scss";

@@ -12,7 +12,8 @@ module.exports = {
         "no-unused-expressions": "off",
         "consistent-return": "off",
         "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
-        "no-underscore-dangle": "off"
+        "no-underscore-dangle": "off",
+        "no-restricted-syntax": "off"
     },
     settings: {
         "import/resolver": {
