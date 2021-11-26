@@ -37,6 +37,9 @@ function closeBurger() {
         hideUser.style.display = "inline-block";
     }, 1000);
     document.querySelector(".pink").style.zIndex = "-1";
+    setTimeout(() => {
+        document.querySelector(".pink").style.zIndex = "0";
+    }, 1000);
 }
 
 burgerMenu.addEventListener("click", openBurger);
