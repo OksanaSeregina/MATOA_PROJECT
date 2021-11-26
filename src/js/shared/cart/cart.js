@@ -15,7 +15,9 @@ export class Cart {
     }
 
     get count() {
-        return this.products.length.toString();
+        return this.products.reduce((sum, product) => {
+            return sum + Number(product.count || 0);
+        }, 0);
     }
 
     get products() {
