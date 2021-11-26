@@ -6,10 +6,31 @@ import "../../../style/modal-edit.scss";
 const addToStorage = (value) => localStorage.setItem("cart", JSON.stringify(value));
 const getFromStorage = () => JSON.parse(localStorage.getItem("cart")) || [];
 
+const CART_EVENT = new Event("cartEvent");
+
 export class Cart {
     constructor() {
         this.products = [];
         this.rootElement = document.createElement("div");
+    }
+
+    get count() {
+        return this.products.length.toString();
+    }
+
+    get products() {
+        return this._products;
+    }
+
+    set products(value) {
+        this._products = value;
+        document.dispatchEvent(CART_EVENT); // Emit event for updating cart count
+    }
+
+    reset() {
+        this.products = [];
+        localStorage.removeItem("cart");
+        return this.render();
     }
 
     init() {
@@ -48,10 +69,10 @@ export class Cart {
 
     render(isFirstRender = true) {
         let productsTemplate = "";
-        let totalCost = 0;
+        this.totalCost = 0;
         this.products.forEach((product) => {
             const cost = product.count * product.bigPrice.replace(/\D/g, "");
-            totalCost += cost;
+            this.totalCost += cost;
             productsTemplate += cartItemView({
                 ...product,
                 cost: cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
@@ -60,13 +81,12 @@ export class Cart {
         this.rootElement.innerHTML = "";
         this.rootElement.innerHTML = cartView(
             productsTemplate,
-            totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."),
+            this.totalCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."),
             !isFirstRender
         );
         if (isFirstRender) {
             document.body.prepend(this.rootElement);
         }
-        localStorage.setItem("subtotal", totalCost);
     }
 
     increase(product) {
@@ -81,7 +101,11 @@ export class Cart {
     }
 
     control() {
-        document.querySelector(".cart").addEventListener("click", () => {
+        document.querySelector(".cart").addEventListener("click", (e) => {
+            e.preventDefault();
+            if (e.target.classList.contains("disabled")) {
+                return;
+            }
             const modalEl = document.querySelector("#modal-history");
             modalEl.classList.add("overlay--show");
         });

@@ -8,6 +8,11 @@ import "../style/global.scss";
 import "../style/checkout.scss";
 import "../style/payment.scss";
 
+const getFromStorage = () => JSON.parse(localStorage.getItem("order")) || {};
+const order = getFromStorage();
+
+const cart = new Cart();
+
 // Burger menu
 const burgerMenu = document.querySelector("#burger");
 const menuList = document.querySelector(".header-menu");
@@ -54,13 +59,10 @@ const getTimeNow = () => {
 // Local Storage
 const getInfoInput = () => {
     const textOrder = document.getElementsByClassName("text-info-input");
-
     for (const elem of textOrder) {
-        for (const key in localStorage) {
-            const data = key;
-
-            if (elem.dataset.info === data) {
-                elem.textContent = localStorage.getItem(data);
+        for (const key in order) {
+            if (elem.dataset.info === key) {
+                elem.textContent = order[key];
             }
         }
     }
@@ -68,9 +70,8 @@ const getInfoInput = () => {
 };
 
 const getInfoItems = () => {
-    const allCartItems = JSON.parse(localStorage.getItem("cart"));
     const infoInputItems = document.querySelector('[data-items="cart"]');
-    allCartItems.forEach((item) => {
+    cart.products.forEach((item) => {
         infoInputItems.innerHTML += `
       <h2 class="text-info-input">${item.name}</h2>
       <p class="descr-info-input">${item.count} x IDR ${item.bigPrice}</p>
@@ -80,17 +81,13 @@ const getInfoItems = () => {
 
 const getZipIndex = () => {
     const shipAddr = document.querySelector('[data-info="delivery"]');
-    const zip = localStorage.getItem("zipCode");
-
-    shipAddr.textContent = `${shipAddr.textContent}, CA ${zip}`;
+    shipAddr.textContent = `${shipAddr.textContent}, CA ${order.zipCode}`;
 };
 
 getInfoInput();
-getInfoItems();
 getZipIndex();
 
-const cart = new Cart();
+const detail = new Detail('[data-element="detail"]', cart);
 cart.init();
-
-const detail = new Detail('[data-element="detail"]');
 detail.init();
+getInfoItems();

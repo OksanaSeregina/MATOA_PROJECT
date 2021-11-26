@@ -6,6 +6,10 @@ import { Cart, Detail } from "./shared";
 import "../style/global.scss";
 import "../style/checkout.scss";
 
+const addToStorage = (value) => localStorage.setItem("order", JSON.stringify(value));
+const getFromStorage = () => JSON.parse(localStorage.getItem("order")) || {};
+const order = getFromStorage();
+
 // Burger menu
 const burgerMenu = document.querySelector("#burger");
 const menuList = document.querySelector(".header-menu");
@@ -49,21 +53,31 @@ const inputZipCode = document.querySelector("input[name='zipCode']");
 const submitForm = document.querySelector(".place-my-order");
 const courier = document.querySelector("select[name='courier']");
 
+// Init value
+inputFName.value = order.fName || "";
+inputEmail.value = order.email || "";
+inputTel.value = order.tel || "";
+inputDelivery.value = order.delivery || "";
+inputZipCode.value = order.zipCode || "";
+
 const inputsRequired = document.querySelectorAll("[data-type='required']");
 const errors = {};
 
 // Set error for all required fields
 for (const input of inputsRequired) {
     const key = input.name;
-    errors[key] = true;
+    if (input.value) {
+        errors[key] = false;
+    } else {
+        errors[key] = true;
+    }
 }
 
 function inputHandler(event) {
     const key = event.target.name;
     const currentData = this.value;
     const errorMesage = document.querySelector(`span[data-error='${key}']`);
-
-    localStorage.setItem(`${key}`, currentData);
+    order[key] = currentData;
 
     // required validator
     const isValid = currentData.charAt(0) !== " " && currentData.length;
@@ -121,13 +135,13 @@ function submitHandler(event) {
     }
 
     if (!hasFormError) {
-        window.location.href = "./payment.html#my-id5";
+        addToStorage(order);
+        window.location.href = "./payment.html";
     }
 }
 
 courier.addEventListener("change", () => {
-    const currentCourier = courier.options[courier.selectedIndex].text;
-    localStorage.setItem("courier", currentCourier);
+    order.courier = courier.options[courier.selectedIndex].text;
 });
 
 inputFName.addEventListener("input", inputHandler);
@@ -150,5 +164,5 @@ submitForm.addEventListener("click", submitHandler);
 const cart = new Cart();
 cart.init();
 
-const detail = new Detail('[data-element="detail"]');
+const detail = new Detail('[data-element="detail"]', cart);
 detail.init();

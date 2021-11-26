@@ -6,7 +6,6 @@ import { Carousel, Catalog, Offer } from "./components";
 import "../style/global.scss";
 
 const cart = new Cart();
-cart.init();
 
 // Burger menu
 const burgerMenu = document.querySelector("#burger");
@@ -88,6 +87,16 @@ const renderOffer = async () => {
     offers.init();
 };
 
+// Cart count listener
+const runCartCountListener = () => {
+    const cartCountElement = document.querySelector(".quantity-cart");
+    document.addEventListener("cartEvent", () => {
+        cartCountElement.textContent = cart.count;
+    });
+};
+
+runCartCountListener();
+cart.init();
 renderCarousel();
 renderCatalog();
 renderOffer();

@@ -5,7 +5,6 @@ import "../style/global.scss";
 const ID = window.location.search.replace("?id=", "");
 const INFO_URL = "http://localhost:3000/profile";
 const CART = new Cart();
-CART.init();
 
 const module = async () => {
     function getProduct() {
@@ -137,5 +136,15 @@ const module = async () => {
             CART.add(PRODUCT);
         }
     });
+
+    // Cart count
+    const runCartCountListener = () => {
+        const cartCountElement = document.querySelector(".quantity-cart");
+        document.addEventListener("cartEvent", () => {
+            cartCountElement.textContent = CART.count;
+        });
+    };
+    runCartCountListener();
+    CART.init();
 };
 module();

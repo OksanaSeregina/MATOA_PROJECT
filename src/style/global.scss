@@ -167,6 +167,13 @@ header .info__header .icon__header .icon[data-link="cart"] {
     height: 46px;
     background: #f1ddc9;
     border-radius: 50%;
+    .disabled {
+        opacity: 0;
+    }
+}
+
+*[data-visible="none"] {
+    opacity: 0;
 }
 
 header .info__header .icon__header .icon .cart {

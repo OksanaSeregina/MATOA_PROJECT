@@ -11,7 +11,8 @@ module.exports = {
         "class-methods-use-this": "off",
         "no-unused-expressions": "off",
         "consistent-return": "off",
-        "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }]
+        "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
+        "no-underscore-dangle": "off"
     },
     settings: {
         "import/resolver": {

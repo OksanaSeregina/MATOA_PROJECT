@@ -1,10 +1,12 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable no-param-reassign */
+import { SHIPPING_COST_MOCK, PACKAGING_COST_MOCK } from "../constants";
 import { getDetail, getDetailPayment } from "./get-detail.view";
 
 export class Detail {
-    constructor(selector) {
+    constructor(selector, cart) {
         this.rootElement = document.querySelector(selector);
+        this.cart = cart;
     }
 
     init() {
@@ -23,16 +25,14 @@ export class Detail {
 
     control() {
         const valueSubtotal = document.querySelector('[data-price="subt"]');
-        const carrent = localStorage.getItem("subtotal");
+        const carrent = this.cart.totalCost;
         const subtCarrent = carrent.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
         valueSubtotal.textContent = `Rp ${subtCarrent}`;
 
-        const grandTotal = Number(carrent) + 500000 + 50000;
+        const grandTotal = Number(carrent) + PACKAGING_COST_MOCK + SHIPPING_COST_MOCK;
         const carrentGrandTotal = grandTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
         const valueGrandTotal = document.querySelector('[data-price="granrdTotal"]');
         valueGrandTotal.textContent = `Rp ${carrentGrandTotal}`;
-
-        localStorage.setItem("grandtotal", grandTotal);
     }
 
     timer(timer, display) {
